@@ -59,8 +59,8 @@
               {
                 "function": "minecraft:set_count",
                 "count": {
-                    "min": 2,
-                    "max": 8,
+                    "min": 6,
+                    "max": 12,
                     "type": "minecraft:uniform"
                   }
               }
@@ -73,7 +73,7 @@
               {
                 "function": "minecraft:set_count",
                 "count": {
-                    "min": 10,
+                    "min": 18,
                     "max": 36,
                     "type": "minecraft:uniform"
                   }
@@ -129,22 +129,8 @@
               {
                 "function": "minecraft:set_count",
                 "count": {
-                    "min": 2,
-                    "max": 8,
-                    "type": "minecraft:uniform"
-                  }
-              }
-            ],
-            "name": "minecraft:nether_brick"
-          },
-          {
-            "type": "minecraft:item",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                    "min": 8,
-                    "max": 16,
+                    "min": 10,
+                    "max": 20,
                     "type": "minecraft:uniform"
                   }
               }
