@@ -2,7 +2,7 @@
     "type": "crafting_shapeless",
     "ingredients": [
       {
-        "item": "tconstruct:lava_bucket"
+        "item": "minecraft:lava_bucket"
       },
       {
         "item": "minecraft:netherrack"
