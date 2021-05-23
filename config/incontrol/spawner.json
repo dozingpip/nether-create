@@ -10,7 +10,7 @@
     },
     {
         "mob":["minecraft:piglin", "minecraft:wither_skeleton", "minecraft:magma_cube", "minecraft:blaze", "minecraft:ghast", "minecraft:enderman"],
-        "attempts":5,
+        "attempts":20,
         "conditions": {"dimension":"minecraft:the_nether", "mindist" : 20, "maxdist":100}
     }
 ]
