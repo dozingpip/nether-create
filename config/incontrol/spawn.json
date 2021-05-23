@@ -42,7 +42,7 @@
     },
     {
         "dimension": "minecraft:the_nether",
-        "mob":["minecraft:zombified_piglin", "minecraft:piglin","minecraft:hoglin", "minecraft:baby_hoglin","minecraft:enderman","minecraft:wither_skeleton","minecraft:blaze","minecraft:ghast", "minecraft:magma_cube"],
+        "mob":["minecraft:zombified_piglin", "minecraft:piglin","minecraft:hoglin", "minecraft:baby_hoglin","minecraft:enderman","minecraft:wither_skeleton","minecraft:blaze","minecraft:ghast", "minecraft:magma_cube", "minecraft:skeleton"],
         "result": "deny"
     }
 ]
