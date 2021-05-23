@@ -1,4 +1,4 @@
-#Welcome to Hell!
+# Welcome to Hell!
 1. Start by making a gold farm. It doesn't have to be very efficient, you will get better tools to make it more efficent as you go.
 2. Set up auto piglin bartering.
 3. Craft a Seared Melter, Seared Tank, Seared Faucet, and Casting Basin, place as seen below:
@@ -12,7 +12,7 @@
 10. Leave the Nether.
 11. Profit more? idk, the overworld is your oyster now I guess.
 
-##Piglin bartering can get you:
+## Piglin bartering can get you:
 - gold leaf, Amount: 1-2. Used for Nature's Aura rituals and recipes.
 - awkward potion, Amount: 1.
 - black lotus, Amount: 1. Concentrated mana from Botania. Throw it in a mana pool to use it.
@@ -27,7 +27,7 @@
 - leather, Amount 2-4.
 This info has been added in JEI as well. See uses of gold ingot, or how to make any of the above items.
 
-##Mobs will only spawn on certain blocks:
+## Mobs will only spawn on certain blocks:
 - zombified_piglins: magma blocks
 - piglins: netherrack
 - endermen: soul sand/soul soil
@@ -45,7 +45,7 @@ Bone meal on nylium still only gets you the fungi, nether roots, and etc.
 
 You can make more infinite lava tanks, put a bucket in a casting basin, pour a bucket's worth of lava on it via seared faucet attached to a seared melter or smeltery.
 
-##Very useful, but not required
+## Very useful, but not required
 - construction wand
 - tape measure
 - storage drawers + drawer controller, for mass storage
@@ -54,7 +54,7 @@ You can make more infinite lava tanks, put a bucket in a casting basin, pour a b
 - using Tinker's tools is optional, but encouraged.
 - edit config/jei/blacklist.cfg to blacklist any items you don't like clogging your jei
 
-#####Every Botania flower aside from pure daisy (which is required)
+##### Every Botania flower aside from pure daisy (which is required)
 - loonium can get you loot from the vanilla dungeon chest loot table (heavy mana investment)
 - orechid can get you overworld ores (heavy mana investment)
 - orechid ignem is the nether equivalent of the orechid (can spawn netherite ore).
@@ -63,7 +63,7 @@ You can make more infinite lava tanks, put a bucket in a casting basin, pour a b
 - etc.
 - Read your Lexica Botania for more.
 
-#####Create mod extras
+##### Create mod extras
 - redstone link is wireless redstone :o
 - schematicannon, build/plan something out in creative, save it as a schematic, and have the schematicannon automatically build it for you in survival!
 - in general just Ponder anything that sounds interesting :D
