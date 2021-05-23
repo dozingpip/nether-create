@@ -1,5 +1,5 @@
 # Welcome to Hell!
-1. Start by making a gold farm. It doesn't have to be very efficient, you will get better tools to make it more efficent as you go.
+1. Start by making a gold farm. Zombified Piglins only spawn on magma blocks. It doesn't have to be very efficient, you will get better tools to make it more efficent as you go.
 2. Set up auto piglin bartering.
 3. Craft a Seared Melter, Seared Tank, Seared Faucet, and Casting Basin, place as seen below:
 ![top left block: seared melter, top right: seared faucet, bottom left: seared tank, bottom right: casting basin](puny_smeltery.png "Your first smeltery. It's puny.")
