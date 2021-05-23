@@ -25,7 +25,6 @@ mods.jei.JEI.hideRegex("quark.*rune.*");
 mods.jei.JEI.hideRegex("quark.*shard.*");
 mods.jei.JEI.hideRegex(".*vertical_(?!white)_stained.*");
 mods.jei.JEI.hideRegex(".*(?!white).*wool.*");
-mods.jei.JEI.hideRegex(".*(?!oak).*drawer.*");
 mods.jei.JEI.hideRegex(".*(?!dark_oak)_vertical_slab.*");
 mods.jei.JEI.hideRegex(".*(?!dark_oak)_post.*");
 mods.jei.JEI.hideRegex(".*(?!dark_oak)_bookshelf.*");
