@@ -1,0 +1,1 @@
+<recipetype:create:compacting>.addRecipe("red_sand", "none", <item:minecraft:red_sand>, [<item:create:cinder_flour> * 4], [<fluid:minecraft:lava> * 1000], 1000);

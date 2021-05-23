@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "OOO",
+      "GGG",
+      "TTT"
+    ],
+    "key": {
+      "O": {
+        "tag": "forge:obsidian"
+      },
+      "G": {
+        "item": "minecraft:glowstone"
+      },
+      "T": {
+        "item": "minecraft:ghast_tear"
+      }
+    },
+    "result": {
+      "item": "minecraft:respawn_anchor"
+    }
+  }

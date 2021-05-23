@@ -1,0 +1,48 @@
+[
+    {
+        "dimension": "minecraft:the_nether",
+        "mob":"minecraft:zombified_piglin",
+        "block": "minecraft:magma_block",
+        "result": "allow"
+    },
+    {
+        "mob":"minecraft:piglin",
+        "block": "minecraft:netherrack",
+        "result": "allow"
+    },
+    {
+        "mob":["minecraft:hoglin", "minecraft:baby_hoglin"],
+        "block": "minecraft:crimson_nylium",
+        "result": "allow"
+    },
+    {
+        "mob":"minecraft:enderman",
+        "block":["minecraft:soul_sand", "minecraft:soul_soil"],
+        "result":"allow"
+    },
+    {
+        "mob":"minecraft:wither_skeleton",
+        "block":"minecraft:nether_bricks",
+        "result":"allow"
+    },
+    {
+        "mob":"minecraft:blaze",
+        "block":"minecraft:quartz_block",
+        "result":"allow"
+    },
+    {
+        "mob":"minecraft:magma_cube",
+        "block":"minecraft:crimson_hyphae",
+        "result":"allow"
+    },
+    {
+        "mob":"minecraft:ghast",
+        "block":"minecraft:gravel",
+        "result":"allow"
+    },
+    {
+        "dimension": "minecraft:the_nether",
+        "mob":["minecraft:zombified_piglin", "minecraft:piglin","minecraft:hoglin", "minecraft:baby_hoglin","minecraft:enderman","minecraft:wither_skeleton","minecraft:blaze","minecraft:ghast", "minecraft:magma_cube"],
+        "result": "deny"
+    }
+]

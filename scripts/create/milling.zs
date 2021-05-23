@@ -1,0 +1,1 @@
+<recipetype:create:milling>.addRecipe("dead_bush", [<item:minecraft:gold_nugget>*3, <item:minecraft:dead_bush> % 25], <item:minecraft:red_sand>);

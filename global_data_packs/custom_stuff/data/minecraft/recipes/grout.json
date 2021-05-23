@@ -1,0 +1,18 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "minecraft:soul_sand"
+      },
+      {
+        "item": "minecraft:gravel"
+      },
+      {
+        "item": "minecraft:quartz"
+      }
+    ],
+    "result": {
+      "item": "tconstruct:grout",
+      "count": 2
+    }
+  }

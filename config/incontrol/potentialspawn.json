@@ -1,0 +1,5 @@
+[{
+    "mob":["minecraft:zombified_piglin", "minecraft:piglin", "minecraft:wither_skeleton", "minecraft:magma_cube", "minecraft:blaze", "minecraft:ghast", "minecraft:enderman"],
+    "attempts":2,
+    "conditions": {"dimension":"minecraft:the_nether", "mindist" : 5, "maxdist":200}
+}]

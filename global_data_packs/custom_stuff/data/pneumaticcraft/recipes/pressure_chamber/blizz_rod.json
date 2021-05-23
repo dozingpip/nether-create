@@ -1,0 +1,40 @@
+{
+    "type": "pneumaticcraft:pressure_chamber",
+    "inputs": [
+      {
+        "type": "pneumaticcraft:stacked_item",
+        "item": "minecraft:spruce_sapling",
+        "count": 4
+      },
+      {
+        "item":"minecraft:turtle_egg"
+      },
+      {
+        "item":"botania:corporea_spark"
+      },
+      {
+        "item":"botania:bifrost_perm"
+      },
+      {
+        "item":"minecraft:player_head"
+      },
+      {
+        "item":"create:chocolate_glazed_berries"
+      },
+      {
+        "item":"pneumaticcraft:spawner_core_shell"
+      },
+      {
+        "item":"naturesaura:clock_hand"
+      },
+      {
+        "item":"tconstruct:queens_slime_block"
+      }
+    ],
+    "pressure": 4.0,
+    "results": [
+      {
+        "item": "thermal:blizz_rod"
+      }
+    ]
+}

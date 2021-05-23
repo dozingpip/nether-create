@@ -1,0 +1,13 @@
+{
+    "type": "tconstruct:casting_basin",
+    "cast": {
+      "item": "botania:white_double_flower"
+    },
+    "cast_consumed": true,
+    "fluid": {
+      "name": "tconstruct:molten_zinc",
+      "amount": 1296
+    },
+    "result": "botania:pure_daisy",
+    "cooling_time": 494
+}

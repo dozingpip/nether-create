@@ -1,0 +1,42 @@
+{
+    "type": "pneumaticcraft:pressure_chamber",
+    "inputs": [
+      {
+        "item": "minecraft:oak_sapling"
+      },
+      {
+        "item":"botania:floating_agricarnation"
+      },
+      {
+        "item":"create:tree_fertilizer"
+      }
+    ],
+    "pressure": 2.0,
+    "results": [
+      {
+        "type": "pneumaticcraft:stacked_item",
+        "item": "minecraft:oak_log",
+        "count" : 32
+      },
+      {
+        "type": "pneumaticcraft:stacked_item",
+        "item": "minecraft:stick",
+        "count" : 16
+      },
+      {
+        "type": "pneumaticcraft:stacked_item",
+        "item": "minecraft:oak_sapling",
+        "count" : 16
+      },
+      {
+        "type": "pneumaticcraft:stacked_item",
+        "item": "minecraft:oak_leaves",
+        "count" : 16
+      },
+      {
+        "type": "pneumaticcraft:stacked_item",
+        "item": "minecraft:apple",
+        "count" : 8
+      }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "type": "tconstruct:casting_basin",
+    "cast": {
+      "item": "pneumaticcraft:ingot_iron_compressed"
+    },
+    "cast_consumed": true,
+    "fluid": {
+      "name": "tconstruct:seared_stone",
+      "amount": 1000
+    },
+    "result": "pneumaticcraft:reinforced_bricks",
+    "cooling_time": 494
+}

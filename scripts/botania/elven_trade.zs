@@ -1,0 +1,2 @@
+<recipetype:botania:elven_trade>.addRecipe("ice", [<item:minecraft:ice>], <item:thermal:blizz_rod>);
+<recipetype:botania:elven_trade>.addRecipe("dirt", [<item:minecraft:dirt>], <item:naturesaura:nether_grass>);

@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "tconstruct:lava_bucket"
+      },
+      {
+        "item": "minecraft:netherrack"
+      }
+    ],
+    "result": {
+      "item": "minecraft:netherrack",
+      "count": 32
+    }
+  }

@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "minecraft:ender_chest"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_ender",
+    "amount": 1000
+  },
+  "temperature": 1400,
+  "time": 332
+}

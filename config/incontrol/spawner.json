@@ -1,0 +1,16 @@
+[
+    {
+        "mob":"minecraft:zombified_piglin",
+        "attempts":30,
+        "amount": {
+            "minimum": 2,
+            "maximum": 5
+          },
+        "conditions": {"dimension":"minecraft:the_nether", "mindist" : 15, "maxdist":100}
+    },
+    {
+        "mob":["minecraft:piglin", "minecraft:wither_skeleton", "minecraft:magma_cube", "minecraft:blaze", "minecraft:ghast", "minecraft:enderman"],
+        "attempts":5,
+        "conditions": {"dimension":"minecraft:the_nether", "mindist" : 20, "maxdist":100}
+    }
+]

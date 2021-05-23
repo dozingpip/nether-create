@@ -1,0 +1,6 @@
+
+<recipetype:botania:runic_altar>.addRecipe("ender_crate", <item:naturesaura:ender_crate>, 20000, <item:naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:end" as string}), <item:minecraft:ender_eye>, <item:minecraft:coal_block>, <item:minecraft:coal_block>, <item:minecraft:ender_chest>);
+<recipetype:botania:runic_altar>.removeRecipe(<item:botania:rune_winter>);
+<recipetype:botania:runic_altar>.addRecipe("rune_winter", <item:botania:rune_winter>, 10000, <item:minecraft:cake>, <tag:items:minecraft:wool>, <item:botania:rune_water>, <item:botania:rune_earth>, <item:minecraft:white_wool>, <item:minecraft:white_wool>);
+<recipetype:botania:runic_altar>.addRecipe("token_of_joy", <item:naturesaura:token_joy>, 10000, <tag:items:minecraft:flowers>, <item:minecraft:iron_ingot>, <item:minecraft:apple>, <item:naturesaura:gold_leaf>, <item:naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:overworld" as string}), <item:minecraft:torch>);
+<recipetype:botania:runic_altar>.addRecipe("nature_altar", <item:naturesaura:nature_altar>, 10000, <item:minecraft:stone>, <item:minecraft:stone>, <item:minecraft:stone>, <item:minecraft:gold_ingot>, <item:naturesaura:token_joy>, <item:naturesaura:gold_leaf>);

@@ -1,0 +1,29 @@
+{
+    "type": "pneumaticcraft:pressure_chamber",
+    "inputs": [
+      {
+        "type": "pneumaticcraft:stacked_item",
+        "item": "minecraft:melon_seeds",
+        "count": 1
+      },
+      {
+        "item":"botania:floating_agricarnation"
+      },
+      {
+        "item":"naturesaura:crimson_meal"
+      }
+    ],
+    "pressure": 2.0,
+    "results": [
+      {
+        "type": "pneumaticcraft:stacked_item",
+        "item": "minecraft:melon_slice",
+        "count" : 64
+      },
+      {
+        "type": "pneumaticcraft:stacked_item",
+        "item": "minecraft:melon_seeds",
+        "count": 4
+      }
+    ]
+}
