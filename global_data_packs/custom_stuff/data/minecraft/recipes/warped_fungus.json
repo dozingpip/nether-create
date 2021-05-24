@@ -1,0 +1,21 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:warped_roots"
+        },
+        {
+            "item": "minecraft:warped_roots"
+        },
+        {
+            "item": "minecraft:warped_roots"
+        },
+        {
+            "item": "minecraft:warped_roots"
+        }
+    ],
+    "result": {
+      "item": "minecraft:warped_fungus",
+      "count": 1
+    }
+  }
