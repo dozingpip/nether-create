@@ -1,0 +1,2 @@
+<recipetype:create:filling>.addRecipe("magma_block", <item:minecraft:magma_block>*8, <item:minecraft:netherrack>, <fluid:minecraft:lava>*1000);
+<recipetype:create:filling>.addRecipe("netherrack", <item:minecraft:netherrack>*32, <item:minecraft:nether_wart_block>, <fluid:minecraft:lava>*1000);
