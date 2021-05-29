@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      " B ",
+      "BIG",
+      " BG"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:blackstone"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "G": {
+        "item": "minecraft:gold_block"
+      }
+    },
+    "result": {
+      "item": "measurements:tape_measure"
+    }
+}
