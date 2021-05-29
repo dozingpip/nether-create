@@ -3,3 +3,5 @@
 <fluid:create:potion>.withTag({"Potion":"minecraft:poison"})*1000]);
 <recipetype:create:mixing>.addRecipe("spider_egg", "heated", <item:minecraft:spider_spawn_egg>, [<item:minecraft:turtle_egg>, <item:minecraft:spider_eye>], [<fluid:tconstruct:blood>*1000]);
 <recipetype:create:mixing>.addRecipe("shulker_egg", "heated", <item:minecraft:shulker_spawn_egg>, [<item:minecraft:turtle_egg>, <tag:items:botania:petals/purple>], [<fluid:tconstruct:blood>*1000]);
+<recipetype:create:mixing>.addRecipe("bee_egg", "heated", <item:minecraft:bee_spawn_egg>, [<item:minecraft:turtle_egg>, <item:minecraft:honeycomb>, <item:minecraft:sugar>], [<fluid:tconstruct:blood>*1000]);
+<recipetype:create:mixing>.addRecipe("witch_egg", "heated", <item:minecraft:witch_spawn_egg>, [<item:minecraft:turtle_egg>, <item:minecraft:brewing_stand>, <item:minecraft:potion>.withTag({Potion: "minecraft:awkward" as string})], [<fluid:tconstruct:blood>*1000]);
