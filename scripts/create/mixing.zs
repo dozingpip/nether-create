@@ -1,3 +1,5 @@
 <recipetype:create:mixing>.addRecipe("oak_sapling", "heated", <item:minecraft:oak_sapling>, [<item:minecraft:warped_fungus>*4, <item:minecraft:crimson_fungus>*4], [<fluid:pneumaticcraft:vegetable_oil>*1000]);
 <recipetype:create:mixing>.addRecipe("poisonous_potato", "heated", <item:minecraft:poisonous_potato>, [<item:minecraft:nether_wart>*4], [<fluid:pneumaticcraft:vegetable_oil>*1000,
 <fluid:create:potion>.withTag({"Potion":"minecraft:poison"})*1000]);
+<recipetype:create:mixing>.addRecipe("spider_egg", "heated", <item:minecraft:spider_spawn_egg>, [<item:minecraft:turtle_egg>, <item:minecraft:spider_eye>], [<fluid:tconstruct:blood>*1000]);
+<recipetype:create:mixing>.addRecipe("shulker_egg", "heated", <item:minecraft:shulker_spawn_egg>, [<item:minecraft:turtle_egg>, <tag:items:botania:petals/purple>], [<fluid:tconstruct:blood>*1000]);

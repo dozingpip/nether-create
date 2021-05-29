@@ -87,20 +87,6 @@
               {
                 "function": "minecraft:set_count",
                 "count": {
-                    "min": 3,
-                    "max": 9,
-                    "type": "minecraft:uniform"
-                  }
-              }
-            ],
-            "name": "minecraft:string"
-          },
-          {
-            "type": "minecraft:item",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
                     "min": 5,
                     "max": 12,
                     "type": "minecraft:uniform"
@@ -108,20 +94,6 @@
               }
             ],
             "name": "minecraft:quartz"
-          },
-          {
-            "type": "minecraft:item",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                    "min": 2,
-                    "max": 4,
-                    "type": "minecraft:uniform"
-                  }
-              }
-            ],
-            "name": "minecraft:leather"
           },
           {
             "type": "minecraft:item",
