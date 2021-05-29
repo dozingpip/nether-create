@@ -125,7 +125,7 @@
 	saddles_storage_stack = 16
 	#New storage stack for potion bottles; default is 4.
 	#Range: 1 ~ 64
-	potions_storage_stack = 16
+	potions_storage_stack = 32
 	#New storage stack for filled lava buckets; default is 1.
 	#Range: 1 ~ 64
 	lava_buckets_storage_stack = 1
