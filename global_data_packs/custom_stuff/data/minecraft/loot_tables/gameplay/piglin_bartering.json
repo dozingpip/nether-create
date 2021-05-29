@@ -150,20 +150,6 @@
               }
             ],
             "name": "minecraft:blackstone"
-          },
-          {
-            "type": "minecraft:item",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": 1
-              },
-              {
-                "function": "set_nbt",
-                "tag": "{StoredEnchantments:[{id:\"minecraft:soul_speed\",lvl:1}]}"
-              }
-            ],
-            "name": "minecraft:enchanted_book"
           }
         ]
       }
