@@ -20,8 +20,7 @@ mods.jei.JEI.addInfo(<item:minecraft:soul_sand>, ["Gotten through Piglin barteri
 mods.jei.JEI.addInfo(<item:minecraft:gravel>, ["Gotten through Piglin bartering. (Amount: 8-16)"]);
 mods.jei.JEI.addInfo(<item:minecraft:blackstone>, ["Gotten through Piglin bartering. (Amount: 8-16)"]);
 mods.jei.JEI.addInfo(<item:minecraft:quartz>, ["Gotten through Piglin bartering. (Amount: 5-12)"]);
-mods.jei.JEI.addInfo(<item:minecraft:enchanted_book>.withTag({"StoredEnchantments":[{"id":"minecraft:soul_speed","lvl":1}]}), ["Gotten through Piglin bartering. (Amount: 1)"]);
-mods.jei.JEI.addInfo(<item:minecraft:iron_nugget>, ["Gotten through Piglin bartering. (Amount: 18-36)"]);
+mods.jei.JEI.addInfo(<item:minecraft:iron_nugget>, ["Gotten through Piglin bartering. (Amount: 27-45)"]);
 mods.jei.JEI.addInfo(<item:minecraft:string>, ["Gotten through Piglin bartering. (Amount: 3-9)"]);
 mods.jei.JEI.addInfo(<item:minecraft:leather>, ["Gotten through Piglin bartering. (Amount: 2-4)"]);
 mods.jei.JEI.addInfo(<item:botania:apothecary_default>, ["Useless without a source of water. Find alternative methods to make flowers."]);
