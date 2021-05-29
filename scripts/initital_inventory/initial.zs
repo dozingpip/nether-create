@@ -4,4 +4,4 @@ mods.initialinventory.InvHandler.addStartingItem("naturesaura", <item:patchouli:
 mods.initialinventory.InvHandler.addStartingItem("angelring", <item:angelring:itemring>);
 mods.initialinventory.InvHandler.addStartingItem("angelblock", <item:angelblock:angel_block>);
 mods.initialinventory.InvHandler.addStartingItem("tank", <item:pneumaticcraft:small_tank>);
-mods.initialinventory.InvHandler.addStartingItem("akashic_tome", <item:akashic_tome:tome>);
+mods.initialinventory.InvHandler.addStartingItem("akashic_tome", <item:akashictome:tome>);
