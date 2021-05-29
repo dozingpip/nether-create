@@ -18,6 +18,7 @@ config/*
 !config/globalgame*
 !config/waystones*
 !config/jeresources*
+!config/wabbity*
 options.txt
 patchouli_data.json
 realms_persistence.json
