@@ -32,5 +32,10 @@
       "mob": "minecraft:wither_skeleton",
       "item": "minecraft:coal",
       "itemcount": "1-2/1-2/3-4"
+    },
+    {
+      "mob": "minecraft:witch",
+      "item": "minecraft:redstone",
+      "itemcount": "1-2/1-2/3-4"
     }
 ]
