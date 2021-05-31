@@ -36,6 +36,16 @@
     {
       "mob": "minecraft:witch",
       "item": "minecraft:redstone",
-      "itemcount": "1-2/1-2/3-4"
+      "itemcount": "2-3/2-3/3-4"
+    },
+    {
+      "mob": "minecraft:witch",
+      "item": "minecraft:sugar",
+      "itemcount": "3-4/3-4/4-5"
+    },
+    {
+      "mob": "minecraft:enderman",
+      "item": "minecraft:ender_pearl",
+      "itemcount": "1-2/1-2/2-3"
     }
 ]

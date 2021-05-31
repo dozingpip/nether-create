@@ -1,5 +1,3 @@
-mods.jei.JEI.hideRegex(".*tinker_station.*");
-mods.jei.JEI.hideRegex(".*part_builder.*");
 mods.jei.JEI.hideRegex("tconstruct.*bucket.*");
 mods.jei.JEI.hideRegex(".*nugget.*");
 mods.jei.JEI.hideRegex(".*plastic_brick.*");
@@ -24,7 +22,6 @@ mods.jei.JEI.hideRegex(".*(?!white)_candle.*");
 mods.jei.JEI.hideRegex("quark.*rune.*");
 mods.jei.JEI.hideRegex("quark.*shard.*");
 mods.jei.JEI.hideRegex(".*vertical_(?!white)_stained.*");
-mods.jei.JEI.hideRegex(".*(?!white).*wool.*");
 mods.jei.JEI.hideRegex(".*(?!dark_oak)_vertical_slab.*");
 mods.jei.JEI.hideRegex(".*(?!dark_oak)_post.*");
 mods.jei.JEI.hideRegex(".*(?!dark_oak)_bookshelf.*");

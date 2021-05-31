@@ -15,7 +15,7 @@ mods.jei.JEI.addInfo(<item:minecraft:gold_ingot>, ["Piglin bartering can get you
 mods.jei.JEI.addInfo(<item:naturesaura:gold_leaf>, ["Gotten through Piglin bartering. (Amount: 1-2)"]);
 mods.jei.JEI.addInfo(<item:minecraft:potion>.withTag({"Potion":"minecraft:awkward"}), ["Gotten through Piglin bartering. (Amount: 1)"]);
 mods.jei.JEI.addInfo(<item:botania:black_lotus>, ["Gotten through Piglin bartering. (Amount: 1)"]);
-mods.jei.JEI.addInfo(<item:minecraft:turtle_egg>, ["Gotten through Piglin bartering. (Amount: 1)"]);
+mods.jei.JEI.addInfo(<item:minecraft:turtle_egg>, ["Gotten through Piglin bartering. (Amount: 1)\nCan be used in various spawn egg recipes."]);
 mods.jei.JEI.addInfo(<item:minecraft:soul_sand>, ["Gotten through Piglin bartering. (Amount: 6-12)"]);
 mods.jei.JEI.addInfo(<item:minecraft:gravel>, ["Gotten through Piglin bartering. (Amount: 8-16)"]);
 mods.jei.JEI.addInfo(<item:minecraft:blackstone>, ["Gotten through Piglin bartering. (Amount: 8-16)"]);

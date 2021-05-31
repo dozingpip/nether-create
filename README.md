@@ -15,16 +15,13 @@
 ## Piglin bartering can get you:
 - gold leaf, Amount: 1-2. Used for Nature's Aura rituals and recipes.
 - awkward potion, Amount: 1.
-- black lotus, Amount: 1. Concentrated mana from Botania. Throw it in a mana pool to use it.
-- turtle egg, Amount: 1. Useful for making your gold farm more efficient.
+- black lotus, Amount: 1. Concentrated mana from Botania. Throw it in a non-empty mana pool to use it.
+- turtle egg, Amount: 1. Useful for making your gold farm more efficient. Also used in various spawn egg recipes.
 - soul sand, Amount: 6-12.
 - gravel, Amount: 8-16.
 - blackstone, Amount: 8-16.
 - quartz, Amount: 5-12.
-- soul speed book, Amount: 1.
-- iron nugget, Amount: 18-36.
-- string, Amount 3-9.
-- leather, Amount 2-4.
+- iron nugget, Amount: 27-45.
 This info has been added in JEI as well. See uses of gold ingot, or how to make any of the above items.
 
 ## Mobs will only spawn on certain blocks:
@@ -37,13 +34,12 @@ This info has been added in JEI as well. See uses of gold ingot, or how to make 
 - magma cube: crimson hyphae
 - hoglins: crimson nylium
 - Nothing spawns on warped nylium (or any other blocks that I also haven't mentioned)
-- Zombified piglins can spawn 15-100 blocks away from you, the player. All other mobs can spawn 20-100 blocks away from you, the player.
+- Zombified piglins can spawn 5-100 blocks away from you, the player. All other mobs can spawn 20-100 blocks away from you, the player.
 - May adjust these spawn rules more later. Mods shouldn't drop any non-stackable items (swords, armor, etc), if they do, notify me and I'll fix it so they don't.
 
 Warped/ Crimson Nylium has been modified to basically act as grass/dirt except it can't be tilled. So you can plant saplings and Botania flowers on Nylium.
 Bone meal on nylium still only gets you the fungi, nether roots, and etc.
 
-You can make more infinite lava tanks, put a bucket in a casting basin, pour a bucket's worth of lava on it via seared faucet attached to a seared melter or smeltery.
 
 ## Very useful, but not required
 - construction wand
