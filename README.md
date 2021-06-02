@@ -73,7 +73,7 @@ Bone meal on nylium still only gets you the fungi, roots, and etc.
 - The petal apothecary is useless since you don't have water, other methods of flower crafting have been added
 - Water wheel can spin with lava, and it won't get burned up
 - Your first pieces of redstone should come from spawning witches with witch eggs, which you *can* craft, see uses of turtle eggs for more spawn eggs you craft.
-- Pure daisy-ing a glowshroom = a glowstone block
+- Pure daisy-ing a shroomlight = a glowstone block
 - Pure daisy-ing a charcoal block = a dried kelp block
 - Pure daisy-ing a white petal block = white wool, which can then be turned into string
 - Hopper recipe uses gold ingots instead of iron now!
@@ -82,7 +82,7 @@ Bone meal on nylium still only gets you the fungi, roots, and etc.
   - allows you to get some nylium wherever you want, for planting botania flowers and etc
 - Melting a blaze in a smeltery gets you molten blaze, a better fuel for your smeltery
 - Melting a wither skeleton in a smeltery gets you a whole bucket's worth of milk
-- Caprice cocoon can get you mobs you otherwise could not spawn, like villagers
+- Cocoon of caprice can get you mobs you otherwise could not spawn, like villagers
 - Striders can still spawn in lava and they drop string
 
 
