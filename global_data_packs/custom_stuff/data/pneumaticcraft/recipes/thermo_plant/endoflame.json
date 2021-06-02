@@ -1,0 +1,17 @@
+{
+    "type": "pneumaticcraft:thermo_plant",
+    "item_input": {
+      "item": "combustivefishing:combustive_cod"
+    },
+    "item_output": {
+        "item": "botania:endoflame"
+    },
+    "fluid_input":
+    {
+        "fluid": "tconstruct:molten_blaze",
+        "amount": 250
+    },
+    "pressure": 2.0,
+    "speed": 0.5,
+    "exothermic": false
+}

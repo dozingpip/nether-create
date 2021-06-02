@@ -5,3 +5,4 @@ mods.initialinventory.InvHandler.addStartingItem("angelring", <item:angelring:it
 mods.initialinventory.InvHandler.addStartingItem("angelblock", <item:angelblock:angel_block>);
 mods.initialinventory.InvHandler.addStartingItem("tank", <item:pneumaticcraft:small_tank>);
 mods.initialinventory.InvHandler.addStartingItem("akashic_tome", <item:akashictome:tome>);
+mods.initialinventory.InvHandler.addStartingItem("pneumaticcraft_guide", <item:patchouli:guide_book>.withTag({"patchouli:book": "pneumaticcraft:book" as string}));
