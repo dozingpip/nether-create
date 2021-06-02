@@ -3,13 +3,14 @@
     "item_input": {
       "item": "combustivefishing:combustive_cod"
     },
-    "item_output": {
-        "item": "botania:endoflame"
-    },
     "fluid_input":
     {
+        "type": "pneumaticcraft:fluid",
         "fluid": "tconstruct:molten_blaze",
         "amount": 250
+    },
+    "item_output": {
+        "item": "botania:endoflame"
     },
     "pressure": 2.0,
     "speed": 0.5,
