@@ -1,0 +1,9 @@
+{
+	"operation": "scavenge:pow",
+	"value": 0.0
+}
+
+"scavenge:pow"
+Pows the value by the desired amount
+
+"value": Value that should be powed with

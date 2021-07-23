@@ -1,0 +1,11 @@
+{
+	"operation": "scavenge:clamp",
+	"minValue": 0,
+	"maxValue": 0
+}
+
+"scavenge:clamp"
+Clamps the Value in a desired Range
+
+"minValue": Value that should be the minimum Threshold
+"maxValue": Value that should be the maximum Threshold

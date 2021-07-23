@@ -1,0 +1,35 @@
+{
+	"property": "scavenge_player:per_player",
+	"id": "exampleId",
+	"min": 0,
+	"max": 0,
+	"change": {
+		"operation": "scavenge:add",
+		"value": 1
+	},
+	"inverted": false,
+	"error_message": null,
+	"error_simple": true,
+	"jei_visible": false,
+	"jei_description": "scavenge_player.per_player.desc",
+	"jei_simple": true
+}
+
+"scavenge_player:per_player"
+Allows to Limit Actions of a Player to a certain amount
+
+"id": Id the Action Limit is stored in
+"min": Minimum Range of the Action Limit
+"max": Maximum Range of the Action Limit
+"change": Incrementer of the Actions
+	"operation": The Operation that should be executed
+	"value": Value that should be added
+"inverted": If the result should be Inverted (Optional, Default: false)
+"error_message": Error Message that should be displayed (Optional, Default: null)
+"error_simple": If the error_message should be treated as a Simple String or a full ITextComponent JsonObject (Optional, Default: true)
+"jei_visible": If the JEI description should be shown (Optional, Default: false)
+"jei_description": JEI Description that should be displayed (Optional, Default: scavenge_player.per_player.desc)
+"jei_simple": If the jei_description should be treated as a Simple String or a full ITextComponent JsonObject (Optional, Default: true)
+
+Incompats:
+[scavenge_player:per_player, scavenge_world:per_chunk_effect, scavenge_world:per_block_effect]

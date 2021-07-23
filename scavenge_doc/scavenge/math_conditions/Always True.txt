@@ -1,0 +1,7 @@
+{
+	"condition": "scavenge:always_true"
+}
+
+"scavenge:always_true"
+Math Operation that always returns true
+

@@ -1,0 +1,11 @@
+{
+	"operation": "scavenge:random",
+	"high": 0,
+	"low": 0
+}
+
+"scavenge:random"
+Returns a Randomized result based on the defined ranges
+
+"high": The High Value of the Randomization
+"low": The Low Value of the Randomization

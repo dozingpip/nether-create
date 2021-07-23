@@ -1,0 +1,36 @@
+{
+	"property": "scavenge_player:has_hunger",
+	"condition": {
+		"condition": "scavenge:always_true",
+		"operations": [
+			{
+				"operation": "scavenge:add",
+				"value": 1
+			}
+		]
+	},
+	"inverted": false,
+	"error_message": null,
+	"error_simple": true,
+	"jei_visible": false,
+	"jei_description": "scavenge_player.has_hunger.desc",
+	"jei_simple": true
+}
+
+"scavenge_player:has_hunger"
+Tests if the Player Food is at the expected level
+
+"condition": Converts the Value into a result can be array or object or be inlined
+	"condition": Value that should be checked against
+	"operations": Operations that should be applied before the test
+			"operation": The Operation that should be executed
+			"value": Value that should be added
+"inverted": If the result should be Inverted (Optional, Default: false)
+"error_message": Error Message that should be displayed (Optional, Default: null)
+"error_simple": If the error_message should be treated as a Simple String or a full ITextComponent JsonObject (Optional, Default: true)
+"jei_visible": If the JEI description should be shown (Optional, Default: false)
+"jei_description": JEI Description that should be displayed (Optional, Default: scavenge_player.has_hunger.desc)
+"jei_simple": If the jei_description should be treated as a Simple String or a full ITextComponent JsonObject (Optional, Default: true)
+
+Incompats:
+[None]

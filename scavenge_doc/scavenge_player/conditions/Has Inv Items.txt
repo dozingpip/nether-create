@@ -1,0 +1,33 @@
+{
+	"property": "scavenge_player:has_inv_items",
+	"items": [
+		{
+			"item": "minecraft:diamond",
+			"nbt": null,
+			"count": 1
+		}
+	],
+	"inverted": false,
+	"error_message": null,
+	"error_simple": true,
+	"jei_visible": false,
+	"jei_description": "scavenge_player.has_inv_items.desc",
+	"jei_simple": true
+}
+
+"scavenge_player:has_inv_items"
+Tests if the Player has the Desired Items and amount in the inventory
+
+"items": Items that should be compared against
+		"item": Item that should be used
+		"nbt": NBT data in the item (Optional, Default: null)
+		"count": Amount of items (Optional, Default: 1)
+"inverted": If the result should be Inverted (Optional, Default: false)
+"error_message": Error Message that should be displayed (Optional, Default: null)
+"error_simple": If the error_message should be treated as a Simple String or a full ITextComponent JsonObject (Optional, Default: true)
+"jei_visible": If the JEI description should be shown (Optional, Default: false)
+"jei_description": JEI Description that should be displayed (Optional, Default: scavenge_player.has_inv_items.desc)
+"jei_simple": If the jei_description should be treated as a Simple String or a full ITextComponent JsonObject (Optional, Default: true)
+
+Incompats:
+[None]

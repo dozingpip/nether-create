@@ -1,0 +1,20 @@
+{
+	"condition": "scavenge:is_bit_not_set",
+	"value": 0,
+	"any": false,
+	"operations": [
+		{
+			"operation": "scavenge:add",
+			"value": 1
+		}
+	]
+}
+
+"scavenge:is_bit_not_set"
+Tests if bits in the number are not set
+
+"value": Bits that should be compared against
+"any": If all bits or any Bit has to match
+"operations": Operations that should be applied before the test (Optional, Default: [])
+		"operation": The Operation that should be executed
+		"value": Value that should be added

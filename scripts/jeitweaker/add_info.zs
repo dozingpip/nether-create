@@ -11,8 +11,7 @@ mods.jei.JEI.addInfo(<item:minecraft:nether_brick>, ["Can be caught commonly wit
 mods.jei.JEI.addInfo(<item:combustivefishing:bone_fish>, ["Can be caught commonly with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
 mods.jei.JEI.addInfo(<item:combustivefishing:combustive_cod>, ["Can be caught commonly with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
 mods.jei.JEI.addInfo(<item:combustivefishing:blazing_fishing_rod>, ["Common catches: coal, rotten flesh, nether brick, combustive cod, bone fish", "Rare: blaze rod, magma cream, ghast tear, wither skull, fire coral, Pigstep, blacker lotus"]);
-mods.jei.JEI.addInfo(<item:minecraft:gold_ingot>, ["Piglin bartering can get you: gold leaf, awkward potion, black lotus, turtle egg, soul sand, gravel, blackstone, quartz, soul speed book, iron nuggets, string, and leather."]);
-mods.jei.JEI.addInfo(<item:naturesaura:gold_leaf>, ["Gotten through Piglin bartering. (Amount: 1-2)"]);
+mods.jei.JEI.addInfo(<item:minecraft:gold_ingot>, ["Piglin bartering can get you: awkward potion, black lotus, turtle egg, soul sand, gravel, blackstone, quartz, soul speed book, iron nuggets, string, and leather."]);
 mods.jei.JEI.addInfo(<item:minecraft:potion>.withTag({"Potion":"minecraft:awkward"}), ["Gotten through Piglin bartering. (Amount: 1)"]);
 mods.jei.JEI.addInfo(<item:botania:black_lotus>, ["Gotten through Piglin bartering. (Amount: 1)"]);
 mods.jei.JEI.addInfo(<item:minecraft:turtle_egg>, ["Gotten through Piglin bartering. (Amount: 1)\nCan be used in various spawn egg recipes."]);

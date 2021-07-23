@@ -1,0 +1,9 @@
+{
+	"operation": "scavenge:logger",
+	"id": ""
+}
+
+"scavenge:logger"
+Prints the Number and returns it. Ideal for value logging in the game console
+
+"id": String that should be logged as prefix

@@ -1,0 +1,70 @@
+{
+    "type": "compactcrafting:miniaturization",
+    "version": 1,
+    "recipeSize": 1,
+    "layers": [
+      {
+        "type": "compactcrafting:mixed",
+        "pattern": [
+          ["R", "R"],
+          ["S", "L"],
+          ["G", "B"]
+        ]
+      },
+      {
+        "type": "compactcrafting:mixed",
+        "pattern": [
+          ["g", "g"],
+          ["N", "M"],
+          ["B", "B"]
+        ]
+      }
+    ],
+  
+    "catalyst": {
+      "id": "botania:rune_lust",
+      "Count": 1
+    },
+  
+    "components": {
+      "g": {
+        "type": "compactcrafting:block",
+        "block": "botania:pink_petal_block"
+      },
+      "R": {
+        "type": "compactcrafting:block",
+        "block": "botania:red_petal_block"
+      },
+      "L": {
+        "type": "compactcrafting:block",
+        "block": "botania:orange_petal_block"
+      },
+      "S": {
+        "type": "compactcrafting:block",
+        "block": "botania:manasteel_block"
+      },
+      "G": {
+        "type": "compactcrafting:block",
+        "block": "quark:gunpowder_sack"
+      },
+      "N": {
+        "type": "compactcrafting:block",
+        "block": "quark:nether_wart_sack"
+      },
+      "M": {
+        "type": "compactcrafting:block",
+        "block": "botania:mana_glass"
+      },
+      "B": {
+        "type": "compactcrafting:block",
+        "block": "minecraft:nether_bricks"
+      }
+    },
+  
+    "outputs": [
+      {
+        "id": "botania:pollidisiac",
+        "Count": 12
+      }
+    ]
+  }

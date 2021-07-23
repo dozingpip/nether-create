@@ -1,0 +1,9 @@
+{
+	"operation": "scavenge:multiply",
+	"value": 0.0
+}
+
+"scavenge:multiply"
+Multiplies the value by a desired value
+
+"value": Value that should be multiplied with

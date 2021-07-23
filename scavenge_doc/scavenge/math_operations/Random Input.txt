@@ -1,0 +1,7 @@
+{
+	"operation": "scavenge:random_input"
+}
+
+"scavenge:random_input"
+Randomizes the Input between the inputvalue and 0
+

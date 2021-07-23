@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-      "pneumaticcraft:reinforced_bricks"
+      "create:shadow_steel",
+      "minecraft:wither_skeleton_skull"
     ]
 }

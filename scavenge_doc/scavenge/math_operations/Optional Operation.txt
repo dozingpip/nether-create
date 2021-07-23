@@ -1,0 +1,29 @@
+{
+	"operation": {
+		"operation": "scavenge:add",
+		"value": 1
+	},
+	"condition": [
+		{
+			"condition": "scavenge:always_true",
+			"operations": [
+				{
+					"operation": "scavenge:add",
+					"value": 1
+				}
+			]
+		}
+	]
+}
+
+"scavenge:optional_operation"
+Applies a Math Operation under a condition
+
+"operation": Operation that should be applied
+	"operation": The Operation that should be executed
+	"value": Value that should be added
+"condition": Condition that decides if the Operation will be applied
+		"condition": Value that should be checked against
+		"operations": Operations that should be applied before the test
+				"operation": The Operation that should be executed
+				"value": Value that should be added

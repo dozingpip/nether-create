@@ -1,0 +1,83 @@
+{
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+      "item": "quark:rainbow_rune"
+    },
+    "transitionalItem": {
+      "item": "create:incomplete_cogwheel"
+    },
+    "sequence": [
+      {
+        "type": "create:deploying",
+        "ingredients": [
+            {
+            "item": "create:incomplete_cogwheel"
+            },
+            {
+            "tag": "botania:runes/pride"
+            }
+        ],
+        "results": [
+            {
+            "item": "create:incomplete_cogwheel"
+            }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create:incomplete_cogwheel"
+          },
+          {
+            "tag": "botania:runes/greed"
+          }
+        ],
+        "results": [
+          {
+            "item": "create:incomplete_cogwheel"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create:incomplete_cogwheel"
+          },
+          {
+            "item": "botania:redstone_root"
+          }
+        ],
+        "results": [
+          {
+            "item": "create:incomplete_cogwheel"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create:incomplete_cogwheel"
+          },
+          {
+            "item": "botania:pixie_dust"
+          }
+        ],
+        "results": [
+          {
+            "item": "create:incomplete_cogwheel"
+          }
+        ]
+      }
+    ],
+    "results": [
+      {
+        "item": "botania:orechid_ignem",
+        "count": 2,
+        "chance": 100.0
+      }
+    ],
+    "loops": 1
+  }

@@ -1,0 +1,70 @@
+{
+    "type": "compactcrafting:miniaturization",
+    "version": 1,
+    "recipeSize": 1,
+    "layers": [
+      {
+        "type": "compactcrafting:mixed",
+        "pattern": [
+          ["R", "R"],
+          ["S", "G"],
+          ["g", "g"]
+        ]
+      },
+      {
+        "type": "compactcrafting:mixed",
+        "pattern": [
+          ["W", "W"],
+          ["N", "M"],
+          ["B", "B"]
+        ]
+      }
+    ],
+  
+    "catalyst": {
+      "id": "botania:rune_wrath",
+      "Count": 1
+    },
+  
+    "components": {
+      "R": {
+        "type": "compactcrafting:block",
+        "block": "botania:red_petal_block"
+      },
+      "g": {
+        "type": "compactcrafting:block",
+        "block": "botania:gray_petal_block"
+      },
+      "W": {
+        "type": "compactcrafting:block",
+        "block": "botania:white_petal_block"
+      },
+      "S": {
+        "type": "compactcrafting:block",
+        "block": "botania:manasteel_block"
+      },
+      "G": {
+        "type": "compactcrafting:block",
+        "block": "quark:gunpowder_sack"
+      },
+      "N": {
+        "type": "compactcrafting:block",
+        "block": "quark:nether_wart_sack"
+      },
+      "M": {
+        "type": "compactcrafting:block",
+        "block": "botania:mana_glass"
+      },
+      "B": {
+        "type": "compactcrafting:block",
+        "block": "minecraft:nether_bricks"
+      }
+    },
+  
+    "outputs": [
+      {
+        "id": "botania:entropinnyum",
+        "Count": 12
+      }
+    ]
+  }

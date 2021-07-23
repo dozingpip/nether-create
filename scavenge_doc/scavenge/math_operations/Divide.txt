@@ -1,0 +1,9 @@
+{
+	"operation": "scavenge:divide",
+	"value": 0.0
+}
+
+"scavenge:divide"
+Devided the amount by the desired value
+
+"value": Value that should be divided by

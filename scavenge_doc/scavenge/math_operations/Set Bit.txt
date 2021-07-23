@@ -1,0 +1,9 @@
+{
+	"operation": "scavenge:set_bit",
+	"value": 0
+}
+
+"scavenge:set_bit"
+Removes the Desired Bits from the value
+
+"value": Bits that should be removed

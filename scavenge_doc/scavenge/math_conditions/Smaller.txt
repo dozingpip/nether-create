@@ -1,0 +1,20 @@
+{
+	"condition": "scavenge:smaller",
+	"value": 0,
+	"inclusive": true,
+	"operations": [
+		{
+			"operation": "scavenge:add",
+			"value": 1
+		}
+	]
+}
+
+"scavenge:smaller"
+Tests if the Value is smaller or equals (optional) to the desired value
+
+"value": Value that should be compared against
+"inclusive": If the Check should be Inclusive or Exclusive (Optional, Default: true)
+"operations": Operations that should be applied before the test (Optional, Default: [])
+		"operation": The Operation that should be executed
+		"value": Value that should be added

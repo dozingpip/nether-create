@@ -1,0 +1,23 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "tconstruct:seared_tank",
+            "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 1
+                },
+                {
+                  "function": "set_nbt",
+                  "tag": "{tank:{\"FluidName\":\"minecraft:lava\",\"Amount\":4000}}"
+                }
+              ]
+          }
+        ]
+      }
+    ]
+  }

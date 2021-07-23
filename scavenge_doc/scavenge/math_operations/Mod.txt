@@ -1,0 +1,9 @@
+{
+	"operation": "scavenge:mod",
+	"value": 0
+}
+
+"scavenge:mod"
+Applies the Modulo operator to value
+
+"value": The Modulo Value

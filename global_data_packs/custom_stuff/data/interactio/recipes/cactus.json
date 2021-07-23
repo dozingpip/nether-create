@@ -1,0 +1,24 @@
+{
+    "type": "interactio:block_explode",
+    "input": {
+      "block": "dried_kelp_block"
+    },
+    "output": {
+      "type": "block",
+      "entries": [
+        {
+          "result": {
+            "block": "dead_bush"
+          },
+          "weight": 3
+        },
+        {
+          "result": {
+            "block": "cactus"
+          },
+          "weight": 2
+        }
+      ],
+      "empty_weight": 0
+    }
+  }

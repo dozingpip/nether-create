@@ -1,0 +1,44 @@
+{
+	"scripts": {
+		"id": "minecraft:example",
+		"swing": true,
+		"drop_rule": "player_inv",
+		"loot_seed": 0,
+		"properties": [],
+		"loot": [],
+		"type": {
+			"type": "right_click",
+			"consume": true,
+			"show": true
+		},
+		"targets": [
+			{
+				"type": "block",
+				"id": "minecraft:diamond_block"
+			},
+			{
+				"type": "blocks",
+				"id": [
+					"minecraft:diamond_block"
+				]
+			},
+			{
+				"type": "tag",
+				"id": "forge:storage_blocks/diamond"
+			},
+			{
+				"type": "all"
+			}
+		]
+	}
+}
+
+- id: The Unique Identifier of the Script
+- swing: if the Player Hand should be swung on Condition Success [Optional]
+- drop_rule: How the Loot should be spawned, (Valid Values: "block": spawns at the Block, "player": Let the player drop it, "player_inv": Adds it to the player inv.) [Optional]
+- loot_seed: custom loottable seed, 0 means world seed [Optional]
+- targets: What Blocks should be affected by this script, can be Object or Array
+- properties: The Conditions & Effects that should be in this script. Execution Order: Top to Bottom
+- loot: LootTables that should be added. Just the id of the loottables. This spawns loot of the successful finishing of a Script
+- type: The Type of the script and if the right click should be consumed and if the right click should be shown in JEI. (Valid values: right_click, left_click), can be object or Array
+Scripts are only valid if they have either Loot or Script Effects. And At least 1 valid Target

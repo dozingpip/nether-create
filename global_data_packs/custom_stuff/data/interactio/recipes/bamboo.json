@@ -1,0 +1,33 @@
+{
+    "type": "interactio:item_explode",
+    "inputs": [
+      {
+        "item": "minecraft:dead_bush",
+        "count": 1
+      },
+      {
+        "item": "minecraft:slime_block",
+        "count": 1
+      }
+    ],
+    "output": {
+      "entries": [
+        {
+          "result": {
+            "item": "minecraft:slime_ball",
+            "count": 8
+          },
+          "weight": 3
+        },
+        {
+          "result": {
+            "item": "minecraft:bamboo",
+            "count": 1
+          },
+          "weight": 2
+        }
+      ],
+      "empty_weight": 0,
+      "rolls": 1
+    }
+  }

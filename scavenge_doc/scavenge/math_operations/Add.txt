@@ -1,0 +1,9 @@
+{
+	"operation": "scavenge:add",
+	"value": 0
+}
+
+"scavenge:add"
+Adds a Value to the Comparable Value
+
+"value": Value that should be added

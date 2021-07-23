@@ -1,0 +1,38 @@
+{
+    "scripts": {
+        "id": "test:not_lava_bucket",
+        "swing": true,
+        "drop_rule": "player_inv",
+        "properties": 
+        [
+            {
+            "property": "scavenge_player:has_item",
+            "item": "minecraft:bucket",
+            "inverted": true
+            },
+            {
+                "property": "scavenge_player:send_message",
+                "message": "only empty bucket plz"
+            }
+        ],
+        "loot": [{
+            "lootPool": "minecraft:netherrack_drop",
+            "conditions": [
+                {
+                    "property": "scavenge_utils:random",
+                    "chance": 0.0
+                }
+            ]}],
+        "type": {
+            "type": "right_click",
+            "consume": true,
+            "show": false
+        },
+        "targets": [
+            {
+                "type": "block",
+                "id": "create:creative_fluid_tank"
+            }
+        ]
+    }
+}

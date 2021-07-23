@@ -1,0 +1,99 @@
+{
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+      "item": "quark:rainbow_rune"
+    },
+    "transitionalItem": {
+      "item": "create:incomplete_cogwheel"
+    },
+    "sequence": [
+      {
+        "type": "create:deploying",
+        "ingredients": [
+            {
+            "item": "create:incomplete_cogwheel"
+            },
+            {
+            "tag": "botania:runes/water"
+            }
+        ],
+        "results": [
+            {
+            "item": "create:incomplete_cogwheel"
+            }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create:incomplete_cogwheel"
+          },
+          {
+            "tag": "botania:runes/fire"
+          }
+        ],
+        "results": [
+          {
+            "item": "create:incomplete_cogwheel"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create:incomplete_cogwheel"
+          },
+          {
+            "tag": "botania:runes/earth"
+          }
+        ],
+        "results": [
+          {
+            "item": "create:incomplete_cogwheel"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create:incomplete_cogwheel"
+          },
+          {
+            "tag": "botania:runes/air"
+          }
+        ],
+        "results": [
+          {
+            "item": "create:incomplete_cogwheel"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create:incomplete_cogwheel"
+          },
+          {
+            "item": "botania:life_essence"
+          }
+        ],
+        "results": [
+          {
+            "item": "create:incomplete_cogwheel"
+          }
+        ]
+      }
+    ],
+    "results": [
+      {
+        "item": "botania:dandelifeon",
+        "count": 2,
+        "chance": 100.0
+      }
+    ],
+    "loops": 1
+  }

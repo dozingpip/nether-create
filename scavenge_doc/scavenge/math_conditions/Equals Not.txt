@@ -1,0 +1,18 @@
+{
+	"condition": "scavenge:equals_not",
+	"value": 0,
+	"operations": [
+		{
+			"operation": "scavenge:add",
+			"value": 1
+		}
+	]
+}
+
+"scavenge:equals_not"
+Tests if the value does not equal the desired value
+
+"value": Value that should be compared against
+"operations": Operations that should be applied before the test (Optional, Default: [])
+		"operation": The Operation that should be executed
+		"value": Value that should be added

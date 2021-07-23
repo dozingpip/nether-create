@@ -1,0 +1,99 @@
+{
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+      "item": "quark:rainbow_rune"
+    },
+    "transitionalItem": {
+      "item": "minecraft:horn_coral"
+    },
+    "sequence": [
+      {
+        "type": "create:deploying",
+        "ingredients": [
+            {
+            "item": "minecraft:horn_coral"
+            },
+            {
+            "tag": "botania:runes/sloth"
+            }
+        ],
+        "results": [
+            {
+            "item": "minecraft:horn_coral"
+            }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "minecraft:horn_coral"
+          },
+          {
+            "tag": "botania:runes/gluttony"
+          }
+        ],
+        "results": [
+          {
+            "item": "minecraft:horn_coral"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "minecraft:horn_coral"
+          },
+          {
+            "tag": "botania:runes/envy"
+          }
+        ],
+        "results": [
+          {
+            "item": "minecraft:horn_coral"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "minecraft:horn_coral"
+          },
+          {
+            "item": "botania:redstone_root"
+          }
+        ],
+        "results": [
+          {
+            "item": "minecraft:horn_coral"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "minecraft:horn_coral"
+          },
+          {
+            "item": "botania:pixie_dust"
+          }
+        ],
+        "results": [
+          {
+            "item": "minecraft:horn_coral"
+          }
+        ]
+      }
+    ],
+    "results": [
+      {
+        "item": "botania:loonium",
+        "count": 1,
+        "chance": 100.0
+      }
+    ],
+    "loops": 1
+  }

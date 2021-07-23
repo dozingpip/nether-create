@@ -1,0 +1,16 @@
+{
+	"operation": "scavenge:array",
+	"operations": [
+		{
+			"operation": "scavenge:add",
+			"value": 1
+		}
+	]
+}
+
+"scavenge:array"
+Array Operations that should be applied
+
+"operations": Operations that should be applied
+		"operation": The Operation that should be executed
+		"value": Value that should be added

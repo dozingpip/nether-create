@@ -66,7 +66,7 @@
 	#Whether the server should skip checking player speed when the player is wearing elytra. Often helps with jittering due to lag in multiplayer, but may also be used to travel unfairly long distances in survival mode (cheating).
 	disable_elytra_movement_check = false
 	#Whether the player should keep items in their inventory after death
-	keep_inventory = true
+	keep_inventory = false
 	#Whether creepers, zombies, endermen, ghasts, withers, ender dragons, rabbits, sheep, villagers, and snow golems should be able to change blocks and whether mobs can pick up items. This also affects the capability of zombie-like creatures like zombie pigmen and drowned to pathfind to turtle eggs. This will also prevent villagers from breeding.
 	mob_griefing = true
 	#Whether the debug screen shows all or reduced information; and whether the effects of F3+B (entity hitboxes) and F3+G (chunk boundaries) are shown.
@@ -92,6 +92,6 @@
 	#A comma separated list of commands to run on world join, @p is replaced with joining player name, command is run by the server
 	#Example: default_commands = ["/tellraw @p [\"\",{\"text\":\"Hi \"},{\"text\":\"@p\",\"color\":\"aqua\"}]"]
 	default_commands = []
-	#If gamerules and world difficulty should be saved to config on world unload
+	#If gamerules should be saved to config on world unload
 	save_gamerules = true
 

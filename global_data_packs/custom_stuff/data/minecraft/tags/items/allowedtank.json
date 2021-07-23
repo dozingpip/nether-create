@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+      "minecraft:bucket",
+      "minecraft:lava_bucket",
+      "create:wrench",
+      "tconstruct:seared_tank",
+      "minecraft:netherrack"
+    ]
+}

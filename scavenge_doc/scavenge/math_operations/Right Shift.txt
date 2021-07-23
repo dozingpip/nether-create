@@ -1,0 +1,9 @@
+{
+	"operation": "scavenge:right_shift",
+	"value": 0
+}
+
+"scavenge:right_shift"
+BitShifts the value to the Right (Keeps Negative Values)
+
+"value": How many bits the value should be shifted

@@ -1,0 +1,49 @@
+{
+	"property": "scavenge_player:limit_action",
+	"id": "exampleId",
+	"delay": 100,
+	"limit": [
+		{
+			"condition": "scavenge:always_true",
+			"operations": [
+				{
+					"operation": "scavenge:add",
+					"value": 1
+				}
+			]
+		}
+	],
+	"change": {
+		"operation": "scavenge:add",
+		"value": 1
+	},
+	"inverted": false,
+	"error_message": null,
+	"error_simple": true,
+	"jei_visible": false,
+	"jei_description": "scavenge_player.limit_action.desc",
+	"jei_simple": true
+}
+
+"scavenge_player:limit_action"
+Allows to Limit Actions in a Certain Timeframe
+
+"id": Id that the Delay is stored in
+"delay": Delay between the Action in ticks
+"limit": Decides how many Actions can be done within the delay
+		"condition": Value that should be checked against
+		"operations": Operations that should be applied before the test
+				"operation": The Operation that should be executed
+				"value": Value that should be added
+"change": Incrementer of the Actions, not used for reset
+	"operation": The Operation that should be executed
+	"value": Value that should be added
+"inverted": If the result should be Inverted (Optional, Default: false)
+"error_message": Error Message that should be displayed (Optional, Default: null)
+"error_simple": If the error_message should be treated as a Simple String or a full ITextComponent JsonObject (Optional, Default: true)
+"jei_visible": If the JEI description should be shown (Optional, Default: false)
+"jei_description": JEI Description that should be displayed (Optional, Default: scavenge_player.limit_action.desc)
+"jei_simple": If the jei_description should be treated as a Simple String or a full ITextComponent JsonObject (Optional, Default: true)
+
+Incompats:
+[None]

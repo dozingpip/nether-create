@@ -1,0 +1,33 @@
+{
+    "type": "interactio:item_explode",
+    "inputs": [
+      {
+        "item": "minecraft:melon_seeds",
+        "count": 1
+      },
+      {
+        "item": "minecraft:bone_meal",
+        "count": 4
+      }
+    ],
+    "output": {
+      "entries": [
+        {
+          "result": {
+            "item": "minecraft:melon_slice",
+            "count": 4
+          },
+          "weight": 3
+        },
+        {
+          "result": {
+            "item": "minecraft:melon_seeds",
+            "count": 2
+          },
+          "weight": 2
+        }
+      ],
+      "empty_weight": 0,
+      "rolls": 1
+    }
+  }

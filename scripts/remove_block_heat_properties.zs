@@ -1,1 +1,0 @@
-<recipetype:pneumaticcraft:heat_properties>.removeAll();

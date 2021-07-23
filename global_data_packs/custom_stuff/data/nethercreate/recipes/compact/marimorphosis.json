@@ -1,0 +1,78 @@
+{
+    "type": "compactcrafting:miniaturization",
+    "version": 1,
+    "recipeSize": 1,
+    "layers": [
+      {
+        "type": "compactcrafting:mixed",
+        "pattern": [
+          ["R", "Y"],
+          ["E", "g"],
+          ["r", "-"]
+        ]
+      },
+      {
+        "type": "compactcrafting:mixed",
+        "pattern": [
+          ["S", "G"],
+          ["N", "M"],
+          ["B", "B"]
+        ]
+      }
+    ],
+  
+    "catalyst": {
+      "id": "botania:rune_earth",
+      "Count": 1
+    },
+  
+    "components": {
+      "g": {
+        "type": "compactcrafting:block",
+        "block": "botania:gray_petal_block"
+      },
+      "R": {
+        "type": "compactcrafting:block",
+        "block": "botania:red_petal_block"
+      },
+      "Y": {
+        "type": "compactcrafting:block",
+        "block": "botania:yellow_petal_block"
+      },
+      "E": {
+        "type": "compactcrafting:block",
+        "block": "botania:green_petal_block"
+      },
+      "S": {
+        "type": "compactcrafting:block",
+        "block": "botania:manasteel_block"
+      },
+      "G": {
+        "type": "compactcrafting:block",
+        "block": "quark:gunpowder_sack"
+      },
+      "N": {
+        "type": "compactcrafting:block",
+        "block": "quark:nether_wart_sack"
+      },
+      "M": {
+        "type": "compactcrafting:block",
+        "block": "botania:mana_glass"
+      },
+      "B": {
+        "type": "compactcrafting:block",
+        "block": "minecraft:nether_bricks"
+      },
+      "r": {
+        "type": "compactcrafting:block",
+        "block": "minecraft:redstone_block"
+      }
+    },
+  
+    "outputs": [
+      {
+        "id": "botania:marimorphosis",
+        "Count": 12
+      }
+    ]
+  }

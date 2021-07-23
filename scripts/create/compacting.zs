@@ -1,1 +1,2 @@
 <recipetype:create:compacting>.addRecipe("red_sand", "none", <item:minecraft:red_sand>, [<item:create:cinder_flour> * 4], [<fluid:minecraft:lava> * 1000], 1000);
+<recipetype:create:compacting>.addRecipe("lapis_block", "heated", <item:minecraft:lapis_block>, [<item:botania:blue_petal_block>], [<fluid:minecraft:lava> * 1000], 1000);

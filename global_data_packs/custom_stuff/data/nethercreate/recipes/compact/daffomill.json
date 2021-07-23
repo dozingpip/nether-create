@@ -1,0 +1,46 @@
+{
+    "type": "compactcrafting:miniaturization",
+    "version": 1,
+    "recipeSize": 1,
+    "layers": [
+      {
+        "type": "compactcrafting:mixed",
+        "pattern": [
+          ["R", "-"],
+          ["W", "W"],
+          ["Y", "B"]
+        ]
+      }
+    ],
+  
+    "catalyst": {
+      "id": "botania:rune_air",
+      "Count": 1
+    },
+  
+    "components": {
+      "W": {
+        "type": "compactcrafting:block",
+        "block": "botania:white_petal_block"
+      },
+      "B": {
+        "type": "compactcrafting:block",
+        "block": "botania:brown_petal_block"
+      },
+      "Y": {
+        "type": "compactcrafting:block",
+        "block": "botania:yellow_petal_block"
+      },
+      "R": {
+        "type": "compactcrafting:block",
+        "block": "minecraft:redstone_block"
+      }
+    },
+  
+    "outputs": [
+      {
+        "id": "botania:daffomill",
+        "Count": 9
+      }
+    ]
+  }

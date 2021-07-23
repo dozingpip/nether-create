@@ -1,0 +1,68 @@
+{
+    "type": "compactcrafting:miniaturization",
+    "version": 1,
+    "recipeSize": 2,
+    "layers": [
+      {
+        "type": "compactcrafting:mixed",
+        "pattern": [
+          ["C", "S", "C"],
+          ["L", "G", "-"]
+        ]
+      },
+      {
+        "type": "compactcrafting:mixed",
+        "pattern": [
+          ["B", "b", "-"],
+          ["M", "F", "B"]
+        ]
+      }
+    ],
+  
+    "catalyst": {
+      "id": "botania:rune_air",
+      "Count": 1
+    },
+  
+    "components": {
+      "C": {
+        "type": "compactcrafting:block",
+        "block": "botania:pink_petal_block"
+      },
+      "L": {
+        "type": "compactcrafting:block",
+        "block": "botania:light_gray_petal_block"
+      },
+      "B": {
+        "type": "compactcrafting:block",
+        "block": "botania:purple_petal_block"
+      },
+      "S": {
+        "type": "compactcrafting:block",
+        "block": "quark:sugar_cane_block"
+      },
+      "b": {
+        "type": "compactcrafting:block",
+        "block": "minecraft:bone_block"
+      },
+      "F": {
+        "type": "compactcrafting:block",
+        "block": "minecraft:fire_coral_block"
+      },
+      "G": {
+        "type": "compactcrafting:block",
+        "block": "botania:mana_glass"
+      },
+      "M": {
+        "type": "compactcrafting:block",
+        "block": "botania:manasteel_block"
+      }
+    },
+  
+    "outputs": [
+      {
+        "id": "botania:jiyuulia",
+        "Count": 12
+      }
+    ]
+  }

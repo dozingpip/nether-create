@@ -1,0 +1,42 @@
+{
+    "type": "compactcrafting:miniaturization",
+    "version": 1,
+    "recipeSize": 1,
+    "layers": [
+      {
+        "type": "compactcrafting:mixed",
+        "pattern": [
+          ["P", "P"],
+          ["U", "U"],
+          ["L", "-"]
+        ]
+      }
+    ],
+  
+    "catalyst": {
+      "id": "botania:rune_mana",
+      "Count": 1
+    },
+  
+    "components": {
+      "P": {
+        "type": "compactcrafting:block",
+        "block": "botania:pink_petal_block"
+      },
+      "U": {
+        "type": "compactcrafting:block",
+        "block": "botania:purple_petal_block"
+      },
+      "L": {
+        "type": "compactcrafting:block",
+        "block": "botania:lime_petal_block"
+      }
+    },
+  
+    "outputs": [
+      {
+        "id": "botania:rosa_arcana",
+        "Count": 9
+      }
+    ]
+  }

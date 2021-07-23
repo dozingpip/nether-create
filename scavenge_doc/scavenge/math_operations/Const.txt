@@ -1,0 +1,9 @@
+{
+	"operation": "scavenge:const",
+	"value": 0
+}
+
+"scavenge:const"
+Sets the comparing value to desired value
+
+"value": Value that should be returned
