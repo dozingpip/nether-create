@@ -33,3 +33,4 @@ mods.jei.JEI.hideRegex("quark.*cobbledstone.*");
 mods.jei.JEI.hideRegex("quark.*basalt.*");
 mods.jei.JEI.hideRegex("quark.stone.*lamp.*");
 mods.jei.JEI.hideRegex("botania.*apoth.*");
+mods.jei.JEI.hideRegex("curios.*");

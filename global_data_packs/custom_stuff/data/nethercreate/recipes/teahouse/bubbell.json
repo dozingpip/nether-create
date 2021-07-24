@@ -1,0 +1,78 @@
+{
+    "type": "custommachinery:custom_machine",
+    "machine": "nethercreate:teahouse",
+    "time": 20,
+    "requirements": [
+        {
+            "type": "custommachinery:block",
+            "mode": "output",
+            "action": "check",
+            "pos": [-1, -1, -1, 1, 1, 1],
+            "block": "create:light_blue_seat",
+            "delay": 0
+        },
+        {
+            "type": "custommachinery:fluid_per_tick",
+            "fluid": "create:tea",
+            "amount": 10,
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "item": "botania:redstone_root",
+            "amount": 1,
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "item": "botania:rune_water",
+            "amount": 1,
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "item": "botania:rune_summer",
+            "amount": 1,
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "item": "botania:pixie_dust",
+            "amount": 1,
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:block",
+            "mode": "output",
+            "action": "destroy",
+            "pos": [-1, -1, -1, 1, 1, 1],
+            "block": "botania:cyan_mushroom",
+            "amount": 2,
+            "delay": 0.8
+        },
+        {
+            "type": "custommachinery:block",
+            "mode": "output",
+            "action": "destroy",
+            "pos": [-1, -1, -1, 1, 1, 1],
+            "block": "botania:light_blue_mushroom",
+            "amount": 2,
+            "delay": 0.9
+        },
+        {
+            "type": "custommachinery:block",
+            "mode": "output",
+            "action": "destroy",
+            "pos": [-1, -1, -1, 1, 1, 1],
+            "block": "botania:blue_mushroom",
+            "amount": 2,
+            "delay": 1
+        },
+        {
+            "type": "custommachinery:item",
+            "item": "botania:bubbell",
+            "amount": 1,
+            "mode": "output"
+        }
+    ]
+}
