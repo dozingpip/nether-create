@@ -1,0 +1,24 @@
+{
+    "name": "First Smeltery",
+    "icon": "tconstruct:seared_melter",
+    "category": "patchouli:getting_started",
+    "pages": [
+        {
+            "type": "multiblock",
+            "name": "First Smeltery",
+            "multiblock":{
+                "mapping":
+                {
+                    "F":"tconstruct:seared_faucet",
+                    "T":"tconstruct:seared_fuel_tank",
+                    "0":"tconstruct:seared_melter",
+                    "B":"tconstruct:seared_basin"
+                },
+                "pattern": [
+                    ["F0"],
+                    ["BT"]
+                ]
+            }
+        }
+    ]
+}

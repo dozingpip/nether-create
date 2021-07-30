@@ -32,7 +32,7 @@
     },
     {
         "mob":"minecraft:magma_cube",
-        "block":"minecraft:crimson_hyphae",
+        "block":["minecraft:crimson_hyphae", "minecraft:warped_hyphae"],
         "result":"allow"
     },
     {

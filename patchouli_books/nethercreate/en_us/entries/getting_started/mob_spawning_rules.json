@@ -1,0 +1,15 @@
+{
+    "name": "Mob Spawning Rules",
+    "icon": "minecraft:wither_skeleton_skull",
+    "category": "patchouli:getting_started",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Spawning rules have been adjusted.$(li1)Piglins spawn on netherrack$(li1)Wither skeletons spawn on nether bricks$(li1)Zombie Piglins spawn on magma blocks$(li1)Magma slimes spawn on crimson/warped hyphae$(li1)Ghasts spawn on gravel$(li1)Hoglins spawn on crimson nylium$(li1)Endermen spawn on soul sand and soul soil"
+        },
+        {
+            "type": "text",
+            "text":"Mobs don't spawn on blocks not listed here. The only mob not listed that does naturally spawn is the Strider, whose spawning rules and drop rates have not been changed. Most mobs' drop rates have generally been increased."
+        }
+    ]
+}

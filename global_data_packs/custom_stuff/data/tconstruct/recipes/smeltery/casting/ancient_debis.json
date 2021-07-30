@@ -1,0 +1,13 @@
+{
+    "type": "tconstruct:casting_basin",
+    "cast": {
+      "item": "botania:bellows"
+    },
+    "cast_consumed": true,
+    "fluid": {
+      "name": "tconstruct:molten_clay",
+      "amount": 8000
+    },
+    "result": "minecraft:ancient_debris",
+    "cooling_time": 1500
+  }

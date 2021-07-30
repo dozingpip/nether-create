@@ -1,0 +1,96 @@
+{
+    "type": "custommachinery:custom_machine",
+    "machine": "nethercreate:teatable",
+    "time": 20,
+    "requirements": [
+        {
+            "type": "custommachinery:block",
+            "mode": "output",
+            "action": "check",
+            "pos": [-1, -1, -1, 1, 1, 1],
+            "block": "create:light_blue_seat",
+            "delay": 0
+        },
+        {
+            "type": "custommachinery:fluid_per_tick",
+            "fluid": "create:tea",
+            "amount": 10,
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "item": "botania:redstone_root",
+            "amount": 1,
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "item": "botania:rune_pride",
+            "amount": 1,
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "item": "botania:rune_greed",
+            "amount": 1,
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "item": "botania:pixie_dust",
+            "amount": 1,
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:block",
+            "mode": "output",
+            "action": "destroy",
+            "pos": [-1, -1, -1, 1, 1, 1],
+            "block": "minecraft:red_sand",
+            "amount": 1,
+            "delay": 0.6
+        },
+        {
+            "type": "custommachinery:block",
+            "mode": "output",
+            "action": "destroy",
+            "pos": [-1, -1, -1, 1, 1, 1],
+            "block": "minecraft:nether_quartz_ore",
+            "amount": 1,
+            "delay": 0.7
+        },
+        {
+            "type": "custommachinery:block",
+            "mode": "output",
+            "action": "destroy",
+            "pos": [-1, -1, -1, 1, 1, 1],
+            "block": "minecraft:nether_gold_ore",
+            "amount": 1,
+            "delay": 0.8
+        },
+        {
+            "type": "custommachinery:block",
+            "mode": "output",
+            "action": "destroy",
+            "pos": [-1, -1, -1, 1, 1, 1],
+            "block": "minecraft:ancient_debris",
+            "amount": 1,
+            "delay": 0.9
+        },
+        {
+            "type": "custommachinery:block",
+            "mode": "output",
+            "action": "destroy",
+            "pos": [-1, -1, -1, 1, 1, 1],
+            "block": "botania:red_mushroom",
+            "amount": 1,
+            "delay": 1
+        },
+        {
+            "type": "custommachinery:item",
+            "item": "botania:orechid_ignem",
+            "amount": 1,
+            "mode": "output"
+        }
+    ]
+}

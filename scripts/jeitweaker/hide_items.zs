@@ -34,3 +34,8 @@ mods.jei.JEI.hideRegex("quark.*basalt.*");
 mods.jei.JEI.hideRegex("quark.stone.*lamp.*");
 mods.jei.JEI.hideRegex("botania.*apoth.*");
 mods.jei.JEI.hideRegex("curios.*");
+mods.jei.JEI.hideRegex(".*skyroot.*");
+mods.jei.JEI.hideRegex(".*greenheart.*");
+mods.jei.JEI.hideRegex(".*enderslime.*");
+mods.jei.JEI.hideRegex(".*bloodshroom.*");
+mods.jei.JEI.hideRegex("tconstruct.*item_frame.*");
