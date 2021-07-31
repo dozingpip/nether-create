@@ -23,3 +23,5 @@ usernamecache.json
 notes.txt
 scavenge_doc/*
 *Shortcut.lnk
+!quark-common.toml
+!tconstruct-common.toml
