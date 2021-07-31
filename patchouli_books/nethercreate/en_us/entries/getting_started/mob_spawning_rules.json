@@ -5,7 +5,7 @@
     "pages": [
         {
             "type": "text",
-            "text": "Spawning rules have been adjusted.$(li1)Piglins spawn on netherrack$(li1)Wither skeletons spawn on nether bricks$(li1)Zombie Piglins spawn on magma blocks$(li1)Magma slimes spawn on crimson/warped hyphae$(li1)Ghasts spawn on gravel$(li1)Hoglins spawn on crimson nylium$(li1)Endermen spawn on soul sand and soul soil"
+            "text": "Spawning rules have been adjusted.$(li1)Piglins on netherrack$(li1)Wither skeletons on nether bricks$(li1)Zombie Piglins on magma blocks$(li1)Magma slimes on crimson/warped hyphae$(li1)Ghasts spawn on gravel$(li1)Hoglins spawn on crimson nylium$(li1)Endermen on soul sand/soil$(li1)Blazes on quartz blocks"
         },
         {
             "type": "text",

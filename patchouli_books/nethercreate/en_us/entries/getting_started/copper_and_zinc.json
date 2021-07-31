@@ -1,0 +1,11 @@
+{
+    "name": "Copper and Zinc",
+    "icon": "minecraft:weeping_vines",
+    "category": "patchouli:getting_started",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Melt weeping vines for molten copper, and twisting vines for molten zinc. You should look into making a smeltery controller at this point. You'll need these and andesite to get started in Create. $(br)$(o)There are weeping vines under the spawn island"
+        }
+    ]
+}

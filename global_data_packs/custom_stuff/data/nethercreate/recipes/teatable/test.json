@@ -1,0 +1,42 @@
+{
+    "type": "custommachinery:custom_machine",
+    "machine": "nethercreate:teatable",
+    "time": 20,
+    "requirements": [
+        {
+            "type": "custommachinery:item",
+            "item": "minecraft:stick",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:block",
+            "action": "destroy",
+            "pos": [-1, -1, -1, 1, 1, 1],
+            "block": "minecraft:melon",
+            "mode": "input",
+            "delay": 1
+        },
+        {
+            "type": "custommachinery:item",
+            "item": "minecraft:diamond",
+            "mode": "output"
+        }
+    ],
+    "jei":[
+    {
+        "type": "custommachinery:item",
+        "item": "minecraft:stick",
+        "mode": "input"
+    },
+    {
+        "type": "custommachinery:item",
+        "mode": "input",
+        "item": "minecraft:melon"
+    },
+    {
+        "type": "custommachinery:item",
+        "item": "minecraft:diamond",
+        "mode": "output"
+    }
+    ]
+}

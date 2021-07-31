@@ -43,12 +43,11 @@ Bone meal on nylium still only gets you the fungi, roots, and etc.
 
 ## Very useful, but not required
 - construction wand
-- tape measure
 - storage drawers + drawer controller, for mass storage
   - storage drawers can be crafted with warped/crimson wood, warped wood -> dark oak drawers, crimson wood -> acacia drawers
 - luminizers let you warp between different parts of your base
 - combustive fishing rod, fishing rod used on lava, check its uses to see what you can fish up
-- using Tinker's tools is optional, but encouraged.
+- use of Tinker's tools is optional.
 - edit config/jei/blacklist.cfg to blacklist any items you don't like clogging your jei
 
 ##### Every Botania flower aside from pure daisy (which is required)

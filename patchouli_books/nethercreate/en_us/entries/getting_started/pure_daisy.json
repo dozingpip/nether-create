@@ -1,0 +1,11 @@
+{
+    "name": "Pure Daisy",
+    "icon": "botania:pure_daisy",
+    "category": "patchouli:getting_started",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Pour molten zinc onto a tall mystical white flower to get a pure daisy, and then you can get started with Botania!"
+        }
+    ]
+}
