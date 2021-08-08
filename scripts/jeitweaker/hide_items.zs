@@ -1,5 +1,4 @@
 mods.jei.JEI.hideRegex("tconstruct.*bucket.*");
-mods.jei.JEI.hideRegex(".*nugget.*");
 mods.jei.JEI.hideRegex(".*ancient_tome.*");
 mods.jei.JEI.hideRegex(".*tipped_arrow.*");
 mods.jei.JEI.hideRegex("quark.*vertical.*");
@@ -51,3 +50,4 @@ mods.jei.JEI.hideRegex(".*slime_sling.*");
 mods.jei.JEI.hideRegex(".*slime_crystal.*");
 mods.jei.JEI.hideRegex(".*congealed_slime.*");
 mods.jei.JEI.hideRegex("tconstruct.*item_frame.*");
+mods.jei.JEI.hideRegex("tconstruct.*copper.*");

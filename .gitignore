@@ -25,3 +25,4 @@ scavenge_doc/*
 *Shortcut.lnk
 !quark-common.toml
 !tconstruct-common.toml
+*.blah

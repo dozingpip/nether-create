@@ -1,0 +1,29 @@
+{
+    "name": "First Smeltery",
+    "icon": "tconstruct:seared_melter",
+    "category": "patchouli:getting_started",
+    "pages": [
+        {
+            "type": "multiblock",
+            "name": "First Smeltery",
+            "multiblock":{
+                "mapping":
+                {
+                    "F":"tconstruct:seared_faucet",
+                    "T":"tconstruct:seared_fuel_tank",
+                    "0":"tconstruct:seared_melter",
+                    "B":"tconstruct:seared_basin"
+                },
+                "pattern": [
+                    ["F0"],
+                    ["BT"]
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "title" : "Uses for your smeltery:",
+            "text": "Melt weeping vines for molten copper, and twisting vines for molten zinc. $(br)$(o)There are weeping vines under the spawn island$(br)$(br)$()Melt blackstone to get liquid seared stone, cast onto more blackstone to get andesite.$(br)$(br)Pour molten zinc onto a tall mystical white flower to get a pure daisy, and then you can get started with Botania!"
+        }
+    ]
+}

@@ -1,3 +1,4 @@
+import crafttweaker.api.loot.LootManager;
 mods.jei.JEI.addInfo(<item:minecraft:fire_coral>, ["Can be caught rarely with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
 mods.jei.JEI.addInfo(<item:botania:blacker_lotus>, ["Can be caught rarely with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
 mods.jei.JEI.addInfo(<item:minecraft:music_disc_pigstep>, ["Can be caught rarely with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
@@ -21,3 +22,4 @@ mods.jei.JEI.addInfo(<item:minecraft:blackstone>, ["Gotten through Piglin barter
 mods.jei.JEI.addInfo(<item:minecraft:quartz>, ["Gotten through Piglin bartering. (Amount: 5-12)"]);
 mods.jei.JEI.addInfo(<item:minecraft:iron_nugget>, ["Gotten through Piglin bartering. (Amount: 27-45)"]);
 mods.jei.JEI.addInfo(<item:botania:apothecary_default>, ["Useless without a source of water. Find alternative methods to make flowers."]);
+mods.jei.JEI.addInfo(<item:minecraft:redstone>, ["Dropped by witches"]);

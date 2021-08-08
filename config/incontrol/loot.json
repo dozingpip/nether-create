@@ -10,45 +10,5 @@
     {
       "mob": "minecraft:wither_skeleton",
       "remove": "minecraft:stone_sword"
-    },
-    {
-      "mob": "minecraft:zombified_piglin",
-      "item": "minecraft:gold_nugget",
-      "itemcount": "3-4/5-6/7-8"
-    },
-    {
-      "mob": "minecraft:zombified_piglin",
-      "item": "minecraft:gold_ingot",
-      "itemcount": "0-1/1-2/2-3"
-    },
-    {
-      "mob": "minecraft:zombified_piglin",
-      "item": "minecraft:rotten_flesh",
-      "itemcount": "0-1/1-2/1-2"
-    },
-    {
-      "mob": "minecraft:wither_skeleton",
-      "item": "minecraft:bone",
-      "itemcount": "1-2/2-3/3-4"
-    },
-    {
-      "mob": "minecraft:wither_skeleton",
-      "item": "minecraft:coal",
-      "itemcount": "1-2/1-2/3-4"
-    },
-    {
-      "mob": "minecraft:witch",
-      "item": "minecraft:redstone",
-      "itemcount": "2-3/2-3/3-4"
-    },
-    {
-      "mob": "minecraft:witch",
-      "item": "minecraft:sugar",
-      "itemcount": "3-4/3-4/4-5"
-    },
-    {
-      "mob": "minecraft:enderman",
-      "item": "minecraft:ender_pearl",
-      "itemcount": "1-2/1-2/2-3"
     }
 ]

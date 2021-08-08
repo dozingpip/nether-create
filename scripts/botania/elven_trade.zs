@@ -1,4 +1,3 @@
-<recipetype:botania:elven_trade>.addRecipe("ice", [<item:minecraft:ice>], <item:minecraft:blue_ice>);
 <recipetype:botania:elven_trade>.addRecipe("dirt", [<item:minecraft:dirt>], <item:minecraft:warped_nylium>);
 <recipetype:botania:elven_trade>.addRecipe("oak_sapling", [<item:minecraft:oak_sapling>], <item:quark:red_blossom_sapling>);
 <recipetype:botania:elven_trade>.addRecipe("melon", [<item:minecraft:melon>], <item:minecraft:melon_seeds>);
@@ -10,3 +9,4 @@
 <recipetype:botania:elven_trade>.addRecipe("slime", [<item:minecraft:slime_ball>], <item:minecraft:magma_cream>);
 <recipetype:botania:elven_trade>.addRecipe("sponge", [<item:minecraft:sponge>], <item:minecraft:fire_coral_block>);
 <recipetype:botania:elven_trade>.addRecipe("orechid", [<item:botania:orechid>], <item:botania:orechid_ignem>);
+<recipetype:botania:elven_trade>.addRecipe("bee_nest", [<item:minecraft:bee_nest>], <item:minecraft:ancient_debris>);

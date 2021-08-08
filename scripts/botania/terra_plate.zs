@@ -6,6 +6,8 @@
 <recipetype:botania:terra_plate>.addRecipe("flugel_eye_for_wimps", <item:botania:flugel_eye>, 20000, <item:minecraft:lodestone>,
 <item:minecraft:shulker_spawn_egg>, <item:botania:third_eye>, <item:botania:light_relay>);
 <recipetype:botania:terra_plate>.addRecipe("nether_star_for_wimps", <item:minecraft:nether_star>, 20000, <item:botania:king_key>,
-<item:botania:infinite_fruit>, <item:botania:flugel_eye>);
+<item:minecraft:wither_skeleton_skull>);
 <recipetype:botania:terra_plate>.addRecipe("life_essence_for_wimps", <item:botania:life_essence>, 30000, <item:minecraft:fire_coral_block>,
 <item:minecraft:beacon>, <item:botania:gaia_pylon>);
+<recipetype:botania:terra_plate>.addRecipe("cobalt_nugget", <item:tconstruct:cobalt_nugget>, 5000, <item:create:powdered_obsidian>,
+<item:minecraft:lapis_lazuli>, <item:botania:manasteel_nugget>);

@@ -1,0 +1,66 @@
+{
+    "type": "custommachinery:custom_machine",
+    "machine": "playingwithfire:teatable",
+    "time": 20,
+    "requirements": [
+        {
+            "type": "custommachinery:block",
+            "mode": "output",
+            "action": "check",
+            "pos": [-1, -1, -1, 1, 1, 1],
+            "block": "create:light_blue_seat",
+            "delay": 0
+        },
+        {
+            "type": "custommachinery:fluid_per_tick",
+            "fluid": "create:tea",
+            "amount": 10,
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "item": "botania:rune_fire",
+            "amount": 1,
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "item": "botania:rune_summer",
+            "amount": 1,
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:block",
+            "mode": "output",
+            "action": "destroy",
+            "pos": [-1, -1, -1, 1, 1, 1],
+            "block": "botania:light_gray_mushroom",
+            "amount": 2,
+            "delay": 0.8
+        },
+        {
+            "type": "custommachinery:block",
+            "mode": "output",
+            "action": "destroy",
+            "pos": [-1, -1, -1, 1, 1, 1],
+            "block": "botania:yellow_mushroom",
+            "amount": 2,
+            "delay": 0.9
+        },
+        {
+            "type": "custommachinery:block",
+            "mode": "output",
+            "action": "destroy",
+            "pos": [-1, -1, -1, 1, 1, 1],
+            "block": "botania:red_mushroom",
+            "amount": 1,
+            "delay": 1
+        },
+        {
+            "type": "custommachinery:item",
+            "item": "botania:gourmaryllis",
+            "amount": 1,
+            "mode": "output"
+        }
+    ]
+}

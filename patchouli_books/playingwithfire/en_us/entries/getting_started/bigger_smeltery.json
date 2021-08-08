@@ -1,0 +1,55 @@
+{
+    "name": "Bigger Smeltery",
+    "icon": "tconstruct:smeltery_controller",
+    "category": "patchouli:getting_started",
+    "pages": [
+        {
+            "type": "text",
+            "text": "You'll probably want a bigger smeltery fairly quickly, as your puny one could only hold 9 ingots... For expansion you at least need a smeltery controller, seared tank, seared drain, and some seared stone blocks (which can be made from melted blackstone)."
+        },
+        {
+            "type": "multiblock",
+            "name": "Smallest Smeltery Size",
+            "multiblock":{
+                "mapping":
+                {
+                    "F":"tconstruct:seared_faucet",
+                    "T":"tconstruct:seared_fuel_tank",
+                    "0":"tconstruct:smeltery_controller",
+                    "B":"tconstruct:seared_basin",
+                    "D":"tconstruct:seared_drain",
+                    "S":"tconstruct:seared_stone"
+                },
+                "pattern":
+                [
+                    ["_0F", "T D", "_S_"],
+                    ["__B", "_S_", "___"]
+                ]
+            }
+        },
+        {
+            "type": "multiblock",
+            "name": "Slightly Larger Smeltery",
+            "multiblock":{
+                "mapping":
+                {
+                    "F":"tconstruct:seared_faucet",
+                    "T":"tconstruct:seared_fuel_tank",
+                    "0":"tconstruct:smeltery_controller",
+                    "B":"tconstruct:seared_basin",
+                    "D":"tconstruct:seared_drain",
+                    "S":"tconstruct:seared_stone"
+                },
+                "pattern":
+                [
+                    ["__F__", "_TD0_", "S   S", "S   S", "S   S", "_SSS_"],
+                    ["__B__", "_____", "_SSS_", "_SSS_", "_SSS_", "_____"]
+                ]
+            }
+        },
+        {
+            "type": "text",
+            "text": "Can also be made to hold more liquid by upping the smeltery dimensions even more! Your only restrictions are that it must be a rectangle and at most 16x16x65 for the outside dimensions (widthxlengthxheight). You can also use blocks other than seared stone, that's just the easiest one to make. Applicable blocks have the 'Part of the Smeltery' tooltip, and seared glass types cannot be used for the smeltery floor."
+        }
+    ]
+}

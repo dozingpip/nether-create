@@ -1,0 +1,12 @@
+{
+    "name": "Recipes requiring obsidian",
+    "icon": "minecraft:obsidian",
+    "category": "patchouli:tips_for_the_stuck",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "create:shadow_steel",
+            "text": "All recipes that require obsidian will also accept shadow steel and/or wither skeleton skulls as a replacement. (This of course does not apply to portals)"
+        }
+    ]
+}

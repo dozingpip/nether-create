@@ -1,0 +1,11 @@
+{
+    "name": "Silk Touch",
+    "icon": "minecraft:glass",
+    "category": "patchouli:tips_for_the_stuck",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Use 5 silky cloths on a Tinker's Construct tool to make it have silk touch, then you can get warped nylium to plant Botania flowers wherever you want!"
+        }
+    ]
+}

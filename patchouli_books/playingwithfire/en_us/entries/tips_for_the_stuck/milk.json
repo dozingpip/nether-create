@@ -1,0 +1,11 @@
+{
+    "name": "Milk",
+    "icon": "minecraft:milk_bucket",
+    "category": "patchouli:tips_for_the_stuck",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Get a wither skeleton into a smeltery, it'll start dying, and for every 1 heart of damage you get 100mb of milk! (1000mb in a bucket)"
+        }
+    ]
+}

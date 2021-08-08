@@ -1,0 +1,12 @@
+{
+    "name": "String and Wool",
+    "icon": "minecraft:string",
+    "category": "patchouli:tips_for_the_stuck",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "botania:white_petal_block",
+            "text": "Place a white petal block in range of a pure daisy and wait for the magic to happen."
+        }
+    ]
+}

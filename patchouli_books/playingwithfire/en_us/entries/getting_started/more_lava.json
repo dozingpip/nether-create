@@ -1,0 +1,15 @@
+{
+    "name": "Need more lava?",
+    "icon": "minecraft:lava_bucket",
+    "category": "patchouli:getting_started",
+    "pages": [
+        {
+            "type": "crafting",
+            "recipe": "playingwithfire:crafting_table/lava_bucket"
+        },
+        {
+            "type": "text",
+            "text": "You'll need to kill some magma slimes to get more lava, and craft it by hand to start with, but eventually it becomes much easier to automate. (See other uses of magma cream in JEI)"
+        }
+    ]
+}

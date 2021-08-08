@@ -1,0 +1,12 @@
+{
+    "name": "Lapis?",
+    "icon": "minecraft:lapis_lazuli",
+    "category": "patchouli:tips_for_the_stuck",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "minecraft:lapis_block",
+            "text": "Check the recipe for a lapis block instead, you can compact a blue petal block with lava to get a lapis block."
+        }
+    ]
+}

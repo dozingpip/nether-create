@@ -1,0 +1,12 @@
+{
+    "name": "Dried Kelp?",
+    "icon": "minecraft:dried_kelp",
+    "category": "patchouli:tips_for_the_stuck",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "quark:charcoal_block",
+            "text": "Place a charcoal block in range of a pure daisy and wait for the magic to happen."
+        }
+    ]
+}

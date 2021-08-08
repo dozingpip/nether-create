@@ -1,0 +1,12 @@
+{
+    "name": "Glowstone?",
+    "icon": "minecraft:glowstone_dust",
+    "category": "patchouli:tips_for_the_stuck",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "minecraft:shroomlight",
+            "text": "Place a shroomlight in range of a pure daisy and wait for the magic to happen."
+        }
+    ]
+}

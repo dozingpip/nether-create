@@ -1,0 +1,213 @@
+{
+    "name": "Tea Table",
+    "appearance": {
+      "lightmode": "running",
+      "lightlevel": 7,
+      "model": "playingwithfire:machine/table",
+      "sound": "botania:gaia_trap"
+    },
+    "components": [
+      {
+        "mode": "input",
+        "id": "input1",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "input",
+        "id": "input2",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "input",
+        "id": "input3",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "input",
+        "id": "input4",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "input",
+        "id": "test1",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "input",
+        "id": "test2",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "input",
+        "id": "test3",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "input",
+        "id": "test4",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "input",
+        "id": "test5",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "input",
+        "id": "fluid",
+        "capacity": 5000,
+        "whitelist": true,
+        "filter":["create:honey", "create:milk", "create:chocolate", "create:tea"],
+        "type": "custommachinery:fluid"
+      },
+      {
+        "mode": "output",
+        "id": "output1",
+        "type": "custommachinery:item"
+      }
+    ],
+    "gui": [
+      {
+        "texture": "playingwithfire:textures/small_base_background.png",
+        "x": 20,
+        "y": 0,
+        "type": "custommachinery:texture",
+        "width" : 180
+      },
+      {
+        "x": 27,
+        "y": 80,
+        "type": "custommachinery:player_inventory"
+      },
+      {
+        "x": 37,
+        "y": 24,
+        "type": "custommachinery:fluid",
+        "id": "fluid",
+        "texture":"playingwithfire:textures/red_fluid_storage.png"
+      },
+      {
+        "x": 57,
+        "y": 30,
+        "type": "custommachinery:slot",
+        "id": "input1"
+      },
+      {
+        "x": 77,
+        "y": 30,
+        "type": "custommachinery:slot",
+        "id": "input2"
+      },
+      {
+        "x": 57,
+        "y": 50,
+        "type": "custommachinery:slot",
+        "id": "input3"
+      },
+      {
+        "x": 77,
+        "y": 50,
+        "type": "custommachinery:slot",
+        "id": "input4"
+      },
+      {
+        "id": "output1",
+        "x": 129,
+        "y": 40,
+        "type": "custommachinery:slot"
+      },
+      {
+        "x": 101,
+        "y": 40,
+        "type": "custommachinery:progress"
+      },
+      {
+        "x": 176,
+        "y": 5,
+        "type": "custommachinery:status"
+      },
+      {
+        "text": "Tea Table",
+        "x": 27,
+        "y": 5,
+        "type": "custommachinery:text"
+      }
+    ],
+    "jei": [
+        {
+          "x": 37,
+          "y": 24,
+          "type": "custommachinery:fluid",
+          "id": "fluid",
+          "texture":"playingwithfire:textures/red_fluid_storage.png"
+        },
+        {
+          "x": 57,
+          "y": 30,
+          "type": "custommachinery:slot",
+          "id": "input1"
+        },
+        {
+          "x": 77,
+          "y": 30,
+          "type": "custommachinery:slot",
+          "id": "input2"
+        },
+        {
+          "x": 57,
+          "y": 50,
+          "type": "custommachinery:slot",
+          "id": "input3"
+        },
+        {
+          "x": 77,
+          "y": 50,
+          "type": "custommachinery:slot",
+          "id": "input4"
+        },
+        {
+          "type": "custommachinery:slot",
+          "x": 50,
+          "y": 70,
+          "width":90,
+          "height":10,
+          "id":"test5",
+          "texture": "playingwithfire:textures/block_requirements_label.png"
+        },
+        {
+          "x": 57,
+          "y": 80,
+          "type": "custommachinery:slot",
+          "id": "test1"
+        },
+        {
+          "x": 77,
+          "y": 80,
+          "type": "custommachinery:slot",
+          "id": "test2"
+        },
+        {
+          "x": 97,
+          "y": 80,
+          "type": "custommachinery:slot",
+          "id": "test3"
+        },
+        {
+          "x": 117,
+          "y": 80,
+          "type": "custommachinery:slot",
+          "id": "test4"
+        },
+        {
+          "id": "output1",
+          "x": 129,
+          "y": 40,
+          "type": "custommachinery:slot"
+        },
+        {
+          "x": 101,
+          "y": 40,
+          "type": "custommachinery:progress"
+        }
+  ]
+}

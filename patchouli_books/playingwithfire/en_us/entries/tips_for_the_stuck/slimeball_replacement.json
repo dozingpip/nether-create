@@ -1,0 +1,12 @@
+{
+    "name": "Slimeballs?",
+    "icon": "minecraft:slime_ball",
+    "category": "patchouli:tips_for_the_stuck",
+    "pages": [
+        {
+            "type": "text",
+            "title": "Blood? Really?",
+            "text": "Get yourself or a zombified piglin into a smeltery, and blood will start flowing. The bleeding entity will start taking damage, eventually dying if they can't get out. Cast onto a casting table for coagulated blood, which can be used as a replacement slimeball. You can also melt zombie flesh to get blood."
+        }
+    ]
+}
