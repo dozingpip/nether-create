@@ -26,3 +26,5 @@ scavenge_doc/*
 !quark-common.toml
 !tconstruct-common.toml
 *.blah
+config.json
+config.bak.json
