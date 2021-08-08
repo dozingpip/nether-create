@@ -9,6 +9,6 @@
 <recipetype:tconstruct:casting_basin>.addItemCastingRecipe("ancient_debris_cast", <item:botania:bellows>, <fluid:tconstruct:molten_clay> * 8000, <item:minecraft:ancient_debris>, 1500, true, false);
 <recipetype:tconstruct:casting_basin>.addItemCastingRecipe("andesite_cast", <item:minecraft:blackstone>, <fluid:tconstruct:seared_stone> * 1728, <item:minecraft:andesite>, 100, true, false);
 <recipetype:tconstruct:casting_basin>.removeRecipe(<item:minecraft:ender_chest>);
-<recipetype:tconstruct:casting_basin>.addItemCastingRecipe("ender_chest_cast", <item:minecraft:ender_eye>, <fluid:tconstruct:molten_ender> * 1000, <item:minecraft:ender_chest>, 494, true, false);
+<recipetype:tconstruct:casting_basin>.addItemCastingRecipe("ender_chest_cast", <item:minecraft:ender_eye>, <fluid:tconstruct:molten_ender> * 1000, <item:minecraft:ender_chest>, 100, true, false);
 <recipetype:tconstruct:casting_basin>.addItemCastingRecipe("nether_gold_ore_cast", <item:minecraft:netherrack>, <fluid:tconstruct:molten_gold> * 1296, <item:minecraft:nether_gold_ore>, 100, true, false);
 <recipetype:tconstruct:casting_basin>.addItemCastingRecipe("pure_daisy_cast", <item:botania:white_double_flower>, <fluid:tconstruct:molten_zinc> * 1296, <item:botania:pure_daisy>, 200, true, false);

@@ -28,3 +28,4 @@ scavenge_doc/*
 *.blah
 config.json
 config.bak.json
+config_new_temp.json
