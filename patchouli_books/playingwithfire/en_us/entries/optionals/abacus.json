@@ -1,0 +1,12 @@
+{
+    "name": "Abacus",
+    "icon": "quark:abacus",
+    "category": "patchouli:optionals",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "quark:abacus",
+            "text": "Don't like counting blocks? Get one of these, it tells you the Manhattan distance between 2 blocks."
+        }
+    ]
+}

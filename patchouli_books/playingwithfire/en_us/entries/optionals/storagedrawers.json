@@ -1,0 +1,12 @@
+{
+    "name": "Storage Drawers",
+    "icon": "storagedrawers:controller",
+    "category": "patchouli:optionals",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "storagedrawers:controller",
+            "text": "Storage drawers is a powerful storage solution, individual drawers allow you to store large amounts of 1 item, but linked together with more drawers and a drawer controller, it can be a whole system that acts as one huge inventory. It can also be used in conjunction with Botania's Corporea system."
+        }
+    ]
+}

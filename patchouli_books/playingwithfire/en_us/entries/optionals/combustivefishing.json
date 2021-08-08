@@ -1,0 +1,12 @@
+{
+    "name": "Combustive Fishing",
+    "icon": "combustivefishing:blazing_fishing_rod",
+    "category": "patchouli:optionals",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "combustivefishing:blazing_fishing_rod",
+            "text": "It's like a fishing rod but for lava! Has a unique loot table, see uses of this rod in JEI. $(br)$(br)$(o)P.S. Don't eat the fish"
+        }
+    ]
+}
