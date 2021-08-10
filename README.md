@@ -19,12 +19,15 @@ Crops don't seem to grow very well, or at all, in the Nether either, but there i
 
 Hmm, it seems that whenever I try to make a portal to Alfheim it connects up to some sort of underwater elfen village in the overworld? I can get quite a few useful items by trading with them.
 
-If you want to listen to some tunes, try combustive fishing! You just might get your very own copy of Pigstep, or any other disc.
+Want to listen to some tunes? Try combustive fishing! You just might get your very own copy of Pigstep, or any other disc.
 ## Modpack Info
 In case it was not clear, the end goal is to create a Nether portal.
 This is a small and goal-oriented skyblock modpack where a big focus is on Nether mob farming. That and Piglin bartering is where all your resources will come from. No sitting around sifting gravel or working away at a cobble generator. There are even ways to craft certain spawn eggs! *See uses of turtle egg.*
+
 Create and Botania are your main ways to automate anything. No one-block solutions here.
+
 There are no quests, but there is an in-game guidebook to help get you started and it has tips for if/when you feel stuck!
+
 The grind is kept low, especially if you automate as you go.
 
 ### Mobs will only spawn on certain blocks:
