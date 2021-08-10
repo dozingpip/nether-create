@@ -114,21 +114,21 @@
             "item": "minecraft:nether_quartz_ore",
             "amount": 1,
             "mode": "input",
-            "slot": "test1"
+            "slot": "test0"
         },
         {
             "type": "custommachinery:item",
             "item": "minecraft:nether_gold_ore",
             "amount": 1,
             "mode": "input",
-            "slot": "test2"
+            "slot": "test1"
         },
         {
             "type": "custommachinery:item",
             "item": "minecraft:ancient_debris",
             "amount": 1,
             "mode": "input",
-            "slot": "test3"
+            "slot": "test2"
         },
         {
             "type": "custommachinery:item",

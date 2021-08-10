@@ -29,6 +29,11 @@
       },
       {
         "mode": "input",
+        "id": "test0",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "input",
         "id": "test1",
         "type": "custommachinery:item"
       },
@@ -45,11 +50,6 @@
       {
         "mode": "input",
         "id": "test4",
-        "type": "custommachinery:item"
-      },
-      {
-        "mode": "input",
-        "id": "test5",
         "type": "custommachinery:item"
       },
       {
@@ -178,25 +178,25 @@
           "x": 57,
           "y": 80,
           "type": "custommachinery:slot",
-          "id": "test1"
+          "id": "test0"
         },
         {
           "x": 77,
           "y": 80,
           "type": "custommachinery:slot",
-          "id": "test2"
+          "id": "test1"
         },
         {
           "x": 97,
           "y": 80,
           "type": "custommachinery:slot",
-          "id": "test3"
+          "id": "test2"
         },
         {
           "x": 117,
           "y": 80,
           "type": "custommachinery:slot",
-          "id": "test4"
+          "id": "test3"
         },
         {
           "id": "output1",

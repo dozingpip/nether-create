@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:nether_brick",
+          "name": "minecraft:fire_coral",
           "weight": 20
         },
         {
@@ -21,6 +21,11 @@
         {
           "type": "item",
           "name": "minecraft:rotten_flesh",
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "minecraft:dried_kelp",
           "weight": 40
         }
       ]

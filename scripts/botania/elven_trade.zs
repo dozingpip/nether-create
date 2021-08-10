@@ -9,4 +9,4 @@
 <recipetype:botania:elven_trade>.addRecipe("slime", [<item:minecraft:slime_ball>], <item:minecraft:magma_cream>);
 <recipetype:botania:elven_trade>.addRecipe("sponge", [<item:minecraft:sponge>], <item:minecraft:fire_coral_block>);
 <recipetype:botania:elven_trade>.addRecipe("orechid", [<item:botania:orechid>], <item:botania:orechid_ignem>);
-<recipetype:botania:elven_trade>.addRecipe("bee_nest", [<item:minecraft:bee_nest>], <item:minecraft:ancient_debris>);
+// <recipetype:botania:elven_trade>.addRecipe("bee_nest", [<item:minecraft:bee_nest>], <item:minecraft:ancient_debris>);

@@ -6,38 +6,73 @@
         "entries": [
           {
             "type": "item",
-            "name": "minecraft:blaze_rod",
-            "weight": 40
-          },
-          {
-            "type": "item",
-            "name": "minecraft:magma_cream",
-            "weight": 40
-          },
-          {
-            "type": "item",
-            "name": "minecraft:ghast_tear",
-            "weight": 30
-          },
-          {
-            "type": "item",
-            "name": "minecraft:wither_skeleton_skull",
-            "weight": 15
-          },
-          {
-            "type": "item",
-            "name": "minecraft:fire_coral",
-            "weight": 50
-          },
-          {
-            "type": "item",
             "name": "minecraft:music_disc_pigstep",
             "weight": 10
           },
           {
             "type": "item",
+            "name": "minecraft:music_disc_13",
+            "weight": 10
+          },
+          {
+            "type": "item",
+            "name": "minecraft:music_disc_cat",
+            "weight": 10
+          },
+          {
+            "type": "item",
+            "name": "minecraft:music_disc_blocks",
+            "weight": 10
+          },
+          {
+            "type": "item",
+            "name": "minecraft:music_disc_chirp",
+            "weight": 10
+          },
+          {
+            "type": "item",
+            "name": "minecraft:music_disc_far",
+            "weight": 10
+          },
+          {
+            "type": "item",
+            "name": "minecraft:music_disc_mall",
+            "weight": 10
+          },
+          {
+            "type": "item",
+            "name": "minecraft:music_disc_melohi",
+            "weight": 10
+          },
+          {
+            "type": "item",
+            "name": "minecraft:music_disc_stal",
+            "weight": 10
+          },
+          {
+            "type": "item",
+            "name": "minecraft:music_disc_strad",
+            "weight": 10
+          },
+          {
+            "type": "item",
+            "name": "minecraft:music_disc_ward",
+            "weight": 10
+          },
+          {
+            "type": "item",
+            "name": "minecraft:music_disc_11",
+            "weight": 10
+          },
+          {
+            "type": "item",
+            "name": "minecraft:music_disc_wait",
+            "weight": 10
+          },
+          {
+            "type": "item",
             "name": "botania:blacker_lotus",
-            "weight": 15
+            "weight": 10
           }
         ]
       }
