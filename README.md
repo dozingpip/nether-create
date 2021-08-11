@@ -43,9 +43,6 @@ The Piglin bartering loot table has also been modified, see uses of gold ingot f
 
 *P.S. Don't eat the fish. If you eat the fish anyway, I told you so! :p*
 
+License: All Rights Reserved
 ## Special Thanks
 PrincessAquos - the alpha tester
-
-
-
-License: All Rights Reserved
