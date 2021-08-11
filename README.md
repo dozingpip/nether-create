@@ -45,3 +45,7 @@ The Piglin bartering loot table has also been modified, see uses of gold ingot f
 
 ## Special Thanks
 PrincessAquos - the alpha tester
+
+
+
+License: All Rights Reserved
