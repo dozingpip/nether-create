@@ -2,8 +2,8 @@
     "type": "interactio:item_fluid_transform",
     "inputs": [
       {
-        "item": "minecraft:bamboo",
-        "count": 1
+        "item": "minecraft:netherrack",
+        "count": 2
       }
     ],
     "fluid": {
@@ -13,8 +13,8 @@
       "entries": [
         {
           "result": {
-            "item": "minecraft:sugar_cane",
-            "count": 1
+            "item": "minecraft:magma_block",
+            "count": 8
           },
           "weight": 3
         }
@@ -22,5 +22,5 @@
       "empty_weight": 0,
       "rolls": 1
     },
-    "consume_fluid": 1
+    "consume_fluid": 0.5
   }

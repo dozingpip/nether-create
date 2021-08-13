@@ -1,14 +1,14 @@
 [
     {
-      "mob": "minecraft:zombified_piglin",
-      "removeall": true
-    },
-    {
       "mob": "minecraft:wither_skeleton",
       "remove": "tconstruct:necrotic_bone"
     },
     {
       "mob": "minecraft:wither_skeleton",
       "remove": "minecraft:stone_sword"
+    },
+    {
+      "mob": "minecraft:zombified_piglin",
+      "remove": "minecraft:golden_sword"
     }
 ]

@@ -11,11 +11,4 @@ Replacer.forTypes(craftingTable).excluding(<resource:botania:terrasteel_chestpla
 <resource:botania:mana_ring>,
 <resource:botania:mana_ring_greater>,
 <resource:botania:twig_wand>,
-<resource:botania:terra_pick>).replace(<item:minecraft:obsidian>, <tag:items:forge:obsidian>).execute();
-Replacer.forTypes(craftingTable).excluding(<resource:botania:terrasteel_chestplate>, <resource:botania:terrasteel_leggings>,
-<resource:botania:terrasteel_helmet>,
-<resource:botania:terrasteel_boots>,
-<resource:botania:mana_ring>,
-<resource:botania:mana_ring_greater>,
-<resource:botania:twig_wand>,
-<resource:botania:terra_pick>).replace(<item:minecraft:dirt>, <tag:items:forge:dirt>).execute();
+<resource:botania:terra_pick>).replace(<item:minecraft:obsidian>, <tag:items:forge:obsidian>).replace(<item:minecraft:dirt>, <tag:items:forge:dirt>).execute();

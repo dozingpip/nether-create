@@ -1,0 +1,14 @@
+<item:minecraft:netherrack>.immuneToFire = true;
+<item:minecraft:bamboo>.immuneToFire = true;
+<item:minecraft:sugar_cane>.immuneToFire = true;
+<item:minecraft:magma_cream>.immuneToFire = true;
+<item:minecraft:lava_bucket>.immuneToFire = true;
+<item:minecraft:bucket>.immuneToFire = true;
+<item:create:water_wheel>.immuneToFire = true;
+<item:minecraft:potion>.withTag({Potion: "minecraft:awkward" as string}).burnTime = 400;
+<item:minecraft:potion>.maxStackSize = 16;
+<item:botania:black_lotus>.burnTime = 1600;
+<item:minecraft:warped_roots>.burnTime = 200;
+<item:minecraft:twisting_vines>.burnTime = 400;
+<item:minecraft:weeping_vines>.burnTime = 400;
+<item:minecraft:rotten_flesh>.burnTime = 100;

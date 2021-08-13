@@ -36,6 +36,10 @@
       {
         "type": "minecraft:item", "name": "minecraft:blackstone",
         "functions": [{"function": "minecraft:set_count", "count": {"min": 8, "max": 16, "type": "minecraft:uniform"}}]
+      },
+      {
+        "type": "minecraft:item", "name": "minecraft:bone_meal",
+        "functions": [{"function": "minecraft:set_count", "count": {"min": 2, "max": 5, "type": "minecraft:uniform"}}]
       }
     ]
   }

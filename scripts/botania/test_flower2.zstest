@@ -1,0 +1,38 @@
+import crafttweaker.api.item.IItemStack;
+import crafttweaker.api.blocks.MCBlock;
+import crafttweaker.api.item.IIngredient;
+
+val colors = ["lime", "green", "yellow","red", "cyan","light_gray","gray","white", "brown","magenta","purple","pink", "blue","black","light_blue", "orange"];
+val petals = {} as IItemStack[IIngredient];
+// val petals = {} as MCBlock[IIngredient];
+for color in colors
+{
+    petals[<tagManager:items>.getTag("botania:petals/"+color).asIIngredient()] = <item:botania:${color}_mushroom>;
+    // petals[<tagManager:items>.getTag("botania:petals/"+color).asIIngredient()] = <block:botania:${color}_mushroom>);
+}
+for recipe in <recipetype:botania:petal_apothecary>.getAllRecipes()
+{
+    if (<item:botania:orechid_ignem>.matches(recipe.output)){
+        continue;
+    }
+    var flower = mods.custommachinery.CMRecipeBuilder.create("playingwithfire:teatable", 20);
+    for ingredient in recipe.ingredients
+    {
+        if(<tag:items:botania:petals>.asIIngredient().matches(ingredient.items[0]))
+        {
+            println(ingredient in petals.keys);
+            println(ingredient.commandString);
+            // flower.requireItem(petals[ingredient]);
+            // flower.breakBlockOnEnd(petals[ingredient], -1, -1, -1, 1, 1, 1, 1);
+        }
+        else
+        {
+            flower.requireItem(ingredient.items[0]);
+        }
+    }
+    flower.requireFluidPerTick(<fluid:create:tea>*10);
+    flower.produceItem(recipe.output);
+    flower.build(recipe.output.registryName.path + "_tea");
+}
+
+<recipetype:botania:petal_apothecary>.removeAll();

@@ -29,33 +29,28 @@ function flower(petal_colors as string[], petal_amts as int[], item_inputs as st
 
     var tea_recipe = mods.custommachinery.CMRecipeBuilder.create("playingwithfire:teatable", 20);
     
-    var index as int = 0;
-    for petal_color in petal_colors
+    for i, petal_color in petal_colors
     {
-        tea_recipe.requireItem(BracketHandlers.getItem("botania:" + petal_color + "_mushroom")*petal_amts[index]);
-        index += 1;
-        // tea_recipe.breakBlockOnEnd(BracketHandlers.getBlock("botania:" + petal_color + "_mushroom"), -1, -1, -1, 1, 1, 1, petal_amts[index]);
+        tea_recipe.destroyBlockOnEnd("botania:"+petal_color+"_mushroom", -1, -1, -1, 1, 1, 1, petal_amts[i]);
     }
     for item in item_inputs
     {
         tea_recipe.requireItem(BracketHandlers.getItem(ingredients[item]));
     }
     tea_recipe.requireFluidPerTick(<fluid:create:tea>*10);
-    tea_recipe.produceItem(BracketHandlers.getItem("botania:"+output));
+    tea_recipe.placeBlockOnEnd("botania:" + output, 0, 1, 0, 0, 1, 0);
     tea_recipe.jei();
     for item in item_inputs
     {
         tea_recipe.requireItem(BracketHandlers.getItem(ingredients[item]));
     }
-    index = 0;
-    for petal_color in petal_colors
+    for i, petal_color in petal_colors
     {
-        tea_recipe.requireItem(BracketHandlers.getItem("botania:" + petal_color + "_mushroom")*petal_amts[index],"test"+index);
-        index += 1;
+        tea_recipe.requireItem(<item:botania:${petal_color}_mushroom>*petal_amts[i],"test"+i);
     }
     tea_recipe.requireFluidPerTick(<fluid:create:tea>*10);
-    tea_recipe.produceItem(BracketHandlers.getItem("botania:"+output));
-    tea_recipe.build(BracketHandlers.getItem("botania:"+output).registryName.path + "_tea");
+    tea_recipe.produceItem(<item:botania:${output}>);
+    tea_recipe.build(<item:botania:${output}>.registryName.path + "_tea");
 }
 flower(["lime", "green", "yellow"], [2, 1, 1], ["spring", "root"], "agricarnation");
 flower(["red", "cyan"], [3, 2], ["root"], "bellethorn");
