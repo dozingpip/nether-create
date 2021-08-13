@@ -23,7 +23,7 @@ Want to listen to some tunes? Try combustive fishing! You just might get your ve
 ## Modpack Info
 In case it was not clear, the end goal is to create a Nether portal.
 
-This is a small and goal-oriented skyblock modpack where a big focus is on Nether mob farming. That and Piglin bartering is where all your resources will come from. No sitting around sifting gravel or working away at a cobble generator. There are even ways to craft certain spawn eggs! *See uses of turtle egg.*
+This is a small, goal-oriented skyblock modpack where a big focus is on Nether mob farming. That and Piglin bartering is where all your resources will come from. No sitting around sifting gravel or working away at a cobble generator. There are even ways to craft certain spawn eggs! *See uses of turtle egg.*
 
 Create and Botania are your main ways to automate anything. No one-block solutions here.
 
