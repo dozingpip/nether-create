@@ -12,3 +12,5 @@
 <item:minecraft:twisting_vines>.burnTime = 400;
 <item:minecraft:weeping_vines>.burnTime = 400;
 <item:minecraft:rotten_flesh>.burnTime = 100;
+<block:create:shadow_steel_casing>.blastResistance = 1200;
+<block:botania:elementium_block>.blastResistance = 1200;

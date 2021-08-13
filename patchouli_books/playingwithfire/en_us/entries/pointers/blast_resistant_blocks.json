@@ -1,0 +1,12 @@
+{
+    "name": "Blast Resistant Blocks",
+    "icon": "create:shadow_steel_casing",
+    "category": "patchouli:pointers",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item" : "create:shadow_steel_casing",
+            "text": "Shadow steel casing and elementium blocks have the same blast resistance as obsidian, so you can make farms with automated tnt with those blocks without any fear."
+        }
+    ]
+}
