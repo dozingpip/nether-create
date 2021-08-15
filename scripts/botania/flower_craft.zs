@@ -89,3 +89,18 @@ flower(["cyan", "gray", "light_gray"], [2, 1, 1], ["earth", "air"], "tangleberri
 flower(["red", "orange"], [1, 2], ["fire", "earth"], "thermalily");
 flower(["yellow", "brown", "orange", "lime"], [1, 1, 1, 1], ["autumn"], "tigerseye");
 flower(["black", "purple", "green"], [2, 2, 1], ["root", "water", "sloth", "lust"], "vinculotus");
+
+
+mods.custommachinery.CMRecipeBuilder.create("playingwithfire:teatable", 20)
+.requireItem(<item:botania:black_lotus>)
+.requireBlock("minecraft:wither_skeleton_skull", -1, -1, -1, 1, 1, 1, 1)
+.requireBlock("botania:black_mystical_flower", -1, -1, -1, 1, 1, 1, 1)
+.requireFluidPerTick(<fluid:create:tea>*10)
+.placeBlockOnEnd("minecraft:wither_rose", 0, 1, 0, 0, 1, 0)
+.jei()
+.requireItem(<item:botania:black_lotus>)
+.requireItem(<item:minecraft:wither_skeleton_skull>, "test0")
+.requireItem(<item:botania:black_mystical_flower>, "test1")
+.requireFluidPerTick(<fluid:create:tea>*10)
+.produceItem(<item:minecraft:wither_rose>)
+.build("wither_rose_tea");
