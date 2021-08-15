@@ -1,5 +1,5 @@
-# Welcome to Hell!
-## If you'd like to leave, I suggest you do the following:
+# The grass is always greener on the other side of the Nether portal.
+## If you'd like to see that greener grass, I suggest you do the following:
 1. Start by making a gold farm. Zombified Piglins only spawn on magma blocks. It doesn't have to be very efficient, you'll get better tools to make it more efficent as you go.
 2. Start doing some piglin bartering.
 3. Make a puny smeltery.![top left block: seared melter, top right: seared faucet, bottom left: seared tank, bottom right: casting basin](puny_smeltery.png "Your first smeltery. It's puny.")
@@ -45,6 +45,9 @@ The Piglin bartering loot table has also been modified, see uses of gold ingot f
 
 License: All Rights Reserved
 
+Available on CurseForge at https://www.curseforge.com/minecraft/modpacks/playing-with-fire
+
 My Discord server: https://discord.gg/MszuxQCF
+
 ## Special Thanks
 PrincessAquos - the alpha tester
