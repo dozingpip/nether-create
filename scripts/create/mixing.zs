@@ -9,4 +9,10 @@
 <recipetype:create:mixing>.addRecipe("redstone_root", "none", <item:botania:redstone_root> *2, [<item:minecraft:redstone>, <item:minecraft:oak_leaves>]);
 <recipetype:create:mixing>.addRecipe("endoflame", "heated", <item:botania:endoflame>, [<item:botania:fertilizer>*2, <tag:items:botania:petals/red>, <tag:items:botania:petals/brown>*2, <tag:items:botania:petals/light_gray>], [<fluid:tconstruct:blood>*500]);
 <recipetype:create:mixing>.addRecipe("cake_overwrite", "heated", <item:minecraft:cake>, [<item:minecraft:sugar>*2, <item:minecraft:wheat>*3, <item:minecraft:egg>], [<fluid:minecraft:milk>*3000]);
-<recipetype:create:mixing>.addRecipe("wither_skull", "superheated", <item:minecraft:wither_skeleton_skull>, [<item:minecraft:bone_block>, <item:minecraft:coal_block>, <item:botania:black_lotus>, <item:botania:rune_wrath>], [<fluid:tconstruct:seared_stone>*2000]);
+<recipetype:create:mixing>.addRecipe("milk", "heated", <fluid:minecraft:milk>*1000, [<item:minecraft:bone_block>, <item:minecraft:turtle_egg>, <item:minecraft:sugar>], [<fluid:tconstruct:molten_quartz>*144]);
+<recipetype:create:mixing>.addRecipe("molten_quartz", "heated", <fluid:tconstruct:molten_quartz>*144, [<item:minecraft:quartz>]);
+<recipetype:create:mixing>.addRecipe("molten_quartz_from_block", "heated", <fluid:tconstruct:molten_quartz>*576, [<item:minecraft:quartz_block>]);
+<recipetype:create:mixing>.addRecipe("blood", "heated", <fluid:tconstruct:blood>*50, [<item:minecraft:rotten_flesh>]);
+<recipetype:create:mixing>.addRecipe("molten_ender", "heated", <fluid:tconstruct:molten_ender>*250, [<item:minecraft:ender_pearl>]);
+<recipetype:create:mixing>.addRecipe("queens_slime", "superheated", <fluid:tconstruct:molten_queens_slime>*288, [<item:minecraft:slime_ball>],[<fluid:tconstruct:molten_cobalt>*144, <fluid:tconstruct:molten_gold>*144, <fluid:tconstruct:magma>*250]);
+<recipetype:create:mixing>.addRecipe("molten_cobalt", "superheated", <fluid:tconstruct:molten_cobalt>*288, [<item:minecraft:lapis_lazuli>, <item:botania:manasteel_ingot>, <item:create:powdered_obsidian>]);

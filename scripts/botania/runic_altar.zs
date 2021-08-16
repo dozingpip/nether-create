@@ -9,3 +9,4 @@
 <tag:items:botania:petals/purple>, <tag:items:botania:petals/magenta>, <tag:items:botania:petals/pink>,
 <tag:items:botania:petals/white>, <tag:items:botania:petals/light_gray>, <tag:items:botania:petals/gray>,
 <tag:items:botania:petals/black>, <tag:items:botania:petals/brown>);
+<recipetype:botania:runic_altar>.addRecipe("wither_skull", <item:minecraft:wither_skeleton_skull>, 10000, <item:minecraft:bone_block>, <item:minecraft:coal_block>, <item:botania:black_lotus>, <item:botania:rune_wrath>);
