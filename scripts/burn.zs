@@ -7,6 +7,7 @@
 <item:create:water_wheel>.immuneToFire = true;
 <item:minecraft:ghast_tear>.immuneToFire = true;
 <item:minecraft:gunpowder>.immuneToFire = true;
+<item:minecraft:blaze_rod>.immuneToFire = true;
 <item:minecraft:potion>.withTag({Potion: "minecraft:awkward" as string}).burnTime = 400;
 <item:minecraft:potion>.maxStackSize = 16;
 <item:botania:black_lotus>.burnTime = 1600;
