@@ -2,6 +2,7 @@
     "name": "Bigger Smeltery",
     "icon": "tconstruct:smeltery_controller",
     "category": "patchouli:getting_started",
+    "sortnum":8,
     "pages": [
         {
             "type": "text",

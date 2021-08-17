@@ -27,7 +27,16 @@
         "conditions": {"dimension":"minecraft:the_nether", "mindist" : 10, "maxdist":100}
     },
     {
-        "mob":["minecraft:piglin", "minecraft:wither_skeleton", "minecraft:blaze", "minecraft:ghast", "minecraft:enderman"],
+        "mob":"minecraft:piglin",
+        "attempts":25,
+        "amount": {
+            "minimum": 1,
+            "maximum": 3
+          },
+        "conditions": {"dimension":"minecraft:the_nether", "mindist" : 10, "maxdist":100}
+    },
+    {
+        "mob":["minecraft:wither_skeleton", "minecraft:blaze", "minecraft:ghast", "minecraft:enderman"],
         "attempts":20,
         "amount": {
             "minimum": 1,

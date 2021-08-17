@@ -2,6 +2,7 @@
     "name": "Magma blocks and Zombie Piglins",
     "icon": "minecraft:magma_block",
     "category": "patchouli:getting_started",
+    "sortnum":3,
     "pages": [
         {
             "type": "crafting",

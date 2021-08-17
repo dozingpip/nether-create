@@ -2,6 +2,7 @@
     "name": "Mob Spawning Rules",
     "icon": "minecraft:wither_skeleton_skull",
     "category": "patchouli:getting_started",
+    "sortnum":2,
     "pages": [
         {
             "type": "text",

@@ -1,3 +1,4 @@
+// immune to fire
 <item:minecraft:netherrack>.immuneToFire = true;
 <item:minecraft:bamboo>.immuneToFire = true;
 <item:minecraft:sugar_cane>.immuneToFire = true;
@@ -8,12 +9,21 @@
 <item:minecraft:ghast_tear>.immuneToFire = true;
 <item:minecraft:gunpowder>.immuneToFire = true;
 <item:minecraft:blaze_rod>.immuneToFire = true;
+<item:minecraft:shroomlight>.immuneToFire = true;
+<item:minecraft:bone_meal>.immuneToFire = true;
+<item:minecraft:magma_block>.immuneToFire = true;
+
+// burn time
 <item:minecraft:potion>.withTag({Potion: "minecraft:awkward" as string}).burnTime = 400;
-<item:minecraft:potion>.maxStackSize = 16;
 <item:botania:black_lotus>.burnTime = 1600;
 <item:minecraft:warped_roots>.burnTime = 200;
 <item:minecraft:twisting_vines>.burnTime = 400;
 <item:minecraft:weeping_vines>.burnTime = 400;
 <item:minecraft:rotten_flesh>.burnTime = 100;
+
+// blast resistance
 <block:create:shadow_steel_casing>.blastResistance = 1200;
 <block:botania:elementium_block>.blastResistance = 1200;
+
+// stack size
+<item:minecraft:potion>.maxStackSize = 16;

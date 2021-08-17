@@ -2,6 +2,7 @@
     "name": "Need more lava?",
     "icon": "minecraft:lava_bucket",
     "category": "patchouli:getting_started",
+    "sortnum":4,
     "pages": [
         {
             "type": "crafting",
