@@ -8,3 +8,4 @@
 <recipetype:botania:mana_infusion>.addRecipe("mana_infusion_blue_blossom_sapling", <item:quark:blue_blossom_sapling>, <item:quark:lavender_blossom_sapling>, 100, <blockstate:botania:alchemy_catalyst>);
 <recipetype:botania:mana_infusion>.addRecipe("mana_infusion_red_blossom_sapling", <item:quark:red_blossom_sapling>, <item:quark:blue_blossom_sapling>, 100, <blockstate:botania:alchemy_catalyst>);
 <recipetype:botania:mana_infusion>.addRecipe("wet_sponge", <item:minecraft:wet_sponge>, <item:minecraft:sponge>, 10000);
+<recipetype:botania:mana_infusion>.removeRecipe(<item:minecraft:ice>);
