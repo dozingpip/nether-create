@@ -1,4 +1,5 @@
 import crafttweaker.api.loot.LootManager;
+// Combustive Fishing
 mods.jei.JEI.addInfo(<item:botania:blacker_lotus>, ["Can be caught rarely with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
 mods.jei.JEI.addInfo(<item:minecraft:music_disc_pigstep>, ["Can be caught rarely with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
 mods.jei.JEI.addInfo(<item:minecraft:coal>, ["Can be caught commonly with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
@@ -8,6 +9,8 @@ mods.jei.JEI.addInfo(<item:minecraft:dried_kelp>, ["Can be caught commonly with 
 mods.jei.JEI.addInfo(<item:combustivefishing:bone_fish>, ["Can be caught commonly with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
 mods.jei.JEI.addInfo(<item:combustivefishing:combustive_cod>, ["Can be caught commonly with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
 mods.jei.JEI.addInfo(<item:combustivefishing:blazing_fishing_rod>, ["Common catches: coal, rotten flesh, fire coral, dried kelp, combustive cod, bone fish", "Rare: Pigstep, all other music discs, blacker lotus"]);
+
+// Piglin Bartering
 mods.jei.JEI.addInfo(<item:minecraft:gold_ingot>, ["Piglin bartering can get you: awkward potion, black lotus, bone meal, turtle egg, soul sand, gravel, blackstone, quartz, and iron nuggets"]);
 mods.jei.JEI.addInfo(<item:minecraft:potion>.withTag({"Potion":"minecraft:awkward"}), ["Gotten through Piglin bartering. (Amount: 1)"]);
 mods.jei.JEI.addInfo(<item:botania:black_lotus>, ["Gotten through Piglin bartering. (Amount: 1) Compostable"]);
@@ -18,11 +21,7 @@ mods.jei.JEI.addInfo(<item:minecraft:blackstone>, ["Gotten through Piglin barter
 mods.jei.JEI.addInfo(<item:minecraft:quartz>, ["Gotten through Piglin bartering. (Amount: 5-12)"]);
 mods.jei.JEI.addInfo(<item:minecraft:bone_meal>, ["Gotten through Piglin bartering. (Amount: 2-5)"]);
 mods.jei.JEI.addInfo(<item:minecraft:iron_nugget>, ["Gotten through Piglin bartering. (Amount: 27-45)"]);
+
+// Other
 mods.jei.JEI.addInfo(<item:botania:apothecary_default>, ["Useless without a source of water. Find alternative methods to make flowers."]);
 mods.jei.JEI.addInfo(<item:minecraft:redstone>, ["Dropped by witches"]);
-mods.jei.JEI.addInfo(<item:minecraft:rotten_flesh>, ["Compostable"]);
-mods.jei.JEI.addInfo(<item:minecraft:shroomlight>, ["Compostable"]);
-mods.jei.JEI.addInfo(<item:minecraft:warped_roots>, ["Compostable"]);
-mods.jei.JEI.addInfo(<item:minecraft:twisting_vines>, ["Compostable"]);
-mods.jei.JEI.addInfo(<item:minecraft:weeping_vines>, ["Compostable"]);
-mods.jei.JEI.addInfo(<item:minecraft:warped_wart_block>, ["Compostable"]);

@@ -51,3 +51,4 @@ mods.jei.JEI.hideRegex(".*slime_crystal.*");
 mods.jei.JEI.hideRegex(".*congealed_slime.*");
 mods.jei.JEI.hideRegex("tconstruct.*item_frame.*");
 mods.jei.JEI.hideRegex("tconstruct.*copper.*");
+mods.jei.JEI.hideRegex("contenttweaker.*");

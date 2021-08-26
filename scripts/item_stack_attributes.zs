@@ -1,7 +1,4 @@
 // immune to fire
-<item:minecraft:netherrack>.immuneToFire = true;
-<item:minecraft:bamboo>.immuneToFire = true;
-<item:minecraft:sugar_cane>.immuneToFire = true;
 <item:minecraft:magma_cream>.immuneToFire = true;
 <item:minecraft:lava_bucket>.immuneToFire = true;
 <item:minecraft:bucket>.immuneToFire = true;
@@ -9,9 +6,6 @@
 <item:minecraft:ghast_tear>.immuneToFire = true;
 <item:minecraft:gunpowder>.immuneToFire = true;
 <item:minecraft:blaze_rod>.immuneToFire = true;
-<item:minecraft:shroomlight>.immuneToFire = true;
-<item:minecraft:bone_meal>.immuneToFire = true;
-<item:minecraft:magma_block>.immuneToFire = true;
 
 // burn time
 <item:minecraft:potion>.withTag({Potion: "minecraft:awkward" as string}).burnTime = 400;

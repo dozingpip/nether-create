@@ -1,10 +1,20 @@
 {
     "name": "Tea Table",
     "appearance": {
-      "lightmode": "running",
-      "lightlevel": 7,
-      "model": "playingwithfire:machine/table",
-      "sound": "botania:gaia_trap"
+      "idle":{
+        "block": "playingwithfire:machine/table_animated"
+      },
+      "running": {
+        "block": "playingwithfire:machine/table_animated",
+        "lightlevel": 10,
+        "sound": "botania:gaia_trap"
+      },
+      "errored": {
+        "block": "playingwithfire:machine/table"
+      },
+      "paused": {
+        "block": "playingwithfire:machine/table"
+      }
     },
     "components": [
       {
@@ -29,27 +39,32 @@
       },
       {
         "mode": "input",
-        "id": "test0",
+        "id": "circle0",
         "type": "custommachinery:item"
       },
       {
         "mode": "input",
-        "id": "test1",
+        "id": "circle1",
         "type": "custommachinery:item"
       },
       {
         "mode": "input",
-        "id": "test2",
+        "id": "circle2",
         "type": "custommachinery:item"
       },
       {
         "mode": "input",
-        "id": "test3",
+        "id": "circle3",
         "type": "custommachinery:item"
       },
       {
         "mode": "input",
-        "id": "test4",
+        "id": "circle4",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "input",
+        "id": "image0",
         "type": "custommachinery:item"
       },
       {
@@ -61,8 +76,38 @@
         "type": "custommachinery:fluid"
       },
       {
+        "mode": "input",
+        "id": "flower_pot_contents_input",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "input",
+        "id": "flower_pot_slot",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "input",
+        "id": "table_slot_input",
+        "type": "custommachinery:item"
+      },
+      {
         "mode": "output",
         "id": "output1",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "output",
+        "id": "flower_pot_contents_output",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "output",
+        "id": "above_table_slot_output",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "input",
+        "id": "table_slot_output",
         "type": "custommachinery:item"
       }
     ],
@@ -111,15 +156,11 @@
         "id": "input4"
       },
       {
-        "id": "output1",
-        "x": 129,
-        "y": 40,
-        "type": "custommachinery:slot"
-      },
-      {
         "x": 101,
         "y": 40,
-        "type": "custommachinery:progress"
+        "type": "custommachinery:progress",
+        "emptyTexture":"playingwithfire:textures/progress_up_empty.png",
+        "filledTexture":"playingwithfire:textures/progress_up_full.png"
       },
       {
         "x": 176,
@@ -166,47 +207,91 @@
           "id": "input4"
         },
         {
-          "type": "custommachinery:slot",
-          "x": 50,
+          "x": 25,
           "y": 70,
-          "width":90,
-          "height":10,
-          "id":"test5",
-          "texture": "playingwithfire:textures/block_requirements_label.png"
+          "type": "custommachinery:slot",
+          "id": "image0",
+          "width" : 75,
+          "height" : 75,
+          "texture":"playingwithfire:textures/block_reqs.png"
         },
         {
-          "x": 57,
+          "x": 24,
+          "y": 105,
+          "type": "custommachinery:slot",
+          "id": "circle1",
+          "texture":"playingwithfire:textures/additional_slot.png"
+        },
+        {
+          "x": 28,
+          "y": 75,
+          "type": "custommachinery:slot",
+          "id": "circle3",
+          "texture":"playingwithfire:textures/additional_slot.png"
+        },
+        {
+          "x": 53,
+          "y": 130,
+          "type": "custommachinery:slot",
+          "id": "circle0",
+          "texture":"playingwithfire:textures/additional_slot.png"
+        },
+        {
+          "x": 85,
+          "y": 105,
+          "type": "custommachinery:slot",
+          "id": "circle2",
+          "texture":"playingwithfire:textures/additional_slot.png"
+        },
+        {
+          "x": 80,
+          "y": 75,
+          "type": "custommachinery:slot",
+          "id": "circle4",
+          "texture":"playingwithfire:textures/additional_slot.png"
+        },
+        {
+          "x": 53,
+          "y": 90,
+          "type": "custommachinery:slot",
+          "id": "flower_pot_slot",
+          "texture":"playingwithfire:textures/additional_slot.png"
+        },
+        {
+          "x": 53,
           "y": 80,
           "type": "custommachinery:slot",
-          "id": "test0"
+          "id": "flower_pot_contents_input",
+          "texture":"playingwithfire:textures/additional_slot.png"
         },
         {
-          "x": 77,
-          "y": 80,
+          "x": 53,
+          "y": 100,
           "type": "custommachinery:slot",
-          "id": "test1"
+          "id": "table_slot_input"
         },
         {
-          "x": 97,
-          "y": 80,
-          "type": "custommachinery:slot",
-          "id": "test2"
-        },
-        {
-          "x": 117,
-          "y": 80,
-          "type": "custommachinery:slot",
-          "id": "test3"
-        },
-        {
-          "id": "output1",
+          "id": "above_table_slot_output",
           "x": 129,
-          "y": 40,
+          "y": 90,
+          "type": "custommachinery:slot"
+        },
+        {
+          "id": "flower_pot_contents_output",
+          "x": 129,
+          "y": 80,
+          "type": "custommachinery:slot",
+          "texture":"playingwithfire:textures/additional_slot.png"
+        },
+        {
+          "id": "table_slot_output",
+          "x": 129,
+          "y": 110,
           "type": "custommachinery:slot"
         },
         {
           "x": 101,
-          "y": 40,
+          "y": 100,
           "type": "custommachinery:progress"
         }
   ]
