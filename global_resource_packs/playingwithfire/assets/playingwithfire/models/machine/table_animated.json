@@ -3,9 +3,9 @@
     "textures": {
       "particle": "botania:block/livingwood_planks",
       "flowerpot": "block/flower_pot",
-      "dirt": "create:fluid/tea_still",
+      "dirt": "create:fluid/tea_flow",
       "side": "botania:block/livingwood_planks",
-      "top": "botania:block/mana_bomb",
+      "top": "playingwithfire:mana_bomb_animated",
       "bottom": "botania:block/open_crate"
     }
-  }
+}
