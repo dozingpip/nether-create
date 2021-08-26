@@ -39,6 +39,11 @@
       },
       {
         "mode": "input",
+        "id": "input5",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "input",
         "id": "circle0",
         "type": "custommachinery:item"
       },
@@ -156,7 +161,13 @@
         "id": "input4"
       },
       {
-        "x": 101,
+        "x": 97,
+        "y": 40,
+        "type": "custommachinery:slot",
+        "id": "input5"
+      },
+      {
+        "x": 121,
         "y": 40,
         "type": "custommachinery:progress",
         "emptyTexture":"playingwithfire:textures/progress_up_empty.png",
@@ -205,6 +216,12 @@
           "y": 50,
           "type": "custommachinery:slot",
           "id": "input4"
+        },
+        {
+          "x": 97,
+          "y": 40,
+          "type": "custommachinery:slot",
+          "id": "input5"
         },
         {
           "x": 25,
