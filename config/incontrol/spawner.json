@@ -6,7 +6,7 @@
             "minimum": 3,
             "maximum": 6
           },
-        "conditions": {"dimension":"minecraft:the_nether", "mindist" : 5, "maxdist":100}
+        "conditions": {"dimension":"minecraft:the_nether", "mindist" : 5, "maxdist":120}
     },
     {
         "mob":"minecraft:magma_cube",
@@ -15,7 +15,7 @@
             "minimum": 1,
             "maximum": 3
           },
-        "conditions": {"dimension":"minecraft:the_nether", "mindist" : 5, "maxdist":100}
+        "conditions": {"dimension":"minecraft:the_nether", "mindist" : 5, "maxdist":120}
     },
     {
         "mob":"minecraft:wither_skeleton",
@@ -24,7 +24,7 @@
             "minimum": 1,
             "maximum": 3
           },
-        "conditions": {"dimension":"minecraft:the_nether", "mindist" : 10, "maxdist":100}
+        "conditions": {"dimension":"minecraft:the_nether", "mindist" : 10, "maxdist":120}
     },
     {
         "mob":"minecraft:piglin",
@@ -33,7 +33,7 @@
             "minimum": 1,
             "maximum": 3
           },
-        "conditions": {"dimension":"minecraft:the_nether", "mindist" : 10, "maxdist":100}
+        "conditions": {"dimension":"minecraft:the_nether", "mindist" : 15, "maxdist":120}
     },
     {
         "mob":["minecraft:wither_skeleton", "minecraft:blaze", "minecraft:ghast", "minecraft:enderman"],
@@ -42,6 +42,6 @@
             "minimum": 1,
             "maximum": 3
           },
-        "conditions": {"dimension":"minecraft:the_nether", "mindist" : 20, "maxdist":100}
+        "conditions": {"dimension":"minecraft:the_nether", "mindist" : 15, "maxdist":120}
     }
 ]
