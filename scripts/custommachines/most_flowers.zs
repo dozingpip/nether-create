@@ -1,96 +1,71 @@
-import crafttweaker.api.BracketHandlers;
 import crafttweaker.api.item.IItemStack;
-import crafttweaker.api.blocks.MCBlock;
-
-function flower(destroyBlocks as string[], blockAmounts as int[], itemInputs as string[], output as string) as void
+import crafttweaker.api.BracketHandlers;
+import stdlib.List;
+val colors = ["lime", "green", "yellow","red", "cyan","light_gray","gray","white", "brown","magenta","purple","pink", "blue","black","light_blue", "orange"];
+val skip = [<item:botania:orechid_ignem>, <item:botania:orechid>];
+for recipe in <recipetype:botania:petal_apothecary>.getAllRecipes()
 {
-    // common ingredients
-    // https://docs.blamejared.com/1.12/en/AdvancedFunctions/Associative_Arrays/
-
-    val colors = ["lime", "green", "yellow","red", "cyan","light_gray","gray","white", "brown","magenta","purple","pink", "blue","black","light_blue", "orange"];
-    var tea_recipe = mods.custommachinery.CMRecipeBuilder.create("playingwithfire:teatable", 30);
-    for i, block in destroyBlocks
-    {
-        tea_recipe.destroyBlockOnEnd(block in colors ? "botania:" + block + "_mushroom" : block, -1, -1, -1, 1, 1, 1, blockAmounts[i]);
+    if (recipe.output in skip){
+        continue;
     }
-    for item in itemInputs
+    var flower = mods.custommachinery.CMRecipeBuilder.create("playingwithfire:teatable", 20);
+    var petals = new List<IItemStack>();
+    var petalBlocks = new List<string>();
+    var other_ingredients = new List<IItemStack>();
+    flower.requireFluidPerTick(<fluid:create:tea>*10);
+    for ingredient in recipe.ingredients
     {
-        tea_recipe.requireItem(BracketHandlers.getItem(item));
+        if(ingredient.items.length >= 1 && <tag:items:botania:petals>.asIIngredient().matches(ingredient.items[0]))
+        {
+            for color in colors
+            {
+                if (<tagManager:items>.getTag("botania:petals/"+color).asIIngredient().matches(ingredient.items[0])){
+                    var plant = BracketHandlers.getItem("botania:" + color + "_mystical_flower");
+                    if (plant in petals)
+                    {
+                        var index = petals.indexOf(plant);
+                        petals[index] = petals[index]*(petals[index].amount +1);
+                    }
+                    else
+                    {
+                        petalBlocks.add("botania:" + color + "_mystical_flower");
+                        petals.add(plant);
+                    }
+                    break;
+                }
+            }
+        }
+        else if(ingredient.items.length >= 1)
+        {
+            flower.requireItem(ingredient.items[0]);
+            other_ingredients.add(ingredient.items[0]);
+        }
     }
-    tea_recipe.requireFluidPerTick(<fluid:create:tea>*10);
-    tea_recipe.placeBlockOnEnd(output, 0, 1, 0, 0, 1, 0);
-    tea_recipe.jei();
-    for item in itemInputs
+    var amountIndex = 0;
+    for petal in petalBlocks
     {
-        tea_recipe.requireItem(BracketHandlers.getItem(item));
+        flower.destroyBlockOnEnd(petal,  -1, -1, -1, 1, 1, 1, petals[amountIndex].amount);
+        amountIndex += 1;
     }
-    var circleIndex = destroyBlocks.length % 2 == 0 ? 1 : 0;
-    for i, block in destroyBlocks
+    flower.placeBlockOnEnd(recipe.output.owner+ ":" + recipe.output.registryName.path, 0, 1, 0, 0, 1, 0);
+    flower.jei();
+    for ing in other_ingredients
     {
-        tea_recipe.requireItem((block in colors ? <item:botania:${block}_mushroom> : BracketHandlers.getItem(block))*blockAmounts[i], "circle"+circleIndex);
+        flower.requireItem(ing);
+    }
+    var petalIndex = 0;
+    var circleIndex = petals.length % 2 == 0 ? 1 : 0;
+    for petal in petals
+    {
+        flower.requireItem(petal, "circle" + petalIndex);
+        petalIndex += 1;
         circleIndex += 1;
     }
-    tea_recipe.requireFluidPerTick(<fluid:create:tea>*10);
-    tea_recipe.requireItem(<item:custommachinery:custom_machine_item>.withTag({machine: "playingwithfire:teatable" as string}), "table_slot_input");
-    tea_recipe.produceItem(<item:${output}>, "above_table_slot_output");
-    tea_recipe.requireItem(<item:custommachinery:custom_machine_item>.withTag({machine: "playingwithfire:teatable" as string}), "table_slot_output");
-    tea_recipe.build(<item:${output}>.registryName.path + "_tea");
+    flower.requireFluidPerTick(<fluid:create:tea>*10);
+    flower.produceItem(recipe.output, "above_table_slot_output");
+    flower.requireItem(<item:custommachinery:custom_machine_item>.withTag({machine: "playingwithfire:teatable" as string}), "table_slot_input");
+    flower.requireItem(<item:custommachinery:custom_machine_item>.withTag({machine: "playingwithfire:teatable" as string}), "table_slot_output");
+    flower.build(recipe.output.registryName.path + "_tea");
 }
 
-function flowerpot(destroyBlocks as string[], itemInputs as IItemStack[], output as string) as void
-{
-    val potted_plants = {
-        "minecraft:flower_pot" : "minecraft:flower_pot",
-        "minecraft:bamboo" : "minecraft:potted_bamboo",
-        "minecraft:cactus" : "minecraft:potted_cactus",
-        "minecraft:sugar_cane" : "quark:potted_sugar_cane",
-        "minecraft:twisting_vines" : "quark:potted_twisting_vines",
-        "minecraft:wither_rose" : "minecraft:potted_wither_rose"
-    } as string[string];
-    val protect = ["minecraft:wither_skeleton_skull"];
-    val plant = ["minecraft:twisting_vines", "minecraft:bamboo", "minecraft:sugar_cane", "minecraft:wither_rose", "minecraft:cactus"];
-    var tea_recipe = mods.custommachinery.CMRecipeBuilder.create("playingwithfire:teatable", 30);
-    for block in destroyBlocks
-    {
-        if(block in plant)
-        {
-            tea_recipe.requireBlock(potted_plants[block], 0, 1, 0, 0, 1, 0);
-        }
-        else if (block in protect)
-        {
-            tea_recipe.requireBlock(block, -1, -1, -1, 1, 1, 1);
-        }
-        else
-        {
-            tea_recipe.destroyBlockOnEnd(block, -1, -1, -1, 1, 1, 1);
-        }
-    }
-    for item in itemInputs
-    {
-        tea_recipe.requireItem(item);
-    }
-    tea_recipe.destroyAndPlaceBlockOnEnd(potted_plants[output], 0, 1, 0, 0, 1, 0);
-    tea_recipe.jei();
-    for item in itemInputs
-    {
-        tea_recipe.requireItem(item);
-    }
-    var circleIndex = destroyBlocks.length % 2 == 0 ? 1 : 0;
-    for i, block in destroyBlocks
-    {
-        tea_recipe.requireItem(BracketHandlers.getItem(block), block in plant ? "flower_pot_contents_input" : "circle" + circleIndex);
-        circleIndex += 1;
-    }
-    tea_recipe.requireItem(<item:custommachinery:custom_machine_item>.withTag({machine: "playingwithfire:teatable" as string}), "table_slot_input");
-    tea_recipe.requireItem(<item:minecraft:flower_pot>, "flower_pot_slot");
-    tea_recipe.produceItem(<item:minecraft:flower_pot>, "above_table_slot_output");
-    tea_recipe.produceItem(<item:${output}>, "flower_pot_contents_output");
-    tea_recipe.requireItem(<item:custommachinery:custom_machine_item>.withTag({machine: "playingwithfire:teatable" as string}), "table_slot_output");
-    tea_recipe.build(<item:${output}>.registryName.path + "_tea");
-}
-flower(["minecraft:nether_quartz_ore", "minecraft:nether_gold_ore", "minecraft:ancient_debris"], [1,1,1], ["botania:rune_pride", "botania:rune_greed", "botania:redstone_root", "botania:pixie_dust"], "botania:orechid_ignem");
-
-flowerpot(["botania:black_mystical_flower", "minecraft:wither_skeleton_skull"], [<item:botania:black_lotus>], "minecraft:wither_rose");
-flowerpot(["minecraft:twisting_vines"], [<item:botania:black_lotus>], "minecraft:bamboo");
-flowerpot(["minecraft:twisting_vines"], [<item:minecraft:sugar>*3], "minecraft:sugar_cane");
-flowerpot(["minecraft:dried_kelp_block"], [], "minecraft:cactus");
+<recipetype:botania:petal_apothecary>.removeAll();
