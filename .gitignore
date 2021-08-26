@@ -30,3 +30,6 @@ config.json
 config.bak.json
 config_new_temp.json
 config/jei/bookmarks.ini
+*.bbmodel
+ct_dumps/
+*/contenttweaker/*
