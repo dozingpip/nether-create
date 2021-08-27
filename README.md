@@ -47,7 +47,7 @@ License: All Rights Reserved
 
 Available on CurseForge at https://www.curseforge.com/minecraft/modpacks/playing-with-fire
 
-My Discord server: https://discord.gg/MszuxQCF
+My Discord server: https://discord.gg/YQCChWUV
 
 ## Special Thanks
 PrincessAquos - the alpha tester
