@@ -24,7 +24,7 @@ for recipe in <recipetype:botania:petal_apothecary>.getAllRecipes()
             for color in colors
             {
                 if (<tagManager:items>.getTag("botania:petals/"+color).asIIngredient().matches(ingredient.items[0])){
-                    var plant = BracketHandlers.getItem("botania:" + color + "_mystical_flower");
+                    var plant = BracketHandlers.getItem("botania:" + color + "_petal");
                     if (plant in petals)
                     {
                         var index = petals.indexOf(plant);
@@ -32,7 +32,7 @@ for recipe in <recipetype:botania:petal_apothecary>.getAllRecipes()
                     }
                     else
                     {
-                        petalBlocks.add("botania:" + color + "_mystical_flower");
+                        petalBlocks.add("botania:" + color + "_buried_petals");
                         petals.add(plant);
                     }
                     break;
