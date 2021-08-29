@@ -76,8 +76,6 @@
         "mode": "input",
         "id": "fluid",
         "capacity": 5000,
-        "whitelist": true,
-        "filter":["create:honey", "create:milk", "create:chocolate", "create:tea"],
         "type": "custommachinery:fluid"
       },
       {
