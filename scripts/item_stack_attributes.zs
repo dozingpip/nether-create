@@ -21,3 +21,11 @@
 
 // stack size
 <item:minecraft:potion>.maxStackSize = 16;
+
+// tags
+<tag:items:minecraft:saplings>.add([<item:minecraft:crimson_fungus>, <item:minecraft:warped_fungus>]);
+<tag:items:forge:gems/diamond>.add(<item:create:refined_radiance>);
+<tag:items:forge:obsidian>.add([<item:minecraft:wither_skeleton_skull>, <item:create:shadow_steel>]);
+<tag:items:forge:stone>.add(<item:minecraft:blackstone>);
+<tag:blocks:forge:stone>.add(<block:minecraft:blackstone>);
+<tag:blocks:forge:dirt>.add([<block:minecraft:crimson_nylium>, <block:minecraft:warped_nylium>, <block:custommachinery:custom_machine_block>]);
