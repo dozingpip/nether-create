@@ -18,3 +18,4 @@ Replacer.forTypes(craftingTable).excluding(<resource:botania:terrasteel_chestpla
 <resource:botania:twig_wand>,
 <resource:botania:terra_pick>).replace(<item:minecraft:obsidian>, <tag:items:forge:obsidian>).replace(<item:minecraft:stone>, <tag:items:forge:stone>).execute();
 Replacer.forTypes(furnace).replace(<tag:items:minecraft:logs_that_burn>, <tag:items:minecraft:logs>).execute();
+Replacer.forOutput(<item:minecraft:writable_book>).replace(<item:minecraft:ink_sac>, <item:minecraft:black_dye>).execute();
