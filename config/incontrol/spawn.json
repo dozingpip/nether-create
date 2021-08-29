@@ -8,10 +8,11 @@
     {
         "mob":"minecraft:piglin",
         "block": "minecraft:netherrack",
+        "nbt":{"Brain":{"isBaby": 0}},
         "result": "allow"
     },
     {
-        "mob":["minecraft:hoglin", "minecraft:baby_hoglin"],
+        "mob":"minecraft:hoglin",
         "block": "minecraft:crimson_nylium",
         "result": "allow"
     },
@@ -42,7 +43,7 @@
     },
     {
         "dimension": "minecraft:the_nether",
-        "mob":["minecraft:zombified_piglin", "minecraft:piglin","minecraft:hoglin", "minecraft:baby_hoglin","minecraft:enderman","minecraft:wither_skeleton","minecraft:blaze","minecraft:ghast", "minecraft:magma_cube", "minecraft:skeleton"],
+        "mob":["minecraft:zombified_piglin", "minecraft:piglin","minecraft:hoglin","minecraft:enderman","minecraft:wither_skeleton","minecraft:blaze","minecraft:ghast", "minecraft:magma_cube", "minecraft:skeleton"],
         "result": "deny"
     }
 ]

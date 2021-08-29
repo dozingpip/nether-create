@@ -33,6 +33,7 @@
             "minimum": 1,
             "maximum": 3
           },
+        "maxthis":20,
         "conditions": {"dimension":"minecraft:the_nether", "mindist" : 15, "maxdist":120}
     },
     {
