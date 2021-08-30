@@ -1,5 +1,5 @@
 <recipetype:botania:elven_trade>.addRecipe("dirt", [<item:minecraft:dirt>], <item:minecraft:warped_nylium>);
-<recipetype:botania:elven_trade>.addRecipe("oak_sapling", [<item:minecraft:oak_sapling>], <item:quark:red_blossom_sapling>);
+<recipetype:botania:elven_trade>.addRecipe("oak_sapling", [<item:minecraft:oak_sapling>], <item:minecraft:warped_fungus>);
 <recipetype:botania:elven_trade>.addRecipe("melon", [<item:minecraft:melon>], <item:minecraft:melon_seeds>);
 <recipetype:botania:elven_trade>.addRecipe("pumpkin", [<item:minecraft:pumpkin>], <item:minecraft:pumpkin_seeds>);
 <recipetype:botania:elven_trade>.addRecipe("wheat", [<item:minecraft:wheat>*2], <item:minecraft:wheat_seeds>);
