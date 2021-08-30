@@ -37,7 +37,16 @@
         "conditions": {"dimension":"minecraft:the_nether", "mindist" : 15, "maxdist":120}
     },
     {
-        "mob":["minecraft:wither_skeleton", "minecraft:blaze", "minecraft:ghast", "minecraft:enderman"],
+        "mob":"minecraft:enderman",
+        "attempts":25,
+        "amount": {
+            "minimum": 1,
+            "maximum": 3
+          },
+        "conditions": {"dimension":"minecraft:the_nether", "mindist" : 10, "maxdist":120}
+    },
+    {
+        "mob":["minecraft:wither_skeleton", "minecraft:blaze", "minecraft:ghast"],
         "attempts":20,
         "amount": {
             "minimum": 1,
