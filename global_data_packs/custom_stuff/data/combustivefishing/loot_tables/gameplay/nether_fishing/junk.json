@@ -27,6 +27,11 @@
           "type": "item",
           "name": "minecraft:dried_kelp",
           "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "minecraft:brown_mushroom",
+          "weight": 40
         }
       ]
     }
