@@ -1,5 +1,5 @@
 {
-	"credit": "Made with Blockbench",
+	"credit": "Made with Blockbench, table model is from tconstruct",
 	"parent": "block/block",
     "ambientocclusion": false,
 	"elements": [
@@ -64,7 +64,7 @@
 				"east": {"uv": [0, 0, 16, 4], "texture": "#side", "cullface": "east"},
 				"south": {"uv": [0, 0, 16, 4], "texture": "#side", "cullface": "south"},
 				"west": {"uv": [0, 0, 16, 4], "texture": "#side", "cullface": "west"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#top", "cullface": "up"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#top"},
 				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom"}
 			}
 		},

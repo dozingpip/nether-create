@@ -1,14 +1,14 @@
 import crafttweaker.api.loot.LootManager;
 // Combustive Fishing
 mods.jei.JEI.addInfo(<item:botania:blacker_lotus>, ["Can be caught rarely with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
-mods.jei.JEI.addInfo(<item:minecraft:music_disc_pigstep>, ["Can be caught rarely with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
 mods.jei.JEI.addInfo(<item:minecraft:coal>, ["Can be caught commonly with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
 mods.jei.JEI.addInfo(<item:minecraft:rotten_flesh>, ["Can be caught commonly with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
 mods.jei.JEI.addInfo(<item:minecraft:fire_coral>, ["Can be caught commonly with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
 mods.jei.JEI.addInfo(<item:minecraft:dried_kelp>, ["Can be caught commonly with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
 mods.jei.JEI.addInfo(<item:combustivefishing:bone_fish>, ["Can be caught commonly with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
 mods.jei.JEI.addInfo(<item:combustivefishing:combustive_cod>, ["Can be caught commonly with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
-mods.jei.JEI.addInfo(<item:combustivefishing:blazing_fishing_rod>, ["Common catches: coal, rotten flesh, fire coral, dried kelp, combustive cod, bone fish", "Rare: Pigstep, all other music discs, blacker lotus"]);
+mods.jei.JEI.addInfo(<item:minecraft:brown_mushroom>, ["Can be caught commonly with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
+mods.jei.JEI.addInfo(<item:combustivefishing:blazing_fishing_rod>, ["Common catches: coal, rotten flesh, fire coral, dried kelp, brown mushroom, combustive cod, bone fish, guardian spawn egg", "Rare: all music discs other than Pigstep, blacker lotus"]);
 
 // Piglin Bartering
 mods.jei.JEI.addInfo(<item:minecraft:gold_ingot>, ["Piglin bartering can get you: awkward potion, black lotus, bone meal, turtle egg, soul sand, gravel, blackstone, quartz, and iron nuggets"]);
