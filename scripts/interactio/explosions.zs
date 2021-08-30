@@ -58,4 +58,4 @@ function explosion(name as string, input as IItemStack[], output as IItemStack[]
 explosion("teatable", [<item:botania:turntable>], [<item:custommachinery:custom_machine_item>.withTag({machine: "playingwithfire:teatable" as string})], [1]);
 explosion("melon", [<item:minecraft:melon_seeds>], [<item:minecraft:melon_seeds>*2, <item:minecraft:melon_slice>*4], [2, 3]);
 explosion("pumpkin", [<item:minecraft:pumpkin_seeds>], [<item:minecraft:pumpkin_seeds>*2, <item:minecraft:pumpkin>], [2, 3]);
-explosion("wheat", [<item:minecraft:wheat_seeds>], [<item:minecraft:wheat_seeds>*2, <item:minecraft:wheat>], [2, 3]);
+explosion("wheat", [<item:minecraft:wheat_seeds>], [<item:minecraft:wheat_seeds>*3, <item:minecraft:wheat>*2], [2, 3]);
