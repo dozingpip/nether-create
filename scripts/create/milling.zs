@@ -1,2 +1,2 @@
 <recipetype:create:milling>.addRecipe("dead_bush", [<item:minecraft:gold_nugget>*3, <item:minecraft:dead_bush> % 25], <item:minecraft:red_sand>);
-<recipetype:create:milling>.addRecipe("red_blossom_sapling", [<item:quark:red_blossom_sapling> % 75, <item:quark:paper_wall_big>], <item:quark:paper_wall_sakura>);
+<recipetype:create:milling>.addRecipe("red_blossom_sapling", [<item:quark:red_blossom_sapling>, <item:quark:paper_wall_big>], <item:quark:paper_wall_sakura>);
