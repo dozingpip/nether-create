@@ -8,6 +8,7 @@ craftingTable.removeByName("minecraft:cake");
 craftingTable.removeByRegex("quark:.*_rune.*");
 <recipetype:tconstruct:melting>.removeByRegex("tconstruct:smeltery/melting/obsidian/.*");
 <recipetype:tconstruct:melting>.removeByRegex("tconstruct:smeltery/melting/diamond/enchanting_table");
+craftingTable.removeByName("create:crafting/materials/rose_quartz");
 
 // replacements
 Replacer.forTypes(craftingTable).excluding(<resource:botania:terrasteel_chestplate>, <resource:botania:terrasteel_leggings>,
