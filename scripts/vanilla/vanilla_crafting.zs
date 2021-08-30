@@ -38,3 +38,10 @@ craftingTable.addShaped("dark_oak_drawer1x4", <item:storagedrawers:dark_oak_full
     [<item:minecraft:warped_planks>,<item:minecraft:warped_planks>,<item:minecraft:warped_planks>],
     [<tag:items:forge:chests>,<item:minecraft:warped_planks>,<tag:items:forge:chests>]
 ]);
+
+
+craftingTable.removeByName("quark:building/crafting/compressed/charcoal_block");
+craftingTable.removeByName("quark:building/crafting/compressed/charcoal_block_uncompress");
+craftingTable.addShapeless("charcoal_block", <item:quark:charcoal_block>, [<item:minecraft:charcoal>, <item:minecraft:charcoal>, <item:minecraft:charcoal>, <item:minecraft:charcoal>]);
+craftingTable.addShapeless("charcoal_block_uncompress", <item:minecraft:charcoal>*4, [<item:quark:charcoal_block>]);
+craftingTable.addShapeless("sticks", <item:minecraft:stick>*16, [<tag:items:minecraft:logs>, <tag:items:minecraft:logs>]);
