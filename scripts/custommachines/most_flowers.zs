@@ -52,6 +52,8 @@ for recipe in <recipetype:botania:petal_apothecary>.getAllRecipes()
         amountIndex += 1;
     }
     flower.placeBlockOnEnd(recipe.output.owner+ ":" + recipe.output.registryName.path, 0, 1, 0, 0, 1, 0);
+    flower.runCommandEachTick("/particle botania:wisp 0.35 0 .25 0 0.75 true false ~ ~1 ~ 0 0 0 1 5");
+    flower.runCommandOnEnd("/particle botania:wisp 0.5 0 .5 0 1.5 true false ~ ~1 ~ 0 0 0 1 50");
     flower.jei();
     for ing in other_ingredients
     {

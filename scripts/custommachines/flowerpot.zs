@@ -18,6 +18,8 @@ function flower(destroyBlocks as string[], blockAmounts as int[], itemInputs as 
     }
     tea_recipe.requireFluidPerTick(<fluid:create:tea>*10);
     tea_recipe.placeBlockOnEnd(output, 0, 1, 0, 0, 1, 0);
+    tea_recipe.runCommandEachTick("/particle botania:wisp 0.35 0 .25 0 0.75 true false ~ ~1 ~ 0 0 0 1 5");
+    tea_recipe.runCommandOnEnd("/particle botania:wisp 0.5 0 .5 0 1.5 true false ~ ~1 ~ 0 0 0 1 100");
     tea_recipe.jei();
     for item in itemInputs
     {
@@ -69,6 +71,8 @@ function flowerpot(destroyBlocks as string[], itemInputs as IItemStack[], output
         tea_recipe.requireItem(item);
     }
     tea_recipe.destroyAndPlaceBlockOnEnd(potted_plants[output], 0, 1, 0, 0, 1, 0);
+    tea_recipe.runCommandEachTick("/particle botania:wisp 0.25 0 .25 0 0.75 true false ~ ~1 ~ 0 0 0 1 5");
+    tea_recipe.runCommandOnEnd("/particle minecraft:composter ~ ~1 ~ .25 .25 .25 0.125 10");
     tea_recipe.jei();
     for item in itemInputs
     {
