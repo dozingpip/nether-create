@@ -5,7 +5,7 @@
         "block": "playingwithfire:machine/table_animated"
       },
       "running": {
-        "block": "playingwithfire:machine/table_animated",
+        "block": "playingwithfire:machine/tea_and_table_animated",
         "lightlevel": 10,
         "sound": "botania:gaia_trap"
       },

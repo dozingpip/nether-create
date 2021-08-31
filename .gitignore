@@ -33,3 +33,4 @@ config/jei/bookmarks.ini
 *.bbmodel
 ct_dumps/
 */contenttweaker/*
+*.xcf
