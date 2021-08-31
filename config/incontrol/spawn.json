@@ -8,7 +8,7 @@
     {
         "mob":"minecraft:piglin",
         "block": "minecraft:netherrack",
-        "nbt":{"Brain":{"IsBaby": 0}},
+        "nbt":{"IsBaby": 0},
         "customname": "Bob",
         "result": "allow"
     },
