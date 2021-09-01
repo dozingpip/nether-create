@@ -39,7 +39,7 @@
 	#Whether patrols can spawn.
 	do_patrol_spawning = true
 	#Whether the feedback from commands executed by a player should show up in chat. Also affects the default behavior of whether command blocks store their output text
-	send_command_feedback = true
+	send_command_feedback = false
 	#Whether raids are disabled.
 	disable_raids = false
 	#Whether players in spectator mode can generate chunks
