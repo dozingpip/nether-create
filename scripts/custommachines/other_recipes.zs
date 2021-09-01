@@ -1,14 +1,13 @@
 import crafttweaker.api.BracketHandlers;
 var tea_recipe = mods.custommachinery.CMRecipeBuilder.create("playingwithfire:teatable", 30);
-tea_recipe.destroyBlockOnEnd("minecraft:jukebox", -1, -1, -1, 1, 1, 1, 1);
+tea_recipe.requireBlock("minecraft:jukebox", -1, -1, -1, 1, 1, 1, 1);
 tea_recipe.destroyBlockOnEnd("minecraft:nether_gold_ore", -1, -1, -1, 1, 1, 1, 1);
 tea_recipe.requireEntities(1, 10, [<entitytype:minecraft:piglin>], true);
 tea_recipe.requireFluidPerTick(<fluid:create:tea>*10);
-tea_recipe.runCommandOnEnd('/setblock ~ ~1 ~ minecraft:jukebox[has_record=true]{RecordItem:{id:"minecraft:music_disc_pigstep", Count:1b}}');
-tea_recipe.runCommandOnEnd("/playsound minecraft:music_disc.pigstep block @a");
+tea_recipe.runCommandOnEnd('/fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:jukebox[has_record=true]{RecordItem:{id:"minecraft:music_disc_pigstep", Count:1b}} replace minecraft:jukebox');
+tea_recipe.runCommandOnEnd("/playsound minecraft:music_disc.pigstep record @a");
 tea_recipe.runCommandEachTick("/particle botania:wisp 0.35 .5 0 .85 0.75 true false ~ ~1 ~ 0 0 0 1 5");
 tea_recipe.runCommandOnEnd("/particle minecraft:note ~ ~1 ~ .5 .5 .5 0.5 5");
-// tea_recipe.destroyAndPlaceBlockOnEnd('minecraft:jukebox[has_record=true]{RecordItem:{id:"minecraft:music_disc_pigstep", Count:1b}}', 0, 1, 0, 0, 1, 0, 1);
 tea_recipe.jei();
 tea_recipe.requireItem(<item:minecraft:jukebox>, "flower_pot_slot");
 tea_recipe.requireItem(<item:minecraft:nether_gold_ore>, "circle1");

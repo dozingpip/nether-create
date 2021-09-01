@@ -49,13 +49,14 @@ function flowerpot(destroyBlocks as string[], itemInputs as IItemStack[], output
         "minecraft:wither_rose" : "minecraft:potted_wither_rose"
     } as string[string];
     val protect = ["minecraft:wither_skeleton_skull"];
-    val plant = ["minecraft:twisting_vines", "minecraft:bamboo", "minecraft:sugar_cane", "minecraft:wither_rose", "minecraft:cactus"];
+    val plants = ["minecraft:twisting_vines", "minecraft:bamboo", "minecraft:sugar_cane", "minecraft:wither_rose", "minecraft:cactus"];
     var tea_recipe = mods.custommachinery.CMRecipeBuilder.create("playingwithfire:teatable", 30);
+    var pot_type = "minecraft:flower_pot";
     for block in destroyBlocks
     {
-        if(block in plant)
+        if(block in plants)
         {
-            tea_recipe.requireBlock(potted_plants[block], 0, 1, 0, 0, 1, 0);
+            pot_type = potted_plants[block];
         }
         else if (block in protect)
         {
@@ -66,11 +67,13 @@ function flowerpot(destroyBlocks as string[], itemInputs as IItemStack[], output
             tea_recipe.destroyBlockOnEnd(block, -1, -1, -1, 1, 1, 1);
         }
     }
+    tea_recipe.requireBlock(pot_type, -1, -1, -1, 1, 1, 1, 1);
     for item in itemInputs
     {
         tea_recipe.requireItem(item);
     }
-    tea_recipe.destroyAndPlaceBlockOnEnd(potted_plants[output], 0, 1, 0, 0, 1, 0);
+    tea_recipe.runCommandOnEnd("/fill ~-1 ~-1 ~-1 ~1 ~1 ~1 " + potted_plants[output] + " replace " + pot_type);
+    // tea_recipe.destroyAndPlaceBlockOnEnd(potted_plants[output], 0, 1, 0, 0, 1, 0);
     tea_recipe.runCommandEachTick("/particle botania:wisp 0.25 0 .25 0 0.75 true false ~ ~1 ~ 0 0 0 1 5");
     tea_recipe.runCommandOnEnd("/particle minecraft:composter ~ ~1 ~ .25 .25 .25 0.125 10");
     tea_recipe.jei();
@@ -81,7 +84,7 @@ function flowerpot(destroyBlocks as string[], itemInputs as IItemStack[], output
     var circleIndex = destroyBlocks.length % 2 == 0 ? 1 : 0;
     for i, block in destroyBlocks
     {
-        tea_recipe.requireItem(BracketHandlers.getItem(block), block in plant ? "flower_pot_contents_input" : "circle" + circleIndex);
+        tea_recipe.requireItem(BracketHandlers.getItem(block), block in plants ? "flower_pot_contents_input" : "circle" + circleIndex);
         circleIndex += 1;
     }
     tea_recipe.requireItem(<item:custommachinery:custom_machine_item>.withTag({machine: "playingwithfire:teatable" as string}), "table_slot_input");
