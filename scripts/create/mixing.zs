@@ -26,3 +26,6 @@
 <recipetype:create:mixing>.removeRecipe(<fluid:create:tea>);
 <recipetype:create:mixing>.addRecipe("tea_petals", "heated", <fluid:create:tea>*500, [<tag:items:botania:petals>*4], [<fluid:create:honey>*250, <fluid:minecraft:milk>*250]);
 <recipetype:create:mixing>.addRecipe("tea_leaves", "heated", <fluid:create:tea>*250, [<tag:items:minecraft:leaves>], [<fluid:create:honey>*250, <fluid:minecraft:milk>*250]);
+
+// obsidian
+<recipetype:create:mixing>.addRecipe("obsidian_mixing", "superheated", <item:minecraft:obsidian>, [<item:minecraft:ice>], [<fluid:minecraft:lava>*1000]);
