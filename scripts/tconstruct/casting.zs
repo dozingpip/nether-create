@@ -10,7 +10,7 @@
 
 // Ore Casting
 <recipetype:tconstruct:casting_basin>.addItemCastingRecipe("cobalt_ore_cast", <item:minecraft:netherrack>, <fluid:tconstruct:molten_cobalt> * 1296, <item:tconstruct:cobalt_ore>, 200, true, false);
-<recipetype:tconstruct:casting_basin>.addItemCastingRecipe("ancient_debris_cast", <item:botania:bellows>, <fluid:tconstruct:molten_clay> * 8000, <item:minecraft:ancient_debris>, 1500, true, false);
+<recipetype:tconstruct:casting_basin>.addItemCastingRecipe("ancient_debris_cast", <item:botania:bellows>, <fluid:create:chocolate> * 2000, <item:minecraft:ancient_debris>, 1500, true, false);
 <recipetype:tconstruct:casting_basin>.addItemCastingRecipe("nether_gold_ore_cast", <item:minecraft:netherrack>, <fluid:tconstruct:molten_gold> * 1296, <item:minecraft:nether_gold_ore>, 100, true, false);
 
 // Ender Chest
