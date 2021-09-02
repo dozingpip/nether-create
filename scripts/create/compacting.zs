@@ -1,3 +1,3 @@
 <recipetype:create:compacting>.addRecipe("red_sand", "none", <item:minecraft:red_sand>, [<item:create:cinder_flour> * 4], [<fluid:minecraft:lava> * 1000], 1000);
-<recipetype:create:compacting>.addRecipe("lapis_block", "heated", <item:minecraft:lapis_block>, [<item:botania:blue_petal_block>], [<fluid:minecraft:lava> * 1000], 1000);
+<recipetype:create:compacting>.addRecipe("lapis_block", "heated", <item:minecraft:lapis_block>, [<item:minecraft:blue_glazed_terracotta>], [<fluid:create:honey> * 250], 1000);
 <recipetype:create:compacting>.addRecipe("quartz_ore", "heated", <item:minecraft:nether_quartz_ore>, [<item:create:rose_quartz>], [], 1000);
