@@ -1,3 +1,5 @@
+import crafttweaker.api.item.IItemStack;
+
 // immune to fire
 <item:minecraft:magma_cream>.immuneToFire = true;
 <item:minecraft:lava_bucket>.immuneToFire = true;
@@ -21,6 +23,11 @@
 
 // stack size
 <item:minecraft:potion>.maxStackSize = 16;
+for item in <tag:items:minecraft:music_discs>.getElements()
+{
+    (item as IItemStack).maxStackSize = 16;
+}
+
 
 // tags
 <tag:items:minecraft:saplings>.add([<item:minecraft:crimson_fungus>, <item:minecraft:warped_fungus>]);
