@@ -6,3 +6,4 @@
 <recipetype:botania:pure_daisy>.addRecipe("crimson_fungus_daisy", <blockstate:minecraft:crimson_fungus>, <blockstate:minecraft:warped_fungus>, 50);
 <recipetype:botania:pure_daisy>.addRecipe("wart_block", <blockstate:minecraft:nether_wart_block>, <blockstate:minecraft:warped_wart_block>, 50);
 <recipetype:botania:pure_daisy>.addRecipe("white_wool", <blockstate:minecraft:white_wool>, <blockstate:botania:white_petal_block>, 50);
+<recipetype:botania:pure_daisy>.addRecipe("slime_block", <blockstate:minecraft:slime_block>, <blockstate:tconstruct:blood_slime>, 50);
