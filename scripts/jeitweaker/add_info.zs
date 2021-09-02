@@ -7,7 +7,7 @@ mods.jei.JEI.addInfo(<item:minecraft:fire_coral>, ["Can be caught commonly with 
 mods.jei.JEI.addInfo(<item:minecraft:dried_kelp>, ["Can be caught commonly with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
 mods.jei.JEI.addInfo(<item:combustivefishing:bone_fish>, ["Can be caught commonly with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
 mods.jei.JEI.addInfo(<item:combustivefishing:combustive_cod>, ["Can be caught commonly with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
-mods.jei.JEI.addInfo(<item:minecraft:brown_mushroom>, ["Can be caught commonly with a Blazing Fishing Rod!", "(from Combustive Fishing)"]);
+mods.jei.JEI.addInfo(<item:minecraft:brown_mushroom>, ["Can be caught commonly with a Blazing Fishing Rod!", "(from Combustive Fishing)", "Also dropped by witches."]);
 mods.jei.JEI.addInfo(<item:combustivefishing:blazing_fishing_rod>, ["Common catches: coal, rotten flesh, fire coral, dried kelp, brown mushroom, combustive cod, bone fish, guardian spawn egg", "Rare: all music discs other than Pigstep, blacker lotus"]);
 
 // Piglin Bartering
@@ -25,3 +25,5 @@ mods.jei.JEI.addInfo(<item:minecraft:iron_nugget>, ["Gotten through Piglin barte
 // Other
 mods.jei.JEI.addInfo(<item:botania:apothecary_default>, ["Useless without a source of water. Find alternative methods to make flowers."]);
 mods.jei.JEI.addInfo(<item:minecraft:redstone>, ["Dropped by witches"]);
+mods.jei.JEI.addInfo(<item:minecraft:clay_ball>, ["Can be generated from sand with a Clayconia"]);
+mods.jei.JEI.addInfo(<item:minecraft:clay>, ["Can be generated from sand with a Clayconia"]);
