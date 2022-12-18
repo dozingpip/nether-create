@@ -1,8 +1,8 @@
 {
     "name": "Compostables",
     "icon": "minecraft:bone_meal",
-    "category": "patchouli:getting_started",
-    "sortnum":5,
+    "category": "patchouli:piglin_bartering",
+    "sortnum":6,
     "pages": [
         {
             "type": "text",

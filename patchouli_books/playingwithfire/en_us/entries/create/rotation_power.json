@@ -1,7 +1,7 @@
 {
     "name": "Rotation Power",
     "icon": "create:water_wheel",
-    "category": "patchouli:getting_started",
+    "category": "patchouli:create",
     "sortnum":9,
     "pages": [
         {

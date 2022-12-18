@@ -1,7 +1,7 @@
 {
     "name": "Schematicannon",
     "icon": "create:schematicannon",
-    "category": "patchouli:optionals",
+    "category": "patchouli:create",
     "pages": [
         {
             "type": "spotlight",

@@ -1,4 +1,5 @@
 import crafttweaker.api.item.IItemStack;
+import crafttweaker.api.item.MCItemDefinition;
 
 // immune to fire
 <item:minecraft:magma_cream>.immuneToFire = true;
@@ -17,10 +18,6 @@ import crafttweaker.api.item.IItemStack;
 <item:minecraft:weeping_vines>.burnTime = 400;
 <item:minecraft:rotten_flesh>.burnTime = 100;
 
-// blast resistance
-<block:create:shadow_steel_casing>.blastResistance = 1200;
-<block:botania:elementium_block>.blastResistance = 1200;
-
 // stack size
 <item:minecraft:potion>.maxStackSize = 16;
 for item in <tag:items:minecraft:music_discs>.getElements()
@@ -28,11 +25,10 @@ for item in <tag:items:minecraft:music_discs>.getElements()
     (item as IItemStack).maxStackSize = 16;
 }
 
-
 // tags
 <tag:items:minecraft:saplings>.add([<item:minecraft:crimson_fungus>, <item:minecraft:warped_fungus>]);
 <tag:items:forge:gems/diamond>.add(<item:create:refined_radiance>);
 <tag:items:forge:obsidian>.add([<item:minecraft:wither_skeleton_skull>, <item:create:shadow_steel>]);
 <tag:items:forge:stone>.add(<item:minecraft:blackstone>);
-<tag:blocks:forge:stone>.add(<block:minecraft:blackstone>);
-<tag:blocks:forge:dirt>.add([<block:minecraft:crimson_nylium>, <block:minecraft:warped_nylium>, <block:custommachinery:custom_machine_block>]);
+// <tag:items:forge:slimeballs>.remove([<item:tconstruct:sky_slime_ball> as MCItemDefinition]);
+// println(<item:minecraft:bucket>.toolTypes);

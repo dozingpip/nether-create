@@ -44,7 +44,7 @@
 	"Endermites Form Shulkers" = true
 	"Jukebox Automation" = true
 	"Chains Connect Blocks" = true
-	"Color Slime" = true
+	"Color Slime" = false
 	"Dispensers Place Blocks" = true
 	"Redstone Circuit" = true
 	"Chain Linkage" = true
@@ -98,19 +98,19 @@
 	"Quilted Wool" = false
 	"Celebratory Lamps" = false
 	"Variant Chests" = true
-	Hedges = true
+	Hedges = false
 	"Vertical Slabs" = false
 	"Nether Brick Fence Gate" = true
 	"Lit Lamp" = true
 	"Vertical Planks" = false
 	"Tie Leads To Fences" = true
-	"Shallow Dirt" = true
+	"Shallow Dirt" = false
 	"More Stone Variants" = false
-	Turf = true
+	Turf = false
 	"Paper Decor" = true
 	Rope = true
 	"Iron Plates" = false
-	"Sturdy Stone" = true
+	"Sturdy Stone" = false
 	"More Potted Plants" = true
 	Grate = true
 	"Variant Bookshelves" = true
@@ -119,18 +119,18 @@
 	"More Brick Types" = false
 	"Gold Bars" = false
 	"Soul Sandstone" = false
-	"Compressed Blocks" = true
+	"Compressed Blocks" = false
 	Stools = false
-	Thatch = true
+	Thatch = false
 	"Variant Ladders" = true
 	Shingles = true
-	"Item Frames" = true
+	"Item Frames" = false
 	"Stained Planks" = false
 	"Wooden Posts" = false
 	"Leaf Carpet" = true
 	Midori = true
 	"Framed Glass" = false
-	"Tallow And Candles" = true
+	"Tallow And Candles" = false
 
 	[building.thatch]
 		#Allowed values: [0,1]

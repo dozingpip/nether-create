@@ -1,0 +1,26 @@
+{
+    "name": "Magma blocks and Zombie Piglins",
+    "icon": "minecraft:magma_block",
+    "category": "patchouli:piglin_bartering",
+    "sortnum":0,
+    "pages": [
+        {
+            "type": "patchouli:lava_dip",
+            "input":"minecraft:netherrack#2",
+            "output":"minecraft:magma_block#8"
+        },
+        {
+            "type": "patchouli:mob_spawn_block",
+            "entityid":"minecraft:zombified_piglin",
+            "entityname":"Zombified Piglin",
+            "blockid":"minecraft:magma_block",
+            "mindist":5,
+            "maxdist":120,
+            "attempts":60
+        },
+        {
+            "type": "text",
+            "text": "Zombie piglins will only spawn on magma blocks. You'll want to start small gold farm going as soon as possible in order to start bartering with the piglins. $(o)You can get turtle eggs from piglin bartering."
+        }
+    ]
+}

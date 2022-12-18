@@ -10,13 +10,3 @@ var builder = <recipetype:create:sequenced_assembly>.builder("ice_seq")
     .addStep(<recipetype:create:pressing>.factory(), (rb1) => rb1.duration(500));
 
 <recipetype:create:sequenced_assembly>.addRecipe(builder);
-
-// var builder = <recipetype:create:sequenced_assembly>.builder("seq_test")
-// .transitionTo(<item:minecraft:glass>)
-// .require(<item:minecraft:arrow>)
-// .loops(2)
-// .addOutput(<item:minecraft:diamond>, 1)
-// .addStep(<recipetype:create:deploying>.factory(), (rb1) => rb1.require(<item:minecraft:dirt>))
-// .addStep(<recipetype:create:pressing>.factory(), (rb1) => rb1.duration(500));
-
-// <recipetype:create:sequenced_assembly>.addRecipe(builder);

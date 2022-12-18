@@ -1,0 +1,23 @@
+{
+    "components": [
+        {
+            "type":"entity",
+            "entity":"#entityid",
+            "rotate":false,
+            "x":60,
+            "y":40
+        },
+        {
+            "type":"item",
+            "item":"#blockid",
+            "framed":true,
+            "x":53,
+            "y":90
+        },
+        {
+            "type":"text",
+            "text":"#entityid->ename#s only spawn on #blockid->iname# between #mindist# and #maxdist# blocks away from a player, with #attempts# attempts to spawn.",
+            "y":115
+        }
+    ]
+}

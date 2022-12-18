@@ -1,12 +1,13 @@
 {
     "name": "Netherrack and Piglins",
     "icon": "minecraft:netherrack",
-    "category": "patchouli:getting_started",
+    "category": "patchouli:piglin_bartering",
     "sortnum":1,
     "pages": [
         {
-            "type": "crafting",
-            "recipe": "playingwithfire:crafting_table/netherrack"
+            "type": "patchouli:lava_dip",
+            "input":"minecraft:weeping_vines",
+            "output":"minecraft:netherrack#4"
         },
         {
             "type": "text",

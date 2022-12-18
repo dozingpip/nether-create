@@ -1,7 +1,7 @@
 {
     "name": "Corporea",
     "icon": "botania:corporea_index",
-    "category": "patchouli:optionals",
+    "category": "patchouli:botania",
     "pages": [
         {
             "type": "spotlight",

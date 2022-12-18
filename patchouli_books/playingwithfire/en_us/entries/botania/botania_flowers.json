@@ -1,7 +1,7 @@
 {
     "name": "Mystical Flowers",
     "icon": "botania:red_mystical_flower",
-    "category": "patchouli:tips_for_the_stuck",
+    "category": "patchouli:botania",
     "pages": [
         {
             "type": "spotlight",

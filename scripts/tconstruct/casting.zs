@@ -18,5 +18,5 @@
 <recipetype:tconstruct:casting_basin>.addItemCastingRecipe("ender_chest_cast", <item:minecraft:ender_eye>, <fluid:tconstruct:molten_ender> * 1000, <item:minecraft:ender_chest>, 100, true, false);
 
 // Other
-<recipetype:tconstruct:casting_basin>.addItemCastingRecipe("pure_daisy_cast", <item:botania:white_double_flower>, <fluid:tconstruct:molten_zinc> * 1296, <item:botania:pure_daisy>, 200, true, false);
+<recipetype:tconstruct:casting_basin>.addItemCastingRecipe("pure_daisy_cast", <item:botania:white_mystical_flower>, <fluid:tconstruct:molten_zinc> * 1296, <item:botania:pure_daisy>, 200, true, false);
 <recipetype:tconstruct:casting_basin>.addItemCastingRecipe("andesite_cast", <item:minecraft:gravel>, <fluid:tconstruct:seared_stone> * 1152, <item:minecraft:andesite>, 100, true, false);

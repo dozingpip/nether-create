@@ -15,6 +15,7 @@ config/*
 !config/globalgame*
 !config/jeiintegration*
 !config/wabbity*
+!config/morphtool*
 options.txt
 patchouli_data.json
 realms_persistence.json

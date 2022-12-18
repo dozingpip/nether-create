@@ -1,7 +1,7 @@
 {
     "name": "Where do I get redstone?",
     "icon": "minecraft:redstone",
-    "category": "patchouli:tips_for_the_stuck",
+    "category": "patchouli:create",
     "pages": [
         {
             "type": "entity",

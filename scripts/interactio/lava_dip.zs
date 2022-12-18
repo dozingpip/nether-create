@@ -56,4 +56,5 @@ function lavaDip(name as string, input as IItemStack[], output as IItemStack[], 
 }
 lavaDip("bone_meal", [<item:minecraft:shroomlight>], [<item:minecraft:bone_meal>*4], 0.8f);
 lavaDip("magma_block", [<item:minecraft:netherrack>*2], [<item:minecraft:magma_block>*8], 0.5f);
-lavaDip("netherrack", [<item:minecraft:weeping_vines>], [<item:minecraft:netherrack>*4], 0.5f);
+lavaDip("netherrack", [<item:minecraft:weeping_vines>], [<item:minecraft:netherrack>*4], 0.0f);
+lavaDip("quartz", [<item:minecraft:soul_sand>], [<item:minecraft:quartz>*4], 0.5f);

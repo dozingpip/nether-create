@@ -1,7 +1,7 @@
 {
     "name": "Wireless Redstone :O",
     "icon": "create:redstone_link",
-    "category": "patchouli:optionals",
+    "category": "patchouli:create",
     "pages": [
         {
             "type": "spotlight",

@@ -1,7 +1,8 @@
 {
     "name": "Construction Wand",
     "icon": "constructionwand:diamond_wand",
-    "category": "patchouli:optionals",
+    "category": "patchouli:piglin_bartering",
+    "sortnum":5,
     "pages": [
         {
             "type": "spotlight",

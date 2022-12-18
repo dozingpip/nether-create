@@ -1,0 +1,7 @@
+"Allow all items to be added" = false
+"Morph in the offhand instead of mainhand" = false
+"Whitelisted Items" = ["botania:twig_wand", "storagedrawers:drawer_key"]
+"Whitelisted Names" = ["wrench", "screwdriver", "hammer", "rotator", "configurator", "crowbar"]
+"Blacklisted Mods" = ["tconstruct", "intangible"]
+"Mod Aliases" = []
+

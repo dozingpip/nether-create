@@ -48,7 +48,7 @@ for recipe in <recipetype:botania:petal_apothecary>.getAllRecipes()
     var amountIndex = 0;
     for petal in petalBlocks
     {
-        flower.destroyBlockOnEnd(petal,  -1, -1, -1, 1, 1, 1, petals[amountIndex].amount);
+        flower.destroyBlockOnEnd([petal], true, -1, -1, -1, 1, 1, 1, petals[amountIndex].amount);
         amountIndex += 1;
     }
     flower.placeBlockOnEnd(recipe.output.owner+ ":" + recipe.output.registryName.path, 0, 1, 0, 0, 1, 0);

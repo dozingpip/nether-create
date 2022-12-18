@@ -13,11 +13,6 @@
         "functions": [{"function": "minecraft:set_count", "count": 1}]
       },
       {
-        "type": "minecraft:item", "name": "minecraft:potion",
-        "functions": [{"function": "minecraft:set_count", "count": 1},
-          {"function": "set_nbt", "tag": "{Potion:\"minecraft:awkward\"}"}]
-      },
-      {
         "type": "minecraft:item", "name": "minecraft:soul_sand",
         "functions": [{"function": "minecraft:set_count", "count": {"min": 6, "max": 12, "type": "minecraft:uniform"}}]
       },
@@ -26,11 +21,7 @@
         "functions": [{"function": "minecraft:set_count", "count": {"min": 27, "max": 45, "type": "minecraft:uniform"}}]
       },
       {
-        "type": "minecraft:item", "name": "minecraft:quartz",
-        "functions": [{"function": "minecraft:set_count", "count": {"min": 5, "max": 12, "type": "minecraft:uniform"}}]
-      },
-      {
-        "type": "minecraft:item", "name": "minecraft:gravel",
+        "type": "minecraft:item", "name": "minecraft:andesite",
         "functions": [{"function": "minecraft:set_count", "count": {"min": 10, "max": 20, "type": "minecraft:uniform"}}]
       },
       {

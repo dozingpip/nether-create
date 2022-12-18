@@ -1,7 +1,7 @@
 {
     "name": "Combustive Fishing",
     "icon": "combustivefishing:blazing_fishing_rod",
-    "category": "patchouli:optionals",
+    "category": "patchouli:smeltery",
     "pages": [
         {
             "type": "spotlight",

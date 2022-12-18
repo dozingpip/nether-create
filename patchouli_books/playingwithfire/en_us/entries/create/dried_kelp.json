@@ -1,7 +1,7 @@
 {
     "name": "Dried Kelp?",
     "icon": "minecraft:dried_kelp",
-    "category": "patchouli:tips_for_the_stuck",
+    "category": "patchouli:create",
     "pages": [
         {
             "type": "spotlight",

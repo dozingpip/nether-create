@@ -1,7 +1,7 @@
 {
     "name": "Luminizers",
     "icon": "botania:light_relay",
-    "category": "patchouli:optionals",
+    "category": "patchouli:botania",
     "pages": [
         {
             "type": "spotlight",

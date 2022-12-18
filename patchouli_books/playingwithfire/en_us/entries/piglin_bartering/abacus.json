@@ -1,7 +1,8 @@
 {
     "name": "Abacus",
     "icon": "quark:abacus",
-    "category": "patchouli:optionals",
+    "category": "patchouli:piglin_bartering",
+    "sortnum":7,
     "pages": [
         {
             "type": "spotlight",

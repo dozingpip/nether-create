@@ -1,7 +1,7 @@
 {
     "name": "First Smeltery",
     "icon": "tconstruct:seared_melter",
-    "category": "patchouli:getting_started",
+    "category": "patchouli:smeltery",
     "sortnum":6,
     "pages": [
         {

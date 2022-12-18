@@ -1,7 +1,8 @@
 {
     "name": "Storage Drawers",
     "icon": "storagedrawers:controller",
-    "category": "patchouli:optionals",
+    "category": "patchouli:piglin_bartering",
+    "sortnum":4,
     "pages": [
         {
             "type": "spotlight",

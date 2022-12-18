@@ -1,7 +1,7 @@
 {
     "name": "Bigger Smeltery",
     "icon": "tconstruct:smeltery_controller",
-    "category": "patchouli:getting_started",
+    "category": "patchouli:smeltery",
     "sortnum":8,
     "pages": [
         {
