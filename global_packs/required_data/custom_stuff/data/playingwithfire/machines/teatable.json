@@ -1,0 +1,272 @@
+{
+  "name": "Tea Table",
+  "appearance": {
+    "idle":{
+      "block": "playingwithfire:machine/table_animated"
+    },
+    "running": {
+      "block": "playingwithfire:machine/tea_and_table_animated",
+      "lightlevel": 10,
+      "sound": "botania:gaia_trap"
+    },
+    "errored": {
+      "block": "playingwithfire:machine/table"
+    },
+    "paused": {
+      "block": "playingwithfire:machine/table"
+    }
+  },
+  "components": [
+    {
+      "mode": "input",
+      "id": "input2",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "input",
+      "id": "input3",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "input",
+      "id": "input4",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "input",
+      "id": "input5",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "input",
+      "id": "circle0",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "input",
+      "id": "circle1",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "input",
+      "id": "circle2",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "input",
+      "id": "circle3",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "input",
+      "id": "circle4",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "input",
+      "id": "circle5",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "input",
+      "id": "circle6",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "input",
+      "id": "image0",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "input",
+      "id": "fluid",
+      "capacity": 5000,
+      "type": "custommachinery:fluid"
+    },
+    {
+      "mode": "input",
+      "id": "flower_pot_contents_input",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "input",
+      "id": "flower_pot_slot",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "input",
+      "id": "table_slot_input",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "output",
+      "id": "output1",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "input",
+      "id": "flower_pot_slot2",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "output",
+      "id": "above_table_slot_output",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "input",
+      "id": "table_slot_output",
+      "type": "custommachinery:item"
+    }
+  ],
+  "gui": [
+    {
+      "texture": "playingwithfire:textures/gui/small_base_background.png",
+      "x": 20,
+      "y": 0,
+      "type": "custommachinery:texture",
+      "width" : 180
+    },
+    {
+      "x": 27,
+      "y": 80,
+      "type": "custommachinery:player_inventory"
+    },
+    {
+      "x": 37,
+      "y": 24,
+      "type": "custommachinery:fluid",
+      "id": "fluid",
+      "texture":"playingwithfire:textures/gui/red_fluid_storage.png"
+    },
+    {
+      "x": 121,
+      "y": 40,
+      "type": "custommachinery:progress",
+      "emptyTexture":"playingwithfire:textures/gui/progress_up_empty.png",
+      "filledTexture":"playingwithfire:textures/gui/progress_up_full.png"
+    },
+    {
+      "x": 176,
+      "y": 5,
+      "type": "custommachinery:status"
+    },
+    {
+      "text": "Tea Table",
+      "x": 27,
+      "y": 5,
+      "type": "custommachinery:text"
+    }
+  ],
+  "jei": [
+      {
+        "x": 5,
+        "y": 40,
+        "type": "custommachinery:fluid",
+        "id": "fluid",
+        "texture":"playingwithfire:textures/gui/red_fluid_storage.png"
+      },
+      {
+        "x": 25,
+        "y": 25,
+        "type": "custommachinery:slot",
+        "id": "image0",
+        "width" : 75,
+        "height" : 75,
+        "texture":"playingwithfire:textures/gui/block_reqs.png"
+      },
+      {
+        "x": 24,
+        "y": 55,
+        "type": "custommachinery:slot",
+        "id": "circle1",
+        "texture":"playingwithfire:textures/gui/additional_slot.png"
+      },
+      {
+        "x": 28,
+        "y": 32,
+        "type": "custommachinery:slot",
+        "id": "circle3",
+        "texture":"playingwithfire:textures/gui/additional_slot.png"
+      },
+      {
+        "x": 53,
+        "y": 82,
+        "type": "custommachinery:slot",
+        "id": "circle0",
+        "texture":"playingwithfire:textures/gui/additional_slot.png"
+      },
+      {
+        "x": 85,
+        "y": 55,
+        "type": "custommachinery:slot",
+        "id": "circle2",
+        "texture":"playingwithfire:textures/gui/additional_slot.png"
+      },
+      {
+        "x": 80,
+        "y": 32,
+        "type": "custommachinery:slot",
+        "id": "circle4",
+        "texture":"playingwithfire:textures/gui/additional_slot.png"
+      },
+      {
+        "x": 28,
+        "y": 75,
+        "type": "custommachinery:slot",
+        "id": "circle5",
+        "texture":"playingwithfire:textures/gui/additional_slot.png"
+      },
+      {
+        "x": 80,
+        "y": 75,
+        "type": "custommachinery:slot",
+        "id": "circle6",
+        "texture":"playingwithfire:textures/gui/additional_slot.png"
+      },
+      {
+        "x": 53,
+        "y": 45,
+        "type": "custommachinery:slot",
+        "id": "flower_pot_slot",
+        "texture":"playingwithfire:textures/gui/additional_slot.png"
+      },
+      {
+        "x": 53,
+        "y": 35,
+        "type": "custommachinery:slot",
+        "id": "flower_pot_contents_input",
+        "texture":"playingwithfire:textures/gui/additional_slot.png"
+      },
+      {
+        "x": 53,
+        "y": 55,
+        "type": "custommachinery:slot",
+        "id": "table_slot_input"
+      },
+      {
+        "id": "flower_pot_slot2",
+        "x": 129,
+        "y": 55,
+        "type": "custommachinery:slot",
+        "texture":"playingwithfire:textures/gui/additional_slot.png"
+      },
+      {
+        "id": "above_table_slot_output",
+        "x": 129,
+        "y": 45,
+        "type": "custommachinery:slot"
+      },
+      {
+        "id": "table_slot_output",
+        "x": 129,
+        "y": 65,
+        "type": "custommachinery:slot"
+      },
+      {
+        "x": 101,
+        "y": 55,
+        "type": "custommachinery:progress"
+      }
+]
+}

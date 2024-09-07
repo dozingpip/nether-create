@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "playingwithfire:item/piglin_barter_proxy"
+    }
+  }

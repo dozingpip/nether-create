@@ -1,0 +1,62 @@
+{
+  "recipe_defaults": {
+    "added": [
+      "jei:/create/fill_minecraft_bucket_with_minecraft_milk",
+      "minecraft:quartz_block",
+      "jei:/botania/elven_trade/pixie_dust",
+      "jei:/botania/kjs/7z96uudbnv8vbrwhi4d9mljcr",
+      "jei:/create/kjs/8mcz5q3ycwhcuoiojuhk2hdiu",
+      "jei:/create/kjs/2x89hanawv5ycdx69bq5w2yw1",
+      "jei:/botania/kjs/36i9v2m3njr1s6nzfdxr0uarc",
+      "jei:/botania/kjs/39hc4mgisspvy5hw6xj9fzss0",
+      "jei:/create/crushing/deepslate_diamond_ore",
+      "jei:/botania/mana_infusion/mana_string",
+      "jei:/create/kjs/3x95k1rvt7jtqor9fqec56hcz",
+      "jei:/botania/elven_trade/dragonstone",
+      "jei:/botania/elven_trade/elf_glass",
+      "jei:/botania/kjs/dja0smideo71smhlcur9et38o",
+      "jei:/botania/runic_altar/water",
+      "jei:/botania/kjs/4m3kn9z5414apdtnef5jqzle6",
+      "jei:/create/pressing/iron_ingot",
+      "jei:/botania/kjs/7cm3izlhufo192eo2mn6wkumi",
+      "jei:/create/crushing/netherrack",
+      "jei:/botania/terra_plate/terrasteel_ingot",
+      "jei:/botania/kjs/1loiqanq2qryr50fzyfuob4g5",
+      "jei:/create/kjs/1bax95bzaqgnvgwf9av5ocbcg",
+      "jei:/botania/runic_altar/earth",
+      "jei:/create/kjs/c8wppdp9ikwimmsk9ohbm4hai",
+      "botania:ice_pendant",
+      "jei:/create/kjs/ep554kenhflow5ff7bghyftnh",
+      "jei:/botania/mana_infusion/mana_diamond",
+      "jei:/create/kjs/1tqbw40m9eaqw4rkoy81mhxzs",
+      "jei:/botania/kjs/e7it7t20u58e6sw3hf64p405z",
+      "jei:/botania/kjs/9wv53x7n7bdvsr0ytlctycjk1",
+      "jei:/botania/kjs/1mi3f9ax0oa7lo3lh6pmaennl",
+      "jei:/create/kjs/fire_coral_block",
+      "jei:/botania/mana_infusion/mana_glass",
+      "jei:/botania/kjs/16yq37lhw2mznp5xd4zubbwzd",
+      "botania:rainbow_rod",
+      "jei:/botania/kjs/5eeu8sdn8yjq0svdp2knl8ut1",
+      "jei:/botania/mana_infusion/mana_pearl",
+      "create:crafting/kinetics/empty_blaze_burner",
+      "jei:/botania/mana_infusion/mana_powder_dust",
+      "jei:/botania/kjs/1iue4v0ruyq4jqn0e0uoztayn",
+      "jei:/botania/kjs/wpaa16uipu3zxmfkow3l6nl3",
+      "botania:bifrost_perm",
+      "jei:/botania/mana_infusion/manasteel",
+      "minecraft:glass",
+      "jei:/create/conversion_0",
+      "jei:/botania/elven_trade/elementium"
+    ],
+    "resolutions": {
+      "jei:/kubejs/custom_machine/playingwithfire/teatable/3": [
+        "item:minecraft:sugar_cane"
+      ]
+    },
+    "disabled": [
+      "minecraft:sugar_from_sugar_cane",
+      "minecraft:magma_cream"
+    ]
+  },
+  "hidden_stacks": ["item:create:veridium"]
+}

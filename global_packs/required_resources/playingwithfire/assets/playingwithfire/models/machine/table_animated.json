@@ -1,0 +1,11 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "playingwithfire:machine/table",
+	"textures": {
+		"flowerpot": "block/flower_pot",
+		"dirt": "create:fluid/tea_still",
+		"particle": "botania:block/livingwood_planks",
+		"side": "botania:block/livingwood_planks",
+		"top": "playingwithfire:block/mana_bomb_animated"
+	}
+}

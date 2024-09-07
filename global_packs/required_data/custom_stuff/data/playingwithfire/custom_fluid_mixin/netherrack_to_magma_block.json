@@ -1,0 +1,11 @@
+{
+    "type": "block_transform",
+    "flowing": "#minecraft:lava",
+    "blocks_nearby": [
+    ],
+    "block_to_transform": "minecraft:crimson_stem",
+    "result": {
+        "type": "block",
+        "block": "minecraft:magma_block"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "added": [
+      {
+        
+      }
+    ],
+    "removed": [
+      "item:minecraft:netherite_upgrade_smithing_template"
+    ],
+    "filters": [
+      "/create:.*veridium/",
+      "/create:.*scor[ch]*ia/",
+      "/create:.*ochrum/",
+      "/create:.*limestone/",
+      "/create:.*crimsite/",
+      "/create:.*asurine/",
+      "/create:.*_tuff/",
+      "/create:.*_calcite/",
+      "/create:.*_granite/",
+      "/create:.*_diorite/",
+      "/create:.*_andesite/",
+      "/create:.*_dripstone/",
+      "/create:.*_deepslate/",
+      "/create:.*cut_copper_/",
+      "/create:.*copper_shingle/",
+      "/create:.*copper_tile/",
+      "/minecraft:.*enchanted_book/",
+      "/minecraft:.*pottery/",
+      "/minecraft:.*armor_trim/",
+      "/custommachinery:.*/",
+      "/botania:.*apothecary/",
+      "/botania:floating_/",
+      "/botania:pattern_/",
+      "/botania:.*_chibi/",
+      "/.*_stair/",
+      "/.*_slab/",
+      "/.*_wall/",
+      "/modonomicon:.*/"
+    ]
+}

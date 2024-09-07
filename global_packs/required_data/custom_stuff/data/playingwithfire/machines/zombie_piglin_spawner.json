@@ -1,0 +1,14 @@
+{
+    "name": "Zombie Piglin Spawner",
+    "appearance": {
+      "idle":{
+        "block": "minecraft:warped_hyphae"
+      },
+      "item": "minecraft:warped_hyphae",
+      "running": {
+        "block": "minecraft:warped_hyphae",
+        "lightlevel": 1,
+        "sound": "botania:gaia_trap"
+      }
+    }
+  }

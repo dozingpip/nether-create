@@ -1,0 +1,157 @@
+{
+    "name": "Piglin Bartering",
+    "appearance": {
+      "idle":{
+        "block": "playingwithfire:machine/table_animated"
+      },
+      "item": "minecraft:gold_ingot",
+      "running": {
+        "block": "playingwithfire:machine/tea_and_table_animated",
+        "lightlevel": 10,
+        "sound": "botania:gaia_trap"
+      },
+      "errored": {
+        "block": "playingwithfire:machine/table"
+      },
+      "paused": {
+        "block": "playingwithfire:machine/table"
+      }
+    },
+    "components": [
+      {
+        "mode": "input",
+        "id": "gold_ingot",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "input",
+        "id": "piglin",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "output",
+        "id": "output1",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "output",
+        "id": "output2",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "output",
+        "id": "output3",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "output",
+        "id": "output4",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "output",
+        "id": "output5",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "output",
+        "id": "output6",
+        "type": "custommachinery:item"
+      }
+    ],
+    "gui": [
+      {
+        "texture": "playingwithfire:textures/gui/small_base_background.png",
+        "x": 20,
+        "y": 0,
+        "type": "custommachinery:texture",
+        "width" : 180
+      },
+      {
+        "x": 27,
+        "y": 80,
+        "type": "custommachinery:player_inventory"
+      },
+      {
+        "x": 121,
+        "y": 40,
+        "type": "custommachinery:progress",
+        "emptyTexture":"playingwithfire:textures/gui/progress_up_empty.png",
+        "filledTexture":"playingwithfire:textures/gui/progress_up_full.png"
+      },
+      {
+        "x": 176,
+        "y": 5,
+        "type": "custommachinery:status"
+      },
+      {
+        "text": "Piglin Bartering",
+        "x": 27,
+        "y": 5,
+        "type": "custommachinery:text"
+      }
+    ],
+    "jei": [
+        {
+          "x": 0,
+          "y": 45,
+          "type": "custommachinery:slot",
+          "id": "gold_ingot",
+          "texture":"playingwithfire:textures/gui/additional_slot.png"
+        },
+        {
+          "x": 20,
+          "y": 45,
+          "type": "custommachinery:slot",
+          "id": "piglin",
+          "texture":"playingwithfire:textures/gui/additional_slot.png"
+        },
+        {
+          "x": 60,
+          "y": 36,
+          "type": "custommachinery:slot",
+          "id": "output1",
+          "texture":"playingwithfire:textures/gui/additional_slot.png"
+        },
+        {
+          "x": 75,
+          "y": 36,
+          "type": "custommachinery:slot",
+          "id": "output2",
+          "texture":"playingwithfire:textures/gui/additional_slot.png"
+        },
+        {
+          "x": 90,
+          "y": 36,
+          "type": "custommachinery:slot",
+          "id": "output3",
+          "texture":"playingwithfire:textures/gui/additional_slot.png"
+        },
+        {
+          "x": 60,
+          "y": 52,
+          "type": "custommachinery:slot",
+          "id": "output4",
+          "texture":"playingwithfire:textures/gui/additional_slot.png"
+        },
+        {
+          "x": 75,
+          "y": 52,
+          "type": "custommachinery:slot",
+          "id": "output5",
+          "texture":"playingwithfire:textures/gui/additional_slot.png"
+        },
+        {
+          "x": 90,
+          "y": 52,
+          "type": "custommachinery:slot",
+          "id": "output6",
+          "texture":"playingwithfire:textures/gui/additional_slot.png"
+        },
+        {
+          "x": 36,
+          "y": 45,
+          "type": "custommachinery:progress"
+        }
+  ]
+  }

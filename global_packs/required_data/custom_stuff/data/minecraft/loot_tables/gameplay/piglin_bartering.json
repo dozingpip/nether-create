@@ -1,0 +1,31 @@
+{
+"type": "minecraft:barter",
+"pools": [
+  {
+    "rolls": 1,
+    "entries": [
+      {
+        "type": "minecraft:item", "name": "minecraft:potion",
+        "functions": [{"function": "minecraft:set_count", "count": 1},
+          {"function": "set_nbt", "tag": "{Potion:\"minecraft:awkward\"}"}]
+      },
+      {
+        "type": "minecraft:item", "name": "minecraft:soul_sand",
+        "functions": [{"function": "minecraft:set_count", "count": {"min": 4, "max": 9, "type": "minecraft:uniform"}}]
+      },
+      {
+        "type": "minecraft:item", "name": "minecraft:iron_nugget",
+        "functions": [{"function": "minecraft:set_count", "count": {"min": 27, "max": 45, "type": "minecraft:uniform"}}]
+      },
+      {
+        "type": "minecraft:item", "name": "minecraft:gravel",
+        "functions": [{"function": "minecraft:set_count", "count": {"min": 5, "max": 10, "type": "minecraft:uniform"}}]
+      },
+      {
+        "type": "minecraft:item", "name": "minecraft:blackstone",
+        "functions": [{"function": "minecraft:set_count", "count": {"min": 8, "max": 16, "type": "minecraft:uniform"}}]
+      }
+    ]
+  }
+]
+}

@@ -1,0 +1,21 @@
+{
+    "filters": [
+      {"category": "create:block_cutting"},
+      {"category": "/create:automatic_/"},
+      {"category": "create:fan_smoking"},
+      {"category": "create:fan_blasting"},
+      {"category": "create:fan_washing"},
+      {"category": "minecraft:blasting"},
+      {"category": "minecraft:smoking"},
+      {"category": "minecraft:anvil"},
+      {"category": "/minecraft:smithing/"},
+      {"category": "minecraft:stonecutting"},
+      {"category": "minecraft:campfire_cooking"},
+      {"category": "minecraft:fuel"},
+      {"category": "/grinding/"},
+      {"category": "/anvil/"},
+      {"id": "/repairing/"},
+      {"id": "/hero_gifts/"},
+      {"id": "/cat_morning/"}
+    ]
+  }
