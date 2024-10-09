@@ -1,0 +1,12 @@
+{
+    "name": "Nether Star",
+    "icon": "minecraft:nether_star",
+    "category": "patchouli:tips_for_the_stuck",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "minecraft:nether_star",
+            "text": "If you don't want to fight the Wither, there is an alternative recipe for crafting a Nether Star."
+        }
+    ]
+}

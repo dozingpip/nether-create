@@ -1,0 +1,20 @@
+{
+    "name": "Special Flowers",
+    "icon": "botania:hopperhock",
+    "category": "patchouli:botania",
+    "pages": [
+        {
+            "type": "text",
+            "text": "The only required Botania flower is the Pure Daisy, but there definitely many more that you will find useful, such as:$(li1)Orechid - overworld ores for heavy mana investment$(li1)Orechid Ignem - nether Orechid$(li1)Vinculotus - stops endermen from teleporting$(li1)Hopperhock - filterable vacuum block$(li1)Read your Lexica Botania for more!"
+        },
+        {
+            "type": "spotlight",
+            "item": "kubejs:teatable",
+            "text": "All of these special flowers except the Dandelifeon and Loonium are crafted in the Teatable ($(c:/create ponder botania:endoflame)Ponder$(/c)), a custom machine configured for this modpack."
+        },
+        {
+            "type": "text",
+            "text": ""
+        }
+    ]
+}

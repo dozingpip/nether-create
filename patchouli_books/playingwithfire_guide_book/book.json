@@ -1,0 +1,9 @@
+{
+    "name": "Playing With Fire",
+    "landing_text": "Welcome to Hell!$(br)You might want to leave now I guess, but in order to do that, you'd need a portal, in which case you want obsidian, but there is no obsidian, and $(o)of course$(), no water to make it with... $(br)$(br)$(o) hint hint, you want ice.",
+    "version": 2,
+    "creative_tab": "minecraft:tools_and_utilities",
+    "use_resource_pack": false,
+    "book_texture": "patchouli:textures/gui/book_red.png",
+    "model": "patchouli:book_red"
+}

@@ -1,0 +1,12 @@
+{
+    "name": "Compostables",
+    "icon": "minecraft:bone_meal",
+    "category": "patchouli:getting_started",
+    "sortnum":6,
+    "pages": [
+        {
+            "type": "text",
+            "text": "Twisting vines, weeping vines, warped roots, warped wart blocks, black lotus, and rotten flesh have been added as compostable items."
+        }
+    ]
+}

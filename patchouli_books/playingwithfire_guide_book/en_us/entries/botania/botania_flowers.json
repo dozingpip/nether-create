@@ -1,0 +1,12 @@
+{
+    "name": "Mystical Flowers",
+    "icon": "botania:red_mystical_flower",
+    "category": "patchouli:botania",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "botania:fertilizer",
+            "text": "Use floral fertilizer on nylium"
+        }
+    ]
+}

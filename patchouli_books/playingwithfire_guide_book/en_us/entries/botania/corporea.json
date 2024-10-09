@@ -1,0 +1,12 @@
+{
+    "name": "Corporea",
+    "icon": "botania:corporea_index",
+    "category": "patchouli:botania",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "botania:corporea_index",
+            "text": "Storage management, Botania style. Look into it in your Lexica Botania for more details."
+        }
+    ]
+}

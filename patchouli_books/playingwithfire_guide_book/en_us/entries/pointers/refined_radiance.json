@@ -1,0 +1,11 @@
+{
+    "name": "Refined Radiance",
+    "icon": "create:refined_radiance",
+    "category": "patchouli:pointers",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Confused by the term 'Mysterious Conversion'? It's different for every item that uses that term... For refined radiance that means surrounding your chromatic alloy with light (completely) or dropping it into a beacon beam."
+        }
+    ]
+}

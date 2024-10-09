@@ -1,0 +1,12 @@
+{
+    "name": "Recipes requiring diamond",
+    "icon": "minecraft:diamond",
+    "category": "patchouli:tips_for_the_stuck",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "create:refined_radiance",
+            "text": "Most recipes that require diamond will also accept refined radiance."
+        }
+    ]
+}
