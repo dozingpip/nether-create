@@ -1,28 +1,7 @@
-JEIAddedEvents.registerCategories((event) => {
-    event.custom("minecraft:bartering", (category) => {
-    const guiHelper = category.jeiHelpers.guiHelper;
-        category.title("Piglin Bartering")
-                // Set the background of the category to a blank 100x50 drawable canvas.
-                .background(guiHelper.createBlankDrawable(150, 20))
-                .icon(guiHelper.createDrawableItemStack(Item.of('minecraft:gold_ingot')))
-                // Set the callback function that will verify if a recipe is a valid recipe for this category.
-                .isRecipeHandled((recipe) => {
-                    return global["verifyRecipe"](category.jeiHelpers, recipe);
-                })
-                // Set the callback function that will allow JEI to index this recipe and determine
-                // what the inputs and outputs of each recipe are.
-                .handleLookup((builder, recipe, focuses) => {
-                    global["handleLookup"](category.jeiHelpers, builder, recipe, focuses);
-                })
-                // Set the callback function for rendering additional detials to the screen.
-                .setDrawHandler((recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
-                    global["renderBarterLoot"](category.jeiHelpers, recipe, recipeSlotsView, guiGraphics, mouseX, mouseY);
-                })
-    });
-});
-
+const $ScreenOpener = Java.loadClass('com.simibubi.create.foundation.gui.ScreenOpener')
+const $PonderTagScreen = Java.loadClass('com.simibubi.create.foundation.ponder.ui.PonderUI')
 // This function will be used by JEI to verify if a custom recipe is apart of this category.
-global["verifyRecipe"] = (jeiHelpers, recipe) => {
+let verifyRecipe = (recipe) => {
     // The data we give later on in the recipes will be stored in the `data` field.
     // Whatever you pass in, is whatever you'll get out.
     // The possibilities are endless, as you are only restricted to what you can store on
@@ -43,18 +22,38 @@ global["verifyRecipe"] = (jeiHelpers, recipe) => {
 // Depending on the slot type, it will effect if the recipe appears in
 // in the recipe lookup.
 // Refer to the JEI API for more information on how to use this.
-global["handleLookup"] = (jeiHelpers, builder, recipe, focuses) => {
-builder.addSlot("OUTPUT", 2, 2).addItemStack(recipe.data.item).setSlotName("loot");
+let handleLookup = (builder, recipe, focuses) => {
+    builder.addSlot("OUTPUT", 2, 2).addItemStack(recipe.data.item).setSlotName("loot");
 }
 
 // We tap into the Minecraft GuiGraphics class to draw the text description above the input slot.
-global["renderBarterLoot"] = (jeiHelpers, recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
+let renderBarterLoot = (recipe, guiGraphics) => {
     // By using the Client binding we can get the Minecraft font.
     // Next we can draw the description of the recipe above the input slot.
     // (Font, FormattedText, xPos, yPos, textWidth, and I have no clue what the last argument does)
     // Probably z-index if I had to guess.
     guiGraphics.drawWordWrap(Client.font, Text.of(recipe.data.description), 25, 2, 150, 0);
 }
+
+JEIAddedEvents.registerCategories((event) => {
+    event.custom("kubejs:bartering", (category) => {
+        let { jeiHelpers } = category;
+        let { guiHelper } = jeiHelpers;
+        global.barteringRecipeType = category
+                .title("Piglin Bartering")
+                // Set the background of the category to a blank 100x50 drawable canvas.
+                .background(guiHelper.createBlankDrawable(150, 20))
+                .icon(guiHelper.createDrawableItemStack(Item.of('minecraft:gold_ingot')))
+                // Set the callback function that will verify if a recipe is a valid recipe for this category.
+                .isRecipeHandled((recipe) => verifyRecipe(recipe))
+                // Set the callback function that will allow JEI to index this recipe and determine
+                // what the inputs and outputs of each recipe are.
+                .handleLookup((builder, recipe, focuses) => handleLookup(builder, recipe, focuses))
+                // Set the callback function for rendering additional detials to the screen.
+                .setDrawHandler((recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => renderBarterLoot(recipe, guiGraphics))
+                .recipeType;
+    });
+});
 
 // Here we can hook into the JEI recipe registration event to add some recipes to our
 // newly created category.
@@ -66,27 +65,36 @@ JEIAddedEvents.registerRecipes((event) => {
     // If you want it to be an object, an array, a string, a number, a boolean, or even a function,
     // It does not matter. It's all up to you. Go wild.
     // Just make sure to update how you render it in the category definition.
-    var blah = event.custom("minecraft:bartering");
+    var blah = event.custom("kubejs:bartering");
     var json = JsonIO.read("global_packs/required_data/custom_stuff/data/minecraft/loot_tables/gameplay/piglin_bartering.json")
     var chance = (1.0 / json.pools[0].entries.length) * 100;
     json.pools[0].entries.forEach(element => {
-        var count = "";
-        console.log("element " + element);
-        element.functions.forEach(func => {
-            if (func.function == "set_count")
-            {
-                count = func.count;
-                if ("min" in countFunc.count)
-                {
-                    count = countFunc.count.min + "-" + countFunc.count.max;
-                }
-            }
-        });
         var name = element.name;
         var nameNoMod = name.substring(name.indexOf(":")+1).replaceAll("_", " ");
-        blah.add({item: Item.of(name), name: name, description: nameNoMod + "\n" + chance + "% chance, count " + count});
+        var item = Item.of(name);
+        var count = "";
+        // console.log("element " + element);
+        element.functions.forEach(func => {
+            if (func.function == "minecraft:set_count")
+            {
+                count = func.count;
+                if ("min" in func.count)
+                {
+                    count = func.count.min + "-" + func.count.max;
+                }
+            }
+            else if (func.function == "set_nbt")
+            {
+                item = Item.of(name, "\"" + func.tag.toString().replaceAll("\"", "\\\"") + "\"");
+                var tagValue = JsonIO.parse(func.tag.toString()).toString();
+                tagValue = tagValue.substring(tagValue.lastIndexOf(":")+1).replaceAll("_", " ").replace("}", "").replace("\"", "")
+                nameNoMod = tagValue + " " + nameNoMod;
+            }
+        });
+        blah.add({item: item, name: name, description: nameNoMod + "\n" + chance + "% chance, count " + count});
     });
-    // event.custom("minecraft:bartering")
-    // .add({name: 'minecraft:obsidian', description: "Obsidian\n20% chance, count 1"})
-    // .add({name: 'minecraft:ender_pearl', description: "Ender Pearl"})
 });
+
+JEIAddedEvents.registerRecipeCatalysts(event => {
+    event.data.addRecipeCatalyst('minecraft:gold_ingot', global.barteringRecipeType)
+})
