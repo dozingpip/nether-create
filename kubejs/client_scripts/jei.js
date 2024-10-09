@@ -11,7 +11,6 @@ JEIEvents.removeCategories(event => {
     console.log(event.getCategoryIds())
 
     const removeCategories = [
-    'create:draining',
     'create:spout_filling',
     'create:automatic_shapeless',
     'create:automatic_shaped',
