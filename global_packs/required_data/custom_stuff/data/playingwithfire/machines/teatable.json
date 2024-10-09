@@ -168,104 +168,148 @@
       },
       {
         "x": 25,
-        "y": 25,
-        "type": "custommachinery:slot",
-        "id": "image0",
+        "y": 30,
+        "type": "custommachinery:texture",
         "width" : 75,
         "height" : 75,
-        "texture":"playingwithfire:textures/gui/block_reqs.png"
+        "jei": true,
+        "texture":"playingwithfire:textures/gui/circle.png"
       },
       {
-        "x": 24,
-        "y": 55,
-        "type": "custommachinery:slot",
-        "id": "circle1",
-        "texture":"playingwithfire:textures/gui/additional_slot.png"
-      },
-      {
-        "x": 28,
-        "y": 32,
-        "type": "custommachinery:slot",
-        "id": "circle3",
-        "texture":"playingwithfire:textures/gui/additional_slot.png"
+        "x": 30,
+        "y": 20,
+        "type": "custommachinery:text",
+        "jei": true,
+        "width":70,
+        "height":6,
+        "text":{"text": "drop within 1 block", "color": "white"}
       },
       {
         "x": 53,
-        "y": 82,
+        "y": 90,
         "type": "custommachinery:slot",
         "id": "circle0",
         "texture":"playingwithfire:textures/gui/additional_slot.png"
       },
       {
-        "x": 85,
-        "y": 55,
+        "x": 22,
+        "y": 53,
+        "type": "custommachinery:slot",
+        "id": "circle1",
+        "texture":"playingwithfire:textures/gui/additional_slot.png"
+      },
+      {
+        "x": 87,
+        "y": 53,
         "type": "custommachinery:slot",
         "id": "circle2",
         "texture":"playingwithfire:textures/gui/additional_slot.png"
       },
       {
-        "x": 80,
-        "y": 32,
+        "x": 28,
+        "y": 37,
         "type": "custommachinery:slot",
         "id": "circle4",
         "texture":"playingwithfire:textures/gui/additional_slot.png"
       },
       {
-        "x": 28,
-        "y": 75,
+        "x": 53,
+        "y": 24,
+        "type": "custommachinery:slot",
+        "id": "circle3",
+        "texture":"playingwithfire:textures/gui/additional_slot.png"
+      },
+      {
+        "x": 80,
+        "y": 37,
         "type": "custommachinery:slot",
         "id": "circle5",
         "texture":"playingwithfire:textures/gui/additional_slot.png"
       },
       {
-        "x": 80,
-        "y": 75,
+        "x": 28,
+        "y": 70,
         "type": "custommachinery:slot",
         "id": "circle6",
         "texture":"playingwithfire:textures/gui/additional_slot.png"
       },
       {
+        "x": 80,
+        "y": 70,
+        "type": "custommachinery:slot",
+        "id": "circle7",
+        "texture":"playingwithfire:textures/gui/additional_slot.png"
+      },
+      {
+        "x": 37,
+        "y": 27,
+        "type": "custommachinery:slot",
+        "id": "circle8",
+        "texture":"playingwithfire:textures/gui/additional_slot.png"
+      },
+      {
+        "x": 71,
+        "y": 27,
+        "type": "custommachinery:slot",
+        "id": "circle9",
+        "texture":"playingwithfire:textures/gui/additional_slot.png"
+      },
+      {
+        "x": 37,
+        "y": 87,
+        "type": "custommachinery:slot",
+        "id": "circle10",
+        "texture":"playingwithfire:textures/gui/additional_slot.png"
+      },
+      {
+        "x": 88,
+        "y": 87,
+        "type": "custommachinery:slot",
+        "id": "circle11",
+        "texture":"playingwithfire:textures/gui/additional_slot.png"
+      },
+      {
         "x": 53,
-        "y": 45,
+        "y": 49,
         "type": "custommachinery:slot",
         "id": "flower_pot_slot",
         "texture":"playingwithfire:textures/gui/additional_slot.png"
       },
       {
         "x": 53,
-        "y": 35,
+        "y": 39,
         "type": "custommachinery:slot",
         "id": "flower_pot_contents_input",
         "texture":"playingwithfire:textures/gui/additional_slot.png"
       },
       {
         "x": 53,
-        "y": 55,
+        "y": 59,
         "type": "custommachinery:slot",
         "id": "table_slot_input"
       },
       {
         "id": "flower_pot_slot2",
         "x": 129,
-        "y": 55,
+        "y": 59,
         "type": "custommachinery:slot",
         "texture":"playingwithfire:textures/gui/additional_slot.png"
       },
       {
         "id": "above_table_slot_output",
         "x": 129,
-        "y": 45,
+        "y": 49,
         "type": "custommachinery:slot"
       },
       {
         "id": "table_slot_output",
         "x": 129,
-        "y": 65,
+        "y": 69,
         "type": "custommachinery:slot"
       },
       {
         "x": 101,
-        "y": 55,
+        "y": 59,
         "type": "custommachinery:progress"
       }
 ]
