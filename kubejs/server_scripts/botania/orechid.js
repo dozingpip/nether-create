@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
             input: { type:"block", block: "minecraft:stone" },
             output: { type:"block", block: ore },
             weight: weight
-        })
+        }).id("playingwithfire:orechid/"+(ore.substring(ore.lastIndexOf(":")+1)))
     }
     orechid("minecraft:clay", 12000);
     orechid("minecraft:redstone_ore", 7654);
@@ -26,12 +26,11 @@ ServerEvents.recipes(event => {
             input: { type:"block", block: "minecraft:netherrack" },
             output: { type:"block", block: ore },
             weight: weight
-        })
+        }).id("playingwithfire:orechidignem/"+(ore.substring(ore.lastIndexOf(":")+1)))
     }
 
     ignem("minecraft:nether_quartz_ore", 3000);
     ignem("minecraft:red_sand", 4000);
     ignem("minecraft:nether_gold_ore", 3000);
     ignem("minecraft:ancient_debris", 400);
-    ignem("minecraft:fire_coral_block", 2000);
 });

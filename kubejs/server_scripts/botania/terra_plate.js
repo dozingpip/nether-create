@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
             ingredients: input,
             result: {item: output},
             mana: mana
-        })
+        }).id("playingwithfire:terra_plate/"+(output.substring(output.lastIndexOf(":")+1)))
     }
 
 

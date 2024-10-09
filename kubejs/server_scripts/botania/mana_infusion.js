@@ -7,10 +7,11 @@ ServerEvents.recipes(event => {
             output: { item: output},
             mana: mana,
             catalyst: {type: "block", block: catalyst}
-        })
+        }).id("playingwithfire:mana_infusion/"+(output.substring(output.lastIndexOf(":")+1)))
     }
     infusion("minecraft:spider_eye", "botania:cosmetic_googly_eyes", 200, "botania:alchemy_catalyst");
     infusion("minecraft:sugar", "botania:mana_powder", 200, "botania:alchemy_catalyst");
+    infusion("minecraft:chorus_fruit", "minecraft:golden_apple", 200, "botania:alchemy_catalyst");
     // infusion("quark:yellow_blossom_sapling", "quark:red_blossom_sapling", 100, "botania:alchemy_catalyst");
     // infusion("quark:pink_blossom_sapling", "quark:yellow_blossom_sapling", 100, "botania:alchemy_catalyst");
     // infusion("quark:orange_blossom_sapling", "quark:pink_blossom_sapling", 100, "botania:alchemy_catalyst");

@@ -18,4 +18,5 @@ ServerEvents.recipes(event => {
   .produceItem("minecraft:music_disc_pigstep", "above_table_slot_output")
   .requireItem("minecraft:jukebox", "flower_pot_slot2")
   .requireItem(Item.of("kubejs:teatable"), "table_slot_output")
+  .id("playingwithfire:teatable/pigstep")
 })

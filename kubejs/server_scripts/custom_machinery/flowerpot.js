@@ -32,6 +32,7 @@ ServerEvents.recipes(event => {
         .requireItem(Item.of("kubejs:teatable"), "table_slot_input")
         .produceItem(Item.of(output), "above_table_slot_output")
         .requireItem(Item.of("kubejs:teatable"), "table_slot_output")
+        .id("playingwithfire:teatable/"+(output.substring(output.lastIndexOf(":")+1)))
     }
     let flowerpot = (destroyBlocks, itemInputs, output) =>
     {
@@ -84,11 +85,12 @@ ServerEvents.recipes(event => {
         .requireItem('minecraft:flower_pot', "flower_pot_slot2")
         .produceItem(Item.of(output), "above_table_slot_output")
         .requireItem(Item.of("kubejs:teatable"), "table_slot_output")
+        .id("playingwithfire:teatable/"+(output.substring(output.lastIndexOf(":")+1)))
     }
-    flower(["minecraft:nether_quartz_ore", "minecraft:nether_gold_ore", "minecraft:ancient_debris"],
-        [1,1,1], [Item.of("botania:rune_pride"), Item.of("botania:rune_greed"), Item.of("botania:redstone_root"), Item.of("botania:pixie_dust")],
+    flower(["minecraft:nether_quartz_ore", "minecraft:nether_gold_ore", "minecraft:ancient_debris", "minecraft:red_sand"],
+        [1,1,1,1], [Item.of("botania:rune_pride"), Item.of("botania:rune_greed"), Item.of("botania:redstone_root"), Item.of("botania:pixie_dust")],
         "botania:orechid_ignem");
-    flowerpot(["botania:black_mystical_flower", "minecraft:wither_skeleton_skull"], [Item.of("botania:black_lotus")], "minecraft:wither_rose");
+    flowerpot(["botania:black_mystical_flower"], [Item.of("botania:black_lotus")], "minecraft:wither_rose");
     flowerpot(["minecraft:twisting_vines"], [Item.of("botania:black_lotus")], "minecraft:bamboo");
     flowerpot(["minecraft:twisting_vines"], [Item.of("minecraft:sugar", 3)], "minecraft:sugar_cane");
     flowerpot(["minecraft:dried_kelp_block"], [], "minecraft:cactus");
@@ -151,6 +153,7 @@ ServerEvents.recipes(event => {
                 flower_recipe.requireItem(ing, "circle" +circleIndex)
                 circleIndex++;
             })
+            console.log(circleIndex + " ingredients");
             if(output != "botania:endoflame")
             {
                 flower_recipe.requireFluidPerTick(Fluid.of("create:tea", 10));
@@ -158,7 +161,20 @@ ServerEvents.recipes(event => {
             flower_recipe.produceItem(Item.of(output), "above_table_slot_output")
             .requireItem(Item.of("kubejs:teatable"), "table_slot_input")
             .requireItem(Item.of("kubejs:teatable"), "table_slot_output")
+            .id("playingwithfire:teatable/"+(output.substring(output.lastIndexOf(":")+1)))
         }
     })
     event.remove({type: 'botania:petal_apothecary'})
+
+    let tadpole_recipe = event.recipes.custommachinery.custom_machine("playingwithfire:teatable", 100)
+    .requireFluidPerTick(Fluid.of("create:potion", 10).withNBT({Potion: "minecraft:awkward"}))
+    .consumeDropOnStart("minecraft:ghast_tear", 1, 2)
+    .runCommandOnEnd("/summon minecraft:tadpole")
+    .jei()
+    .produceItem("minecraft:tadpole_bucket")
+    .requireFluidPerTick(Fluid.of("create:potion", 10).withNBT({Potion: "minecraft:awkward"}))
+    .requireItem("minecraft:ghast_tear")
+    .requireItem(Item.of("kubejs:teatable"), "table_slot_input")
+    .requireItem(Item.of("kubejs:teatable"), "table_slot_output")
+    .id("playingwithfire:teatable/tadpole")
 })

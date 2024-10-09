@@ -61,5 +61,4 @@ ServerEvents.recipes(event => {
         }
     }
     lava_dip("weeping_vines", "netherrack")
-    fluid_dip("botania:bellows", "ancient_debris", 1, "create:chocolate")
 });

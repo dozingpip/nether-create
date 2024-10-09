@@ -8,5 +8,5 @@ ServerEvents.recipes(e => {
     ], {
       D: 'minecraft:nether_wart_block',
       P: 'botania:pixie_dust'
-    })
+    }).id("playingwithfire:mechanical_crafting/fire_coral")
   })
