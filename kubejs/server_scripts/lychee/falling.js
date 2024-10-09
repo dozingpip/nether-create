@@ -1,29 +1,5 @@
 ServerEvents.recipes(event => {
-    let fallingOn = (json, fallingBlock) =>
-    {
-        json["fallingBlock"] = fallingBlock
-        return json
-    }
-    let fallingDropItem = (output, json) =>
-    {
-        json["post"] = [
-            {
-                "type": "place",
-                "block": "*"
-            },
-            {
-                "type": "place",
-                "offsetY": -1,
-                "block": "*"
-            },
-            {
-                "type": "drop_item",
-                "item": output
-            }
-        ]
-        return json
-    }
-    let falling = (output, landing, below) =>
+    let fallingWithBelow = (output, landing, below) =>
     {
         return {
             "type": "lychee:block_crushing",
@@ -51,14 +27,31 @@ ServerEvents.recipes(event => {
             "comment": "make sure your " + below + " is underneath"
         }
     }
+    let falling = (output, landing) =>
+    {
+        return {
+            "type": "lychee:block_crushing",
+            "landing_block": landing,
+            "post": [
+                {
+                    "type": "place",
+                    "block": "*"
+                },
+                {
+                    "type": "place",
+                    "offsetY": -1,
+                    "block": output
+                }
+            ]
+        }
+    }
     // do ponderjs stuff with this since can't see the below thing without a tooltip
     // event.custom(falling("botania:pure_daisy", "candle", "moss_block"))
     // event.custom(falling("botania:pure_daisy", "turtle_egg", "moss_block"))
-    event.custom(fallingDropItem("botania:pure_daisy", fallingOn(falling("botania:pure_daisy", "minecraft:oxidized_cut_copper_slab","botania:white_buried_petals"), "gravel")))
     // event.custom(falling("botania:pure_daisy", "cake", "moss_block"))
     // event.custom(fallingOn(falling("botania:pure_daisy", "flower_pot", "moss_block"), "pointed_dripstone"))
-    event.custom(falling("create:zinc_block", "kubejs:potted_twisting_vines", "minecraft:magma_block"))
-    event.custom(falling("minecraft:copper_block", "minecraft:potted_crimson_fungus", "minecraft:magma_block"))
+    event.custom(fallingWithBelow("create:zinc_block", "kubejs:potted_twisting_vines", "minecraft:magma_block"))
+    event.custom(fallingWithBelow("minecraft:copper_block", "minecraft:potted_crimson_fungus", "minecraft:magma_block"))
     event.custom(
     {
         "type": "lychee:block_crushing",
@@ -67,19 +60,23 @@ ServerEvents.recipes(event => {
             "item": "gold_block"
         },
         ],
-        "contextual": {
-            "type": "location",
-            "offsetY": -1,
-            "predicate": {
-                "block": {
-                    "blocks": [ "netherrack" ]
-                }
-            }
-        },
+        "landing_block": "netherrack",
         "post": [
             {
                 "type": "place",
                 "block": "nether_gold_ore"
+            }
+        ]
+    })
+    event.custom(
+    {
+        "type": "lychee:block_crushing",
+        "falling_block": "gravel",
+        "landing_block": "botania:white_petal_block",
+        "post": [
+            {
+                "type": "place",
+                "block": "botania:pure_daisy"
             }
         ]
     })
@@ -91,15 +88,7 @@ ServerEvents.recipes(event => {
             "item": "ender_eye"
         },
         ],
-        "contextual": {
-            "type": "location",
-            "offsetY": -1,
-            "predicate": {
-                "block": {
-                    "blocks": [ "create:shadow_steel_casing" ]
-                }
-            }
-        },
+        "landing_block": "create:shadow_steel_casing",
         "post": [
             {
                 "type": "place",
