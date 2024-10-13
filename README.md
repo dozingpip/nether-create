@@ -49,5 +49,14 @@ Available on CurseForge at https://www.curseforge.com/minecraft/modpacks/playing
 
 My Discord server: https://discord.gg/kXCHPa6UdG
 
+### To install the modpack from this git repository (rather than from a launcher)
+1. Download [packwiz](https://packwiz.infra.link/).
+2. Clone this repository.
+3. Get into the cloned repository on a command line.
+4. Do `packwiz curseforge export` or `packwiz modrinth export`. (you can drag and drop the exe into the commandline on Windows and it'll resolve the path for you)
+5. This will create a .zip or .mrpack file that your launcher can then import.
+
+For more information on how to use packwiz export commands, see https://packwiz.infra.link/reference/commands/packwiz/curseforge/export/ or https://packwiz.infra.link/reference/commands/packwiz/modrinth/export/.
+
 ## Special Thanks
 PrincessAquos - the alpha tester
