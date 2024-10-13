@@ -61,7 +61,17 @@ ServerEvents.recipes(event => {
             R: 'minecraft:rotten_flesh'
         }
     ).id("playingwithfire:lava_fishing_rod")
-    //craftingTable.addShapeless("sandpaper", <item:create:sand_paper>, [<item:tconstruct:pattern>, <item:minecraft:sand>]);
-    //craftingTable.addShapeless("charcoal_block", <item:quark:charcoal_block>, [<item:minecraft:charcoal>, <item:minecraft:charcoal>, <item:minecraft:charcoal>, <item:minecraft:charcoal>]);
-    // craftingTable.addShapeless("charcoal_block_uncompress", <item:minecraft:charcoal>*4, [<item:quark:charcoal_block>]);
+    event.shaped('kubejs:lightningmachine',
+        [
+            ' E ',
+            'PLP',
+            ' C '
+        ],
+        {
+            E: 'create:electron_tube',
+            P: 'botania:prism',
+            L: 'botania:light_relay',
+            C: 'create:copper_sheet'
+        }
+    ).id("playingwithfire:lightning_machine")
 })
