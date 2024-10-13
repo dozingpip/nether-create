@@ -24,6 +24,7 @@ event.recipes.create.mixing(Item.of("botania:redstone_root", 2), ["minecraft:red
 event.recipes.create.mixing("minecraft:cake", [Item.of("minecraft:sugar", 2), Item.of("minecraft:wheat", 3), "minecraft:egg", Fluid.of("minecraft:milk", 1000)]).heated().id("playingwithfire:mixing/cake");
 event.recipes.create.mixing("minecraft:poisonous_potato", [Item.of("minecraft:nether_wart", 4), Fluid.of("minecraft:milk", 1000),
     Fluid.of("create:potion", 250).withNBT({Potion:"minecraft:poison"})]).heated().id("playingwithfire:mixing/poisonous_potato");
+event.recipes.create.mixing(Item.of("create:chromatic_compound", 1), ["minecraft:pearlescent_froglight", "botania:terrasteel_ingot", "minecraft:sculk", Fluid.of("funkyfluids:magnetroleum", 1000)]).superheated().id("playingwithfire:mixing/chromatic_compound");
 
 // tea recipe, replace water with honey
 event.remove({type:"create:mixing", output:Fluid.of("create:tea")});
