@@ -1,0 +1,57 @@
+{
+  "name": "Lightning Machine",
+  "appearance": {
+    "idle":{
+      "block": "playingwithfire:machine/lightning_machine"
+    },
+    "running": {
+      "block": "playingwithfire:machine/lightning_machine_running",
+      "lightlevel": 15,
+      "sound": "botania:mana_blaster"
+    },
+    "errored": {
+      "block": "playingwithfire:machine/lightning_machine"
+    },
+    "paused": {
+      "block": "playingwithfire:machine/lightning_machine"
+    }
+  },
+  "components": [
+    {
+      "mode": "input",
+      "id": "input1",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "output",
+      "id": "output1",
+      "type": "custommachinery:item"
+    }
+  ],
+  "jei": [
+    {
+      "texture": "playingwithfire:textures/gui/small_base_background.png",
+      "x": 20,
+      "y": 0,
+      "type": "custommachinery:texture",
+      "width" : 180
+    },
+    {
+      "x": 101,
+      "y": 59,
+      "id": "input1",
+      "type": "custommachinery:slot"
+    },
+    {
+      "x": 101,
+      "y": 59,
+      "id": "output1",
+      "type": "custommachinery:slot"
+    },
+    {
+      "x": 101,
+      "y": 59,
+      "type": "custommachinery:progress"
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 ServerEvents.recipes(event => {
     event.custom({
     "type": "lychee:lightning_channeling",
-    "item_in": {"item":"minecraft:calcite"},
+    "hide_in_viewer": true,
     "post": [
         {
-            "type": "place",
-            "block": "minecraft:budding_amethyst"
+            "type": "execute",
+            "command": "fill ~-3 ~-3 ~-3 ~3 ~3 ~3 minecraft:budding_amethyst replace minecraft:calcite"
         }
     ]
     }).id("playingwithfire:lightning")

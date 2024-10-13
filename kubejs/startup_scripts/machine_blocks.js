@@ -3,4 +3,5 @@ StartupEvents.registry('block', event => {
 	//Type must be one of solid, cutout or translucent
 	//Default is translucent
 	event.create("kubejs:teatable", "custommachinery").machine("playingwithfire:teatable").renderType("solid").occlude()
+	event.create("kubejs:lightningmachine", "custommachinery").machine("playingwithfire:lightningmachine").renderType("cutout")
 })
