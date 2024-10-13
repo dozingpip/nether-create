@@ -35,3 +35,5 @@ config/jei/bookmarks.ini
 ct_dumps/
 */contenttweaker/*
 *.xcf
+*.zip
+*.mrpack

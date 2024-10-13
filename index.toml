@@ -1,6 +1,62 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/MouseTweaks.cfg"
+hash = "4069ce1a439d8c37453c1b1e9f2037e0942674c7e48723a39b37eab245792ad4"
+
+[[files]]
+file = "config/botania-client.toml"
+hash = "c0598e6bb59979727792969ecfc12a1e6b701019ec12b68da4cd3e2e000f4e1f"
+
+[[files]]
+file = "config/botania-common.toml"
+hash = "a99aa03507150dfb619ddfd56bc67420ebf1880a194997deb4aa8e8765de80fa"
+
+[[files]]
+file = "config/constructionwand-client.toml"
+hash = "49dab16d69ef53b3846431d403918762dc0b22a4efba307c80894eeec64a1118"
+
+[[files]]
+file = "config/craftingtweaks-client.toml"
+hash = "1b585a9754d011ab9cc49c2b6637ed2be68204cd52886c0050710f6bad3d339b"
+
+[[files]]
+file = "config/craftingtweaks-common.toml"
+hash = "5f162c1b1f3ed2cb35ce5be5ab87d04fa55fef02f8bc7728aabfca675b4c07e6"
+
+[[files]]
+file = "config/create-client.toml"
+hash = "ab1e2f078baf3d4d6a2284ff454e7828ba774628ad3391e29332c56ff679bc9e"
+
+[[files]]
+file = "config/create-common.toml"
+hash = "749e4219f3a3e3b1885bc0c31a26447861743ba274998d720ae9e484cc7297b9"
+
+[[files]]
+file = "config/curios-client.toml"
+hash = "b38ea260cde0a1b5d176abc4c5c7ac0f11ff30c972d0ff9cb66c129c4fed67fd"
+
+[[files]]
+file = "config/ding.toml"
+hash = "51245bfcda61504b9f498d12216943f4114364dd04923849c95d5ad5229e5169"
+
+[[files]]
+file = "config/flywheel-client.toml"
+hash = "cf7162f32415cf5d7cae4f8eee9a4dc986d2171acdede310e3203edf5dfafbf7"
+
+[[files]]
+file = "config/fml.toml"
+hash = "7b7d580fbddb34b59cfa2b08130e4514d7f84ddf33bd61e03c25299997ab5f4c"
+
+[[files]]
+file = "config/forge-client.toml"
+hash = "aba44e8db528160edac5925e92b8fed6148853cf60e98ce7c255b814e685e7d2"
+
+[[files]]
+file = "config/forge-common.toml"
+hash = "7da7a8a2043c5146b6c941631b040a945281943b9ff75a25e9743291959bd2bf"
+
+[[files]]
 file = "config/globalgamerules-common.toml"
 hash = "37f4e6db2ced2dbdb94196b30ff4097ec50bf57528abe1777d4ac1a14694ecc1"
 
@@ -33,8 +89,20 @@ file = "config/incontrol/summonaid.json"
 hash = "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
 
 [[files]]
+file = "config/invtweaks-client.toml"
+hash = "979801f130fa3755d254c06aaa30036ba2392021d7c60b8cc9e248790780887a"
+
+[[files]]
 file = "config/isd/config.toml"
 hash = "dda572a4a5e5cf1453a520fe7c5437de5b361a3fc1cd53fbb0a1c661cf44a648"
+
+[[files]]
+file = "config/jade-common.toml"
+hash = "618e2ac27e2ffb5543d2985a53bffb2c317429a2220cba8b70cb97c77c7a8a43"
+
+[[files]]
+file = "config/jei-client.toml"
+hash = "4b215b42b4d5b6b2ec508f0e337b6a89a6315f20bb945dc35e9de1177e7436cc"
 
 [[files]]
 file = "config/jei/blacklist.cfg"
@@ -61,12 +129,60 @@ file = "config/jeiintegration-client.toml"
 hash = "9153724ec74e3a3b647a29f349f0cbdfaa33afc95b05bb53452b395ae3fbdfe4"
 
 [[files]]
+file = "config/mantle-client.toml"
+hash = "4eb31565ff6cb05edf5a4111eef5603f59b9f9a46d3682dd9f537dfe9a53e1cc"
+
+[[files]]
 file = "config/morphtool-common.toml"
 hash = "45314d3c70491a1cd2c6f9b8b2ffc2c5098d415ea0d226e9b2d6a77d00688afc"
 
 [[files]]
+file = "config/oreexcavation-client.toml"
+hash = "a0e1ccdc8a5e885b9146b6f0d28b2c3cacc7bc1b553a6c8d674adc29fefe2901"
+
+[[files]]
+file = "config/oreexcavation-common.toml"
+hash = "cf08c3c39a56969937b4cabae714a341bb2fc70c6b6ae786e5e1fac1b42d1fc8"
+
+[[files]]
+file = "config/oreexcavation/block_groups.json"
+hash = "c10846e015d2fb6bdbaf3c3271ae6a2ee17c31596949793b401cd390be091510"
+
+[[files]]
+file = "config/oreexcavation/shapes.json"
+hash = "2a2429b18ea0ef737d05653964fa5443a2a80cf5b4d80e0f9b8a6022df34bb0d"
+
+[[files]]
+file = "config/oreexcavation/tool_overrides.json"
+hash = "a456dc73234254ee94ddb1a3a6461729127c85b833370c83bb945a3d14e5344e"
+
+[[files]]
+file = "config/patchouli-client.toml"
+hash = "13ab4823538aa3c136c4fa291e785bff3dd34df3e5a20f0524ab11b0be68fd15"
+
+[[files]]
 file = "config/quark-common.toml"
 hash = "ba603be6cd9b7e9e098ba3703a63ada2ffafaae7a6b38acd7ff0917601a08277"
+
+[[files]]
+file = "config/sidebar_buttons.json"
+hash = "87495456ba9a7e9f2a3c578118cf626cedd4a9acdf399a53c01593ca8b0e78f1"
+
+[[files]]
+file = "config/smoothboot.json"
+hash = "98b3608ee6a700135e2ca1724f91650dd6bee6e2eb6590c8e9e83905e8b0e5e9"
+
+[[files]]
+file = "config/storagedrawers-client.toml"
+hash = "6faa59ad785aef88aad21da04ee176f7ca54eb23b4647f7e2045c56db23803c1"
+
+[[files]]
+file = "config/storagedrawers-common.toml"
+hash = "459f803851484347980c94d3dc9424a0165205506c0d769bf239af8c0474e93e"
+
+[[files]]
+file = "config/tconstruct-client.toml"
+hash = "50d70bfd9e627ed6d9a3bd0c5d9ccf3f3ee6d2f6272d4632ede6d67b28afce8a"
 
 [[files]]
 file = "config/tconstruct-common.toml"
@@ -129,6 +245,14 @@ file = "config/topography/structures/spawn_island.nbt"
 hash = "1b980fec5b103d6ed9d54524e2d0a23d67f4c806320058fd30eabd3ff4ea4d71"
 
 [[files]]
+file = "config/waila/waila.json"
+hash = "54d8c2b1710cbb845729ed256ea6447f8946d76c38455902cae804bb8d81267e"
+
+[[files]]
+file = "config/waila/waila_plugins.json"
+hash = "66584d27d44168844da5b4cec570da81b7866585bd9428df03d2f11a2e59d434"
+
+[[files]]
 file = "global_data_packs/custom_stuff/data/combustivefishing/loot_tables/gameplay/nether_fishing/fish.json"
 hash = "16dbebc334691bd14e0cf1e2535c6734d82262ebab8e89248e60aa93dcf4c334"
 
@@ -183,6 +307,10 @@ hash = "5205f994a68634589b14b7740ee8f4cb7a55d4fed2b86c8c913e42d92feeba80"
 [[files]]
 file = "global_resource_packs/playingwithfire/assets/playingwithfire/models/machine/table.json"
 hash = "3084d374314b2e10bb1db80fdb0aa636cc411fd9224cf7a2c8ad4d6aef420f4b"
+
+[[files]]
+file = "global_resource_packs/playingwithfire/assets/playingwithfire/models/machine/table_animated.bbmodel"
+hash = "aad4f6e202f9cabd2be306c0b935812ca2596707d598c89bebcf2c138a81713f"
 
 [[files]]
 file = "global_resource_packs/playingwithfire/assets/playingwithfire/models/machine/table_animated.json"
@@ -245,6 +373,10 @@ file = "global_resource_packs/playingwithfire/assets/playingwithfire/textures/sm
 hash = "6669a20a74071a65210554a55859beeba80ae174292576296606c286c076db07"
 
 [[files]]
+file = "global_resource_packs/playingwithfire/assets/playingwithfire/textures/tea_flow.xcf"
+hash = "e4fe830fdaf4f23ee1ee1a1411340fc16a072016bb5ef386f95db17a7b9136a7"
+
+[[files]]
 file = "global_resource_packs/playingwithfire/assets/playingwithfire/textures/tea_still.png"
 hash = "8416f41e90147748ebf516675ef5b905533db810219444db0a3a8dd72a170ba4"
 
@@ -259,6 +391,176 @@ hash = "e9b8025fde1b09b0a4d2a38427b04f98f28a593045be6d177eb2b29164c872b0"
 [[files]]
 file = "global_resource_packs/playingwithfire/pack.mcmeta"
 hash = "3034c8076fd2c6bc11abaa9a9cca8014cc68e7eecca2aa70632d900d0cdff853"
+
+[[files]]
+file = "mods/angel-block.pw.toml"
+hash = "f48d4c23735633fbff272e16e9d4cb99abe43aa664049c0c90cc7653c7d42bad"
+metafile = true
+
+[[files]]
+file = "mods/angel-ring.pw.toml"
+hash = "2e50cf8ba950eb097edfbba3ed3e2c79f6a07745aa8259f96f0419183b84aed8"
+metafile = true
+
+[[files]]
+file = "mods/autoreglib.pw.toml"
+hash = "9b2088287d126347cb44a539b7104462e0a4aaa0b871577ca13902398f174f52"
+metafile = true
+
+[[files]]
+file = "mods/botania.pw.toml"
+hash = "63a01c408a8fbe7949e672920bf5b0728ae7cac20915326acb3b34a20759ea32"
+metafile = true
+
+[[files]]
+file = "mods/combustive-fishing.pw.toml"
+hash = "8f5e10dda6a1edf19dbcab61856455b09d0fac8bd5cb88ae618616965d9767a9"
+metafile = true
+
+[[files]]
+file = "mods/construction-wand.pw.toml"
+hash = "54a5332980e525d59ba420d126df5495bf1fc19fcdd00ade54215ce36ad607f1"
+metafile = true
+
+[[files]]
+file = "mods/crafting-tweaks.pw.toml"
+hash = "586883e0e232116f6804de5bb29f28f8a0c30a19087f4b16804a32f6672b89fd"
+metafile = true
+
+[[files]]
+file = "mods/crafttweaker.pw.toml"
+hash = "788722c1fc2dc7cdc7e494df0c3a3768523450d392389812820dd859e422d478"
+metafile = true
+
+[[files]]
+file = "mods/create.pw.toml"
+hash = "306869237ef6c49c698af071a46b917cb4bb08ed4d297831501fb08afdf781ef"
+metafile = true
+
+[[files]]
+file = "mods/createtweaker.pw.toml"
+hash = "261754f8f881f4feac76e88e8868eaabb29c00a1904840dab920fea1670fa651"
+metafile = true
+
+[[files]]
+file = "mods/curios.pw.toml"
+hash = "4d77ef88aa2192c18153f8b29e14bc0e89818a69adbf6ae7bfd0aed3ed6d9dc2"
+metafile = true
+
+[[files]]
+file = "mods/custom-machinery.pw.toml"
+hash = "80a9fef1c5362b9a922c1efe47e09ac9d9f66ee49da434c570075c3ea283993e"
+metafile = true
+
+[[files]]
+file = "mods/ding.pw.toml"
+hash = "8b7d4ae6992880d0c2376cc425f00201ec22a4e68852712a026d29326fea008f"
+metafile = true
+
+[[files]]
+file = "mods/drp-global-datapack.pw.toml"
+hash = "82a95c9fb41e12e95b857be9f039efd39cedb136bbb3d300cf95eed0fd3adbe9"
+metafile = true
+
+[[files]]
+file = "mods/flywheel.pw.toml"
+hash = "c759a0807b131a4aa4689e7cc344a7f3c2f380129f1258d42c07bc2362e9274c"
+metafile = true
+
+[[files]]
+file = "mods/global-gamerules.pw.toml"
+hash = "ab43cecc447e6f572d5c7ee0df2ebd2520695c1fef45d2be6748ffd5560c9991"
+metafile = true
+
+[[files]]
+file = "mods/in-control.pw.toml"
+hash = "4dd1fd50513b53c15ec0defe854a89c4c9e681c459134026ffccc31150881e15"
+metafile = true
+
+[[files]]
+file = "mods/initial-inventory.pw.toml"
+hash = "aed127856359c30fd8de39777edfd4b49e323f4a018c06c2541a7169be8ab37b"
+metafile = true
+
+[[files]]
+file = "mods/initial-spawn-dimension.pw.toml"
+hash = "666f98c2c871baf02f7364a28d10415ee035333df2dcb6e98f2c8d6dca1a338b"
+metafile = true
+
+[[files]]
+file = "mods/interactio.pw.toml"
+hash = "9cf3c51a557ee20386ffb025cbf03c329342090f8b0b0ad8a5c971adb6a8acba"
+metafile = true
+
+[[files]]
+file = "mods/inventory-tweaks-renewed.pw.toml"
+hash = "6d768075542b20801d327c38bc13096edc8b517b5c969ca887b456ac698d8573"
+metafile = true
+
+[[files]]
+file = "mods/jade.pw.toml"
+hash = "5f1148814281ccdba752cfbae47a4dfd77e3dc5f97214d4cdbfd62f15c1c43a2"
+metafile = true
+
+[[files]]
+file = "mods/jei-integration.pw.toml"
+hash = "d0e5598342f9d44850c2b9241541c5cf5f95e820f7ecf87df3e83316c1972d70"
+metafile = true
+
+[[files]]
+file = "mods/jei.pw.toml"
+hash = "a5e39ffbd87dba56456a10087b848188a4b019b8adac8354668dcbe5e362cd11"
+metafile = true
+
+[[files]]
+file = "mods/jeitweaker.pw.toml"
+hash = "12b8348e73a978bdaaeb1073e560155be86d4aba4daf279cdbbdd2a22496b05b"
+metafile = true
+
+[[files]]
+file = "mods/mantle.pw.toml"
+hash = "0ed07e2f7cdae10167b9b909491c3583a1eb16b4aa4a478163e5570ab9901a86"
+metafile = true
+
+[[files]]
+file = "mods/mouse-tweaks.pw.toml"
+hash = "04a92a819f7c3dff89382baf5c5fb25c1386da08ead8510ea009aa1ccc8daf02"
+metafile = true
+
+[[files]]
+file = "mods/ore-excavation.pw.toml"
+hash = "99b6906f304e7c3548599ecf0becb1e0fea771eb4ab3d243b51a7ad434ec946d"
+metafile = true
+
+[[files]]
+file = "mods/patchouli.pw.toml"
+hash = "b637f94688f9b65b3bb07f4c40f77c444ad09b90e8476464d7b4bf1ec5d5239f"
+metafile = true
+
+[[files]]
+file = "mods/quark.pw.toml"
+hash = "099c6264b349a355dcbd6979391ff5efb33c17d57bd1bfdc5b6fd3bde34e26fc"
+metafile = true
+
+[[files]]
+file = "mods/smooth-boot-forge.pw.toml"
+hash = "8fc85728b1093f7c7ee32cfcc91d185c6d856d374277be6420be562e6b4b99a3"
+metafile = true
+
+[[files]]
+file = "mods/storage-drawers.pw.toml"
+hash = "84e382fe6d34adcd737e5769c8c890170f14a48599e3ab1253e0294b813b17ee"
+metafile = true
+
+[[files]]
+file = "mods/tinkers-construct.pw.toml"
+hash = "a1904e80238f5d96d22a75f41ee4a6e7feeecf705a14694775e9a05c74eb401f"
+metafile = true
+
+[[files]]
+file = "mods/topography.pw.toml"
+hash = "0d63c9c2565fc81ca64b5c38c2e5ecd8064d3e1905ed9b47bf933828b56a8569"
+metafile = true
 
 [[files]]
 file = "patchouli_books/playingwithfire/book.json"
@@ -551,6 +853,14 @@ hash = "748fc4aa445254eb6f2af3ecf2c6d0fe446a06fe6f991972528a5842e5a7331c"
 [[files]]
 file = "scripts/vanilla/crafting_table.zs"
 hash = "320b42636eddb84b749b5f517b3227936db3ba60522e7808d5d8a0df211b60b2"
+
+[[files]]
+file = "scripts/vanilla/delete_baby_piglins.zs.blah"
+hash = "98deacfc8e9b0bd6211b8a77c656f900c28532d5be452344ca080de309be36a2"
+
+[[files]]
+file = "scripts/vanilla/piglin_bartering_loot.zs.blah"
+hash = "a3680c46fe5008173b3ab857766ca60ec31de44e24b601b97f49ca35add67b65"
 
 [[files]]
 file = "scripts/vanilla/right_click_jukebox.zs"
