@@ -10,7 +10,7 @@ function flower(destroyBlocks as string[], blockAmounts as int[], itemInputs as 
     var tea_recipe = mods.custommachinery.CMRecipeBuilder.create("playingwithfire:teatable", 30);
     for i, block in destroyBlocks
     {
-        tea_recipe.destroyBlockOnEnd([block in colors ? "botania:" + block + "_mushroom" : block], true, -1, -1, -1, 1, 1, 1, blockAmounts[i]);
+        tea_recipe.destroyBlockOnEnd(block in colors ? "botania:" + block + "_mushroom" : block, -1, -1, -1, 1, 1, 1, blockAmounts[i]);
     }
     for item in itemInputs
     {
@@ -60,14 +60,14 @@ function flowerpot(destroyBlocks as string[], itemInputs as IItemStack[], output
         }
         else if (block in protect)
         {
-            tea_recipe.requireBlock([block], true, -1, -1, -1, 1, 1, 1);
+            tea_recipe.requireBlock(block, -1, -1, -1, 1, 1, 1);
         }
         else
         {
-            tea_recipe.destroyBlockOnEnd([block], true, -1, -1, -1, 1, 1, 1);
+            tea_recipe.destroyBlockOnEnd(block, -1, -1, -1, 1, 1, 1);
         }
     }
-    tea_recipe.requireBlock([pot_type], true, -1, -1, -1, 1, 1, 1, 1);
+    tea_recipe.requireBlock(pot_type, -1, -1, -1, 1, 1, 1, 1);
     for item in itemInputs
     {
         tea_recipe.requireItem(item);

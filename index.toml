@@ -800,15 +800,15 @@ hash = "2d8e31d4757738ee8ce5ce9ba8ed6c2687aa44b64c29b4758f9610b304a3f6cf"
 
 [[files]]
 file = "scripts/custommachines/flowerpot.zs"
-hash = "2590474ab5dccd61d14bc41847c128c0a5d75114619b38eca043c2b2174ccb82"
+hash = "05b53eea4befd8464bf1b0961f6b0a195dfc33bec30ae2c01d0fc6316761d54c"
 
 [[files]]
 file = "scripts/custommachines/most_flowers.zs"
-hash = "bffb46b55b9e92e1e41568bfadb95864873562547b7338e031a88194e5bb5a9f"
+hash = "0688bd9a7cf4f1b91f8eaa80ec86e6dbb2b348f999ae120a2f44bd4af1d9c578"
 
 [[files]]
 file = "scripts/custommachines/other_recipes.zs"
-hash = "2eb0ab598bd5a16fbe5723810d549f1773f2198c920df64f153a501004e5c750"
+hash = "81380ef48925277de59b885f4d7e6dee4726988339b2eb12b676ae269bbc80bd"
 
 [[files]]
 file = "scripts/disable_replace_recipes.zs"

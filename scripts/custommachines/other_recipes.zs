@@ -1,7 +1,7 @@
 import crafttweaker.api.BracketHandlers;
 var tea_recipe = mods.custommachinery.CMRecipeBuilder.create("playingwithfire:teatable", 30);
-tea_recipe.requireBlock(["minecraft:jukebox"], true, -1, -1, -1, 1, 1, 1, 1);
-tea_recipe.destroyBlockOnEnd(["minecraft:nether_gold_ore"], true, -1, -1, -1, 1, 1, 1, 1);
+tea_recipe.requireBlock("minecraft:jukebox", -1, -1, -1, 1, 1, 1, 1);
+tea_recipe.destroyBlockOnEnd("minecraft:nether_gold_ore", -1, -1, -1, 1, 1, 1, 1);
 tea_recipe.requireEntities(1, 10, [<entitytype:minecraft:piglin>], true);
 tea_recipe.requireFluidPerTick(<fluid:create:tea>*10);
 tea_recipe.runCommandOnEnd('/fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:jukebox[has_record=true]{RecordItem:{id:"minecraft:music_disc_pigstep", Count:1b}} replace minecraft:jukebox');
