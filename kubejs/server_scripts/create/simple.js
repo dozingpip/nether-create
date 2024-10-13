@@ -42,6 +42,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.compacting("minecraft:nether_quartz_ore", "create:rose_quartz").heated().id("playingwithfire:compacting/nether_quartz_ore");
     event.recipes.create.milling(["minecraft:cherry_sapling", '#minecraft:leaves'], "minecraft:spore_blossom").id("playingwithfire:milling/spore_blossom");
     event.recipes.create.milling(["minecraft:quartz"], "minecraft:quartz_block").id("playingwithfire:milling/quartz");
+    event.recipes.create.milling(["create:cinder_flour"], "minecraft:netherrack").id("playingwithfire:milling/cinder_flour");
     event.recipes.create.milling([Item.of("minecraft:dead_bush").withChance(0.25), Item.of('minecraft:gold_nugget', 3)], "minecraft:red_sand").id("playingwithfire:milling/dead_bush");
     // event.recipes.create.compacting("tconstruct:blood_slime_ball", [], [Fluid.of("tconstruct:blood", 250)], 1000).heated();
     // event.recipes.create.compacting("tconstruct:blood_slime", [], [Fluid.of("tconstruct:blood", 1250)], 1000).heated();
