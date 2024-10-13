@@ -96,7 +96,6 @@ ServerEvents.recipes(event => {
     flowerpot(["minecraft:dried_kelp_block"], [], "minecraft:cactus");
     //botania flowers
     let skip = ["botania:orechid_ignem", "botania:orechid", "minecraft:player_head", "botania:pure_daisy"]
-    console.log("start hi")
     event.forEachRecipe({type: "botania:petal_apothecary"}, recipe => {
         let json = recipe.json;
         let ingredients = json.get("ingredients")
@@ -153,7 +152,6 @@ ServerEvents.recipes(event => {
                 flower_recipe.requireItem(ing, "circle" +circleIndex)
                 circleIndex++;
             })
-            console.log(circleIndex + " ingredients");
             if(output != "botania:endoflame")
             {
                 flower_recipe.requireFluidPerTick(Fluid.of("create:tea", 10));
