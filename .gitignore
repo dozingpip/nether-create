@@ -9,11 +9,10 @@ BotaniaVars.dat
 natives/
 *.bak
 config/*
-# !config/incontrol/
 !config/defaultworldtype/
-!config/oreexcavation-common.toml
 !config/doomangelring.json
-!config/globalgame*
+!config/kiwi-client.yaml
+!config/globalgamerules-common.toml
 options.txt
 patchouli_data.json
 realms_persistence.json
@@ -32,6 +31,7 @@ config/jei/bookmarks.ini
 *.bbmodel
 *.xcf
 .probe/
+kubejs/probe
 /*.log
 rhino.local.properties
 shaderpacks
@@ -40,3 +40,12 @@ local
 datapacks
 defaultconfigs
 schematics
+profile.json
+*.mrpack
+*.zip
+.probe/
+kubejs/*/jsconfig.json
+.vscode/probe.*
+kubejs/config/probe*.json
+kubejs/assets/ponderjs_generated/
+build/

@@ -1,0 +1,17 @@
+{
+    "name": "Playing With Fire",
+    "version": "1.0.0",
+    "overrides": [
+        "config/defaultworldtype/",
+        "config/doomangelring.json",
+        "config/globalgamerules-common.toml",
+        "config/kiwi-client.yaml",
+        "kubejs/assets/",
+        "kubejs/data/",
+        "kubejs/client_scripts/",
+        "kubejs/server_scripts/",
+        "kubejs/startup_scripts/",
+        "patchouli_books",
+        "emi.json"
+    ]
+}
