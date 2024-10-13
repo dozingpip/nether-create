@@ -1,0 +1,13 @@
+name = "Initial Inventory"
+filename = "InitialInventory-5.0.2.22.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "300126931e60b83e6bb3ef043a828bc2df455930"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3348526
+project-id = 253230

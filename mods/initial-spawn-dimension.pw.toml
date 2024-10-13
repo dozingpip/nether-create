@@ -1,0 +1,13 @@
+name = "Initial Spawn Dimension"
+filename = "initialSpawnDimension-1.16.5-1.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0787c887ae2a97a2dec5a49e3d794d2b0ede6fae"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3310605
+project-id = 477454

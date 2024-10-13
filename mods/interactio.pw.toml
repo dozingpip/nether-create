@@ -1,0 +1,13 @@
+name = "Interactio - In-World Crafting with Datapacks!"
+filename = "Interactio-1.16.4-3.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b0036780022e9c413468a0cb99af1b12512f9a3a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3146507
+project-id = 359344

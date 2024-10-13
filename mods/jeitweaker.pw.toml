@@ -1,0 +1,13 @@
+name = "JEITweaker"
+filename = "JEITweaker-1.16.5-1.0.1.34.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3c5401c5dd194ca93e46aa5912e4ea0c590dc7f3"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3393971
+project-id = 368718

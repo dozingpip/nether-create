@@ -1,0 +1,13 @@
+name = "Construction Wand"
+filename = "constructionwand-1.16.5-2.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2e1e654e4d2ed5cb0311664fb611f860da0d54d7"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3285196
+project-id = 399558

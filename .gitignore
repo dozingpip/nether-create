@@ -2,7 +2,8 @@ saves/
 logs/
 crash-reports/
 .mixin.out/
-mods/
+mods/*
+!mods/*.pw.toml
 resourcepacks/
 screenshots/
 BotaniaVars.dat

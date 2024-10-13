@@ -1,0 +1,13 @@
+name = "Combustive Fishing"
+filename = "combustivefishing-forge-1.16.3-4.0.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ebb6d766a22cc9062faee20a34fdd32ca6c834ca"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3071442
+project-id = 279693

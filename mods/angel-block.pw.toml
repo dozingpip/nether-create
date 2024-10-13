@@ -1,0 +1,13 @@
+name = "Angel Block"
+filename = "angelblock-3.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d195f3477dd233d6a4251852c88db334a33c05ae"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3176624
+project-id = 332817
