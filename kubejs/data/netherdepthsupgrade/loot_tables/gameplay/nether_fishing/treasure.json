@@ -7,6 +7,10 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "botania:black_lotus"
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:name_tag"
         },
         {
@@ -31,7 +35,7 @@
               "treasure": true
             }
           ],
-          "name": "minecraft:golden_sword"
+          "name": "minecraft:golden_boots"
         },
         {
           "type": "minecraft:item",
@@ -70,11 +74,11 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:gold_ingot"
+          "name": "minecraft:raw_gold_block"
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:gold_nugget"
+          "name": "minecraft:raw_iron_block"
         },
         {
           "type": "minecraft:item",

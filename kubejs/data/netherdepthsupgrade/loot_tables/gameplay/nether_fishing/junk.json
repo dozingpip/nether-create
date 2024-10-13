@@ -66,6 +66,11 @@
           "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:rotten_flesh"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:magma_cream"
         }
       ]
     }

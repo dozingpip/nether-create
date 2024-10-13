@@ -53,22 +53,6 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 10.0,
-              "add": false
-            }
-          ],
-          "name": "minecraft:slime_ball"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "name": "minecraft:paper"
-        },
-        {
-          "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:rotten_flesh"
         }
