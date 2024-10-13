@@ -33,12 +33,12 @@ ServerEvents.recipes(event => {
     event.shapeless('minecraft:warped_fungus', [
         '4x minecraft:warped_roots'
     ]).id("playingwithfire:roots_to_fungus")
-    event.shapeless('minecraft:iron_ingot', [
-        'minecraft:magma_cream',
-        'minecraft:bone_block',
-        'minecraft:bone_block',
-        'minecraft:bone_block'
-    ]).id("playingwithfire:iron_ingot")
+    event.shapeless('minecraft:dried_kelp', [
+        '2x netherdepthsupgrade:warped_kelp'
+    ]).id("playingwithfire:warped_to_dried_kelp")
+    event.shapeless('minecraft:warped_fungus', [
+        '2x netherdepthsupgrade:warped_seagrass'
+    ]).id("playingwithfire:warped_to_fungus")
     event.shaped('minecraft:hopper', [
         'G G',
         'GCG',
