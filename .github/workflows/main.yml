@@ -1,0 +1,77 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - 'master'
+      - '1.20'
+    paths-ignore:
+      - '*.md'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  get-changelog:
+    name: Get Changelog
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+            fetch-depth: 0
+
+      - name: Get Changelog
+        shell: bash
+        run: |
+            latest_tag=$(git describe --tags --abbrev=0)
+            { grep --color=auto -Pzo "(?<=## $latest_tag)((?!\n## )[\s\S])*" ./CHANGELOG.md || true; } | sed '$ s/.$//' > ./NEW_CHANGELOG.md
+
+      - name: Upload Changelog
+        uses: actions/upload-artifact@v4
+        with:
+            name: changelog
+            path: ${{ github.workspace }}/NEW_CHANGELOG.md
+    
+  pakku-build:
+    name: Pakku build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: 17
+
+      - name: Get Pakku
+        uses: amitie10g/install-package@v1
+        with:
+          brew: juraj-hrivnak/pakku/pakku
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - run: pakku fetch
+      - run: pakku export
+      - name: Upload Pakku Export
+        uses: actions/upload-artifact@v4
+        with:
+            name: pakkubuild
+            path: build/
+
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    needs: [get-changelog, pakku-build]
+    permissions:
+      contents: write
+    steps:
+      - name: Download Artifact Changelog
+        uses: actions/download-artifact@v4
+        with:
+          name: changelog
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+            name: pakkubuild
+            path: dist
