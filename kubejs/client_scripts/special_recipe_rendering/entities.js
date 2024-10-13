@@ -8,18 +8,19 @@ const AllGuiTextures = Java.loadClass('snownee.lychee.client.gui.AllGuiTextures'
 const GuiGameElement = Java.loadClass('snownee.lychee.client.gui.GuiGameElement');
 const Blocks = Java.loadClass('net.minecraft.world.level.block.Blocks');
 const ItemAndBlockBaseCategory = Java.loadClass('snownee.lychee.compat.jei.category.ItemAndBlockBaseCategory');
+const JEIREI = Java.loadClass('snownee.lychee.compat.JEIREI');
 const setLevelMethod = Entity.__javaObject__.getDeclaredMethod('m_284535_', Level);
 setLevelMethod.setAccessible(true);
 JEIAddedEvents.registerCategories(event => {
-    let verifyEntityRecipe = (r) => {
+    let verifyRecipe = (r) => {
         return r.data != undefined && r.data.entity != undefined && r.data.description != undefined && r.data.offset != undefined && r.data.renderScale != undefined && r.data.output != undefined;
     }
 
-    let handleEntityLookup = (builder, recipe) => {
+    let handleLookup = (builder, recipe) => {
         // Required because JEI doesn't seem to build a category if it has no slots
-        builder.addSlot('input', 0, 15).addItemStack(recipe.data.input).setSlotName("input");
-        var x = 100;
-        var y = 105;
+        builder.addSlot('input', 0, 0).addItemStack(recipe.data.input).setSlotName("input");
+        var x = 78;
+        var y = 110;
         recipe.data.output.forEach((outputItem) => 
         {
             builder.addSlot('output', x, y).addItemStack(outputItem).setSlotName("output" + x.toString() + y.toString());
@@ -33,10 +34,10 @@ JEIAddedEvents.registerCategories(event => {
         })
     }
 
-    let renderEntityRecipe = (r, guiGraphics) => {
-        AllGuiTextures.JEI_ARROW.render(guiGraphics, 30, 20);
-        guiGraphics.drawWordWrap(Client.font, Text.translatable(r.data.description), 0, 5, 150, 0);
-        guiGraphics.drawWordWrap(Client.font, Text.translatable("drops:"), 105, 95, 100, 0);
+    let renderRecipe = (r, guiGraphics) => {
+        AllGuiTextures.JEI_ARROW.render(guiGraphics, 32, 55);
+        guiGraphics.drawWordWrap(Client.font, Text.translatable(r.data.description), 16, 3, 150, 0);
+        guiGraphics.drawWordWrap(Client.font, Text.translatable("drops:"), 80, 100, 100, 0);
 
         let poseStack = guiGraphics.pose();
         poseStack.pushPose();
@@ -57,12 +58,20 @@ JEIAddedEvents.registerCategories(event => {
 
         guiGraphics.bufferSource().endBatch();
         poseStack.popPose();
-        GuiGameElement.of(Blocks.FIRE.defaultBlockState())
+        
+        GuiGameElement['of(net.minecraft.world.level.block.state.BlockState)'](Block.id(r.data.fire).getBlockState())
                 .rotateBlock(12.5, 202.5, 0)
-                .scale(15)
-                // .lighting(JEIREI.BLOCK_LIGHTING)
+                .scale(20)
+                .lighting(JEIREI.BLOCK_LIGHTING)
                 .atLocal(0, 0.2, 0)
-                .at(10, 10)
+                .at(0, 30)
+                .render(guiGraphics);
+        GuiGameElement['of(net.minecraft.world.level.block.state.BlockState)'](Block.id(r.data.input).getBlockState())
+                .rotateBlock(12.5, 202.5, 0)
+                .scale(20)
+                .lighting(JEIREI.BLOCK_LIGHTING)
+                .atLocal(0, 0.2, 0)
+                .at(0, 50)
                 .render(guiGraphics);
     }
 
@@ -74,9 +83,9 @@ JEIAddedEvents.registerCategories(event => {
         .title("Mob spawning")
         .background(guiHelper.createBlankDrawable(150, 150))
         .icon(guiHelper.createDrawableItemStack('minecraft:flint_and_steel'))
-        .isRecipeHandled(r => verifyEntityRecipe(r))
-        .handleLookup((builder, r, focuses) => handleEntityLookup(builder, r, focuses))
-        .setDrawHandler((r, recipeSlotsView, guiGraphics, mouseX, mouseY) => renderEntityRecipe(r, guiGraphics))
+        .isRecipeHandled(r => verifyRecipe(r))
+        .handleLookup((builder, r, focuses) => handleLookup(builder, r, focuses))
+        .setDrawHandler((r, recipeSlotsView, guiGraphics, mouseX, mouseY) => renderRecipe(r, guiGraphics))
         .recipeType;
     })
     event.custom('kubejs:other_entity', category => {
@@ -87,15 +96,15 @@ JEIAddedEvents.registerCategories(event => {
         .title("Mob spawning")
         .background(guiHelper.createBlankDrawable(150, 150))
         .icon(guiHelper.createDrawableItemStack('minecraft:clock'))
-        .isRecipeHandled(r => verifyEntityRecipe(r))
-        .handleLookup((builder, r, focuses) => handleEntityLookup(builder, r, focuses))
-        .setDrawHandler((r, recipeSlotsView, guiGraphics, mouseX, mouseY) => renderEntityRecipe(r, guiGraphics))
+        .isRecipeHandled(r => verifyRecipe(r))
+        .handleLookup((builder, r, focuses) => handleLookup(builder, r, focuses))
+        .setDrawHandler((r, recipeSlotsView, guiGraphics, mouseX, mouseY) => renderRecipe(r, guiGraphics))
         .recipeType;
     })
 })
 
 JEIAddedEvents.registerRecipes(event => {
-    let registerFireEntityRecipe = (entityName, inputBlock, drops, scale, offset) =>
+    let registerRecipe = (entityName, inputBlock, drops, scale, offset, fire_type) =>
     {
         let entity = Client.level.createEntity(entityName);
         entity.noCulling = true;
@@ -108,18 +117,21 @@ JEIAddedEvents.registerRecipes(event => {
                 }
                 return entity;
             },
-            description: 'set fire to:',
+            description: 'set on fire and wait for it...',
             offset: {x: offset.x, y: offset.y}, // Change to specification
             renderScale: scale, // Change to specification
             input: inputBlock,
-            output: drops
+            output: drops,
+            fire: fire_type
         });
     }
     
-    let registerOtherEntityRecipe = (entityName, inputBlock, drops, scale, offset) =>
+    let registerRecipe2 = (entityName, inputBlock, drops, scale, offset) =>
         {
             let entity = Client.level.createEntity(entityName);
             entity.noCulling = true;
+            if(entityName == "minecraft:magma_cube")
+                entity.mergeNbt('{Size:2}');
         
             event.custom('kubejs:other_entity')
             .add({
@@ -129,19 +141,19 @@ JEIAddedEvents.registerRecipes(event => {
                     }
                     return entity;
                 },
-                description: 'leave exposed to air:',
+                description: 'leave exposed to air',
                 offset: {x: offset.x, y: offset.y}, // Change to specification
                 renderScale: scale, // Change to specification
                 input: inputBlock,
                 output: drops
             });
         }
-    registerFireEntityRecipe('minecraft:ghast', "minecraft:white_wool", ["minecraft:ghast_tear", "minecraft:gunpowder"], 10, {x:5, y:0})
-    registerFireEntityRecipe('minecraft:enderman', "minecraft:soul_sand", ["minecraft:ender_pearl"], 30, {x:2, y:1})
-    registerFireEntityRecipe('minecraft:blaze', "minecraft:quartz_block", ["minecraft:blaze_rod"], 30, {x:2, y:1})
-    registerFireEntityRecipe('minecraft:wither_skeleton', "minecraft:nether_bricks", ["minecraft:wither_skeleton_skull", "minecraft:coal", "minecraft:bone"], 30, {x:2, y:1})
-    registerOtherEntityRecipe('minecraft:magma_cube', "minecraft:magma_block", ["minecraft:magma_cream"], 30, {x:2, y:1})
-    registerOtherEntityRecipe('minecraft:zombified_piglin', "minecraft:stripped_warped_stem", ["minecraft:rotten_flesh", "minecraft:gold_nugget", "minecraft:gold_ingot"], 30, {x:2, y:1})
+    registerRecipe('minecraft:ghast', "minecraft:white_wool", ["minecraft:ghast_tear", "minecraft:gunpowder"], 10, {x:5, y:0}, 'minecraft:fire')
+    registerRecipe('minecraft:enderman', "minecraft:soul_sand", ["minecraft:ender_pearl"], 28, {x:1.2, y:1.2}, 'minecraft:soul_fire')
+    registerRecipe('minecraft:blaze', "minecraft:quartz_block", ["minecraft:blaze_rod"], 30, {x:1.2, y:1}, 'minecraft:fire')
+    registerRecipe('minecraft:wither_skeleton', "minecraft:nether_bricks", ["minecraft:coal", "minecraft:bone", "minecraft:wither_skeleton_skull"], 30, {x:1.2, y:1}, 'minecraft:fire')
+    registerRecipe2('minecraft:magma_cube', "minecraft:magma_block", ["minecraft:magma_cream"], 30, {x:1.7, y:1})
+    registerRecipe2('minecraft:zombified_piglin', "minecraft:stripped_warped_stem", ["minecraft:rotten_flesh", "minecraft:gold_nugget", "minecraft:gold_ingot"], 30, {x:1.3, y:1})
 })
 
 JEIAddedEvents.registerRecipeCatalysts(event => {

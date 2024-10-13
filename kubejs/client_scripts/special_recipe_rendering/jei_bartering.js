@@ -66,7 +66,7 @@ JEIAddedEvents.registerRecipes((event) => {
     // It does not matter. It's all up to you. Go wild.
     // Just make sure to update how you render it in the category definition.
     var blah = event.custom("kubejs:bartering");
-    var json = JsonIO.read("global_packs/required_data/custom_stuff/data/minecraft/loot_tables/gameplay/piglin_bartering.json")
+    var json = JsonIO.read("kubejs/data/minecraft/loot_tables/gameplay/piglin_bartering.json")
     var chance = (1.0 / json.pools[0].entries.length) * 100;
     json.pools[0].entries.forEach(element => {
         var name = element.name;
