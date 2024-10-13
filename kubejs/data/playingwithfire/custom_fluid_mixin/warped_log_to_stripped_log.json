@@ -1,0 +1,11 @@
+{
+    "type": "block_transform",
+    "flowing": "#funkyfluids:silly_putty",
+    "blocks_nearby": [
+    ],
+    "block_to_transform": "minecraft:warped_stem",
+    "result": {
+        "type": "block",
+        "block": "minecraft:stripped_warped_stem"
+    }
+}

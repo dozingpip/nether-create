@@ -1,0 +1,11 @@
+{
+    "type": "block_transform",
+    "flowing": "#minecraft:lava",
+    "blocks_nearby": [
+    ],
+    "block_to_transform": "minecraft:tnt",
+    "result": {
+        "type": "block",
+        "block": "create:experience_block"
+    }
+}
