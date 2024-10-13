@@ -1,0 +1,557 @@
+hash-format = "sha256"
+
+[[files]]
+file = "config/globalgamerules-common.toml"
+hash = "37f4e6db2ced2dbdb94196b30ff4097ec50bf57528abe1777d4ac1a14694ecc1"
+
+[[files]]
+file = "config/incontrol/experience.json"
+hash = "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+
+[[files]]
+file = "config/incontrol/loot.json"
+hash = "7becf279b7d7a6d6c777197c90c103bb64bde7a461c49b939ac2b145296fa758"
+
+[[files]]
+file = "config/incontrol/phases.json"
+hash = "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+
+[[files]]
+file = "config/incontrol/potentialspawn.json"
+hash = "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+
+[[files]]
+file = "config/incontrol/spawn.json"
+hash = "86c4c6d5772769e6fb956371ae6435fa9deeaabf8ec6a194f9c2a45d0fc8747f"
+
+[[files]]
+file = "config/incontrol/spawner.json"
+hash = "5c26eb7d4f19ac4d74f3f183c00844cbb34b0858c3e435f57a4f1a3cd2381ba3"
+
+[[files]]
+file = "config/incontrol/summonaid.json"
+hash = "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+
+[[files]]
+file = "config/isd/config.toml"
+hash = "dda572a4a5e5cf1453a520fe7c5437de5b361a3fc1cd53fbb0a1c661cf44a648"
+
+[[files]]
+file = "config/jei/blacklist.cfg"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "config/jei/bookmarks.ini"
+hash = "d61ee452c916a1908dcbf3c02a5a5edfca3b161dd9f8b24b8d29edcde44f88a1"
+
+[[files]]
+file = "config/jei/ingredient-list-mod-sort-order.ini"
+hash = "ccdac5c6841f836f4eb4c4c52c7a94c5a84273c492e8a1851cec6cd16fc1dbc0"
+
+[[files]]
+file = "config/jei/ingredient-list-type-sort-order.ini"
+hash = "a8b743403f445a17528097b0e95b41afe2913d095719d86887519a68b9c73097"
+
+[[files]]
+file = "config/jei/recipe-category-sort-order.ini"
+hash = "99c204661a6c83bf57ec604be91fd429a8ad4ae482d399b1ded6a13aa40edfcd"
+
+[[files]]
+file = "config/jeiintegration-client.toml"
+hash = "9153724ec74e3a3b647a29f349f0cbdfaa33afc95b05bb53452b395ae3fbdfe4"
+
+[[files]]
+file = "config/morphtool-common.toml"
+hash = "45314d3c70491a1cd2c6f9b8b2ffc2c5098d415ea0d226e9b2d6a77d00688afc"
+
+[[files]]
+file = "config/quark-common.toml"
+hash = "ba603be6cd9b7e9e098ba3703a63ada2ffafaae7a6b38acd7ff0917601a08277"
+
+[[files]]
+file = "config/tconstruct-common.toml"
+hash = "e0cd994dba0abf44f05121cc5310f7150ca7cd72142a5488afcf261a4d30bf8d"
+
+[[files]]
+file = "config/topography/Presets.js"
+hash = "245f8b88cc80ff906c3dbea79b445b6b0f28c6acd6bbbbea066cc6b66d8f174f"
+
+[[files]]
+file = "config/topography/Topography.js"
+hash = "5aac605f5c33255ecddd7a9c8ddb1b9b6bc10268ebd0094a41fc7b2fbba0aec8"
+
+[[files]]
+file = "config/topography/dimensions/nether.js"
+hash = "e1b2ce9e7a19594db25cb09eee994afb95b1eb99bd2d980ddd808a610a121dfb"
+
+[[files]]
+file = "config/topography/examples/Presets.js"
+hash = "ffca143c8646c8476cf11c8b76fe2a6449a60b017f90c3c200721744bb1ffb1f"
+
+[[files]]
+file = "config/topography/examples/README.txt"
+hash = "678ea07bfab7285052dbbe7c96f2cc1f0cc3124f7c865890b3d1b31216dd847a"
+
+[[files]]
+file = "config/topography/examples/VERSION.txt"
+hash = "680fc277cb9b2ccc469b1d3a0dc91586f0ca74d9aba5d855f332cbdafed8d3d1"
+
+[[files]]
+file = "config/topography/examples/dimensions/end_void.js"
+hash = "e4d6a3896d1f419cfe0f35aae85d532be337b33637f6e30d9836ce490bc26d28"
+
+[[files]]
+file = "config/topography/examples/dimensions/nether_void.js"
+hash = "b1fa18f9046f5f6d68c19089e9581f6fa0daed46c4d4a9cbac51ea857c332daa"
+
+[[files]]
+file = "config/topography/examples/dimensions/overworld_skylands.js"
+hash = "f60748249111e302b3c6f229ef083dc07aff6126cca0db395fe50bfceaeb1e34"
+
+[[files]]
+file = "config/topography/examples/dimensions/overworld_void.js"
+hash = "03623cab03f575485880d1c845f075552193c177308e3b89702315b775c8bfe6"
+
+[[files]]
+file = "config/topography/examples/images/Basic_Tree.png"
+hash = "5e5959d201ad8b3ec1f70202797b2c5f27634fce59cedc4f92d0104b1155f65c"
+
+[[files]]
+file = "config/topography/examples/structures/oaktree.nbt"
+hash = "c8d664b5f6849da6d051118080b9495c05151ee673585a7ccdfb2e7fc33b55b1"
+
+[[files]]
+file = "config/topography/images/spawn.png"
+hash = "a2fb4f56dbb63505eaad2b664c50a6113d330f471d906fc38dba99931d7df141"
+
+[[files]]
+file = "config/topography/structures/spawn_island.nbt"
+hash = "1b980fec5b103d6ed9d54524e2d0a23d67f4c806320058fd30eabd3ff4ea4d71"
+
+[[files]]
+file = "global_data_packs/custom_stuff/data/combustivefishing/loot_tables/gameplay/nether_fishing/fish.json"
+hash = "16dbebc334691bd14e0cf1e2535c6734d82262ebab8e89248e60aa93dcf4c334"
+
+[[files]]
+file = "global_data_packs/custom_stuff/data/combustivefishing/loot_tables/gameplay/nether_fishing/junk.json"
+hash = "02f3d59d3c1280a88f22c2d31716c84c0349e3feb9855eadcb144b62d3df98f3"
+
+[[files]]
+file = "global_data_packs/custom_stuff/data/combustivefishing/loot_tables/gameplay/nether_fishing/treasure.json"
+hash = "182f91481cf52d4b65dad59b40a31f1ed39f3fa9f6fd5f28df8d46079db46ec6"
+
+[[files]]
+file = "global_data_packs/custom_stuff/data/combustivefishing/loot_tables/nether_fishing.json"
+hash = "82f771c89e27c0c463a1e02b831287c69e76f265278442b9d9e42708912a5344"
+
+[[files]]
+file = "global_data_packs/custom_stuff/data/minecraft/loot_tables/entities/blaze.json"
+hash = "ab8fc41a7bb598a08c8636ec3c4ecb4cccbff7ecde864f89e4ff155c72112045"
+
+[[files]]
+file = "global_data_packs/custom_stuff/data/minecraft/loot_tables/entities/enderman.json"
+hash = "54a8066bae383fbdc42ddcc7aa45a343c49b5c2191bb97c56e1f599486c92770"
+
+[[files]]
+file = "global_data_packs/custom_stuff/data/minecraft/loot_tables/entities/magma_cube.json"
+hash = "a760aaaac2906920a09273e5b1bbeaa2a3638e173a5ae2265ca7e5d2679f3105"
+
+[[files]]
+file = "global_data_packs/custom_stuff/data/minecraft/loot_tables/entities/witch.json"
+hash = "44d045cff6638a0e3991e5aadc8ff5d26ae7c5f7d4131ce774680df02b76b5be"
+
+[[files]]
+file = "global_data_packs/custom_stuff/data/minecraft/loot_tables/entities/wither_skeleton.json"
+hash = "8e2a14a318bc92c90807ad5e8b5296b176138496d50da95c3e243a7bbf8ec756"
+
+[[files]]
+file = "global_data_packs/custom_stuff/data/minecraft/loot_tables/entities/zombified_piglin.json"
+hash = "c15c91cdc55f2e12dedef82cb27c078ada9fdfe5fcc594b2f3d85f1a7cf60bcc"
+
+[[files]]
+file = "global_data_packs/custom_stuff/data/minecraft/loot_tables/gameplay/piglin_bartering.json"
+hash = "958b304540541696b9a87a44156214a33721804ae477a52d9a17d65b1113f3a6"
+
+[[files]]
+file = "global_data_packs/custom_stuff/data/playingwithfire/machines/teatable.json"
+hash = "493e9616bced2eed3148abf43b944fa23824d999d098660c47a773777377900e"
+
+[[files]]
+file = "global_data_packs/custom_stuff/pack.mcmeta"
+hash = "5205f994a68634589b14b7740ee8f4cb7a55d4fed2b86c8c913e42d92feeba80"
+
+[[files]]
+file = "global_resource_packs/playingwithfire/assets/playingwithfire/models/machine/table.json"
+hash = "3084d374314b2e10bb1db80fdb0aa636cc411fd9224cf7a2c8ad4d6aef420f4b"
+
+[[files]]
+file = "global_resource_packs/playingwithfire/assets/playingwithfire/models/machine/table_animated.json"
+hash = "bd74655a96051fcacd741a906c9a11e7fd2bcf9f16c5d2428297572c60bcc807"
+
+[[files]]
+file = "global_resource_packs/playingwithfire/assets/playingwithfire/models/machine/tea_and_table_animated.json"
+hash = "b050106dadba18ecb32120b7bc4270e6a411f5294fc3f331a9a906651da5dc16"
+
+[[files]]
+file = "global_resource_packs/playingwithfire/assets/playingwithfire/textures/additional_slot.png"
+hash = "125ffc5e0542e54cd3e368a39ccf5f5f7edb8653e7df93a75874e321aded2faf"
+
+[[files]]
+file = "global_resource_packs/playingwithfire/assets/playingwithfire/textures/block_reqs.png"
+hash = "ab789d912defc32713c7e9e64caa46131fefd972dc90c5aba1ce03f0aea0f97b"
+
+[[files]]
+file = "global_resource_packs/playingwithfire/assets/playingwithfire/textures/block_requirements_label.png"
+hash = "7654c2571811340a32ca405824eecee04c788daaf5f9ddcd2f57a660a240e4d6"
+
+[[files]]
+file = "global_resource_packs/playingwithfire/assets/playingwithfire/textures/flower_pot.png"
+hash = "a31123c8da085c287acbe873aa66090ab6da460b1f1c5f5b99d408363024acc1"
+
+[[files]]
+file = "global_resource_packs/playingwithfire/assets/playingwithfire/textures/fluid_transform.png"
+hash = "3d6834e0e9a748b6f2e67a1f13f8f6bb5805de5cf9eb4810a6e80d8d08b3be2b"
+
+[[files]]
+file = "global_resource_packs/playingwithfire/assets/playingwithfire/textures/livingwood_planks.png"
+hash = "7bc1bd9aa75b0f350f5150f24a76612a67179ebbbee84c7f6b490b63b7f51925"
+
+[[files]]
+file = "global_resource_packs/playingwithfire/assets/playingwithfire/textures/mana_bomb_animated.png"
+hash = "4871705c98ba599bc98cbd58a77a0fdff93e46b88db7786b1dd9f5ade825ced4"
+
+[[files]]
+file = "global_resource_packs/playingwithfire/assets/playingwithfire/textures/mana_bomb_animated.png.mcmeta"
+hash = "e9b8025fde1b09b0a4d2a38427b04f98f28a593045be6d177eb2b29164c872b0"
+
+[[files]]
+file = "global_resource_packs/playingwithfire/assets/playingwithfire/textures/open_crate.png"
+hash = "03fa27841ff49d82f937f6aeecb0a8959d8658ae2bdb91014ef24f88168079ea"
+
+[[files]]
+file = "global_resource_packs/playingwithfire/assets/playingwithfire/textures/progress_up_empty.png"
+hash = "4ed0cf73d741cf7586efaa169b7f7c3019f186b73643bd6c3ac94d6471735b99"
+
+[[files]]
+file = "global_resource_packs/playingwithfire/assets/playingwithfire/textures/progress_up_full.png"
+hash = "867fd9283b3a1bdf30c63f2f36df99b13b2f12f2d8c9c8a7dd229f97161bbeaf"
+
+[[files]]
+file = "global_resource_packs/playingwithfire/assets/playingwithfire/textures/red_fluid_storage.png"
+hash = "425f409095c37a8c210c0d7a5012f0cb3628a0a20b5c87e057877b790c5592cf"
+
+[[files]]
+file = "global_resource_packs/playingwithfire/assets/playingwithfire/textures/small_base_background.png"
+hash = "6669a20a74071a65210554a55859beeba80ae174292576296606c286c076db07"
+
+[[files]]
+file = "global_resource_packs/playingwithfire/assets/playingwithfire/textures/tea_still.png"
+hash = "8416f41e90147748ebf516675ef5b905533db810219444db0a3a8dd72a170ba4"
+
+[[files]]
+file = "global_resource_packs/playingwithfire/assets/playingwithfire/textures/tea_twist_flow.png"
+hash = "2c28ffde5e1b950c22d054efcd3b35ba8fccca70f640c61586cb51751e36e191"
+
+[[files]]
+file = "global_resource_packs/playingwithfire/assets/playingwithfire/textures/tea_twist_flow.png.mcmeta"
+hash = "e9b8025fde1b09b0a4d2a38427b04f98f28a593045be6d177eb2b29164c872b0"
+
+[[files]]
+file = "global_resource_packs/playingwithfire/pack.mcmeta"
+hash = "3034c8076fd2c6bc11abaa9a9cca8014cc68e7eecca2aa70632d900d0cdff853"
+
+[[files]]
+file = "patchouli_books/playingwithfire/book.json"
+hash = "5d4ebc447fc4ae76983007b7ac142d6899484e122b7d6b3376ec4aab89f50677"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/categories/botania.json"
+hash = "90c9ce5506b9d3bb368da56bf9f8d696c5ecff43fb1836216ad0704c01ee2fd0"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/categories/create.json"
+hash = "f648d53ec2698c6866a1fbbe1568d69397e9a023ad94a3e01bb7aa295db3da48"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/categories/piglin_bartering.json"
+hash = "9d13a9fe25e03ac76c395974b1b427243df76ff888eb9f1c139e8d1919a436df"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/categories/pointers.json"
+hash = "07886cdf535453f85c060fe210c6f0ad89344b843b21e879eb380c6c459d5b41"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/categories/smeltery.json"
+hash = "32c06e8236e63aa3e04200f847ea28f0d2b948f58ce4ebcca6893afa44acebbe"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/categories/tips_for_the_stuck.json"
+hash = "58564539d4e78f706e96f12ad14f44b7fcbe5bcfdd68e76161d6bff93395ece5"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/botania/botania_flowers.json"
+hash = "25603236d07f1e4145241a3f96b6e53e534c73288a92444409e6a81c55f3ee91"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/botania/botania_special_flowers.json"
+hash = "887e412a16ac194e9e4d3830c53104cab817eb4c65c6a799121e4d96138076f1"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/botania/corporea.json"
+hash = "0799dffcf48b9b7b545f7cd07288f42e8a33fe7fc7ea6bfa02ac51d7419e1ccf"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/botania/luminizers.json"
+hash = "195c484cdccc8e44267244262f6efb05a5d78b3d5525f0af9da5096580e11997"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/create/dried_kelp.json"
+hash = "e4279eb74ff0b6bcb5070e78ee2923fa5a60c312bdf12cef03567a5981e60436"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/create/redstone.json"
+hash = "528c8d3fafd67f051d34d1a45b2fe3d19dbaf567d2933f98ecb27228cab69ec9"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/create/redstone_link.json"
+hash = "1d7ab7a6cf58527ef9cc3e051b37e6762ea4b999b64fc6632272b1c95741496a"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/create/rotation_power.json"
+hash = "13ded346e269bebc586e19f8cd8bc98248f5ca7317dc436b6c1126d25a834e95"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/create/schematicannon.json"
+hash = "4f9f4c102e69bfb621b896f92899f80d7a3a3b445b0a843bf9bae32a515aead6"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/piglin_bartering/abacus.json"
+hash = "a48b309f206d99eb11e17d0522e27d8a42d8a2b828713a518bc675bf984f381e"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/piglin_bartering/compostables.json"
+hash = "74c96108735b74f1c9b9d8a810c25b2ec06d34359889bf391235e19e2d1fc80e"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/piglin_bartering/construction_wand.json"
+hash = "5af9815a84cbc61b22e2728b02e37db4a32b57e785be8adcea475db938cd31fa"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/piglin_bartering/magma_block.json"
+hash = "861dd457f41ffae0790824e683dad674f050fd40f3df8037032663c51fec0bc9"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/piglin_bartering/mob_spawning_rules.json"
+hash = "52ba652e4ff838ecb8903899f035b6a2f72a9666ed5d3b207c507569a4834bfe"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/piglin_bartering/more_lava.json"
+hash = "f38bec7caaf5de4076b91f7f6d565e662727f3c9ea4db6838289801967ec702f"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/piglin_bartering/netherrack.json"
+hash = "41ebb96875a666f2fd2d5b8b45bfab468987ef95576c1d922e9a1b91b54d8783"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/piglin_bartering/storagedrawers.json"
+hash = "d3d26d3e6407fcd865f3da40a4ecf061581e16ad2dabb77ce9399bc2b35ecd38"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/pointers/blast_resistant_blocks.json"
+hash = "48d9eee7308e54a82109af91f63f3df37c8f4c3ab022a148ab9932d77b102a35"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/pointers/refined_radiance.json"
+hash = "b5ea80126969c8393d9b7b2f0f13a91a1bf7807796ae3ccd5985c8970a80de05"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/pointers/shadow_steel.json"
+hash = "56eb23cf9c63357685cc0db71fa6a3c15044f88f8046a2ad287783ad25164a8e"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/smeltery/bigger_smeltery.json"
+hash = "7b5ebe30abec743e4bb4d62abb509cafffd4267f51a3269822cec11485eb393a"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/smeltery/combustivefishing.json"
+hash = "d9ad1dcbc006f21cd218b1fb209711d303f3c4a12db7f2f0289171d2d7bae8f4"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/smeltery/first_smeltery.json"
+hash = "48ea00e2be557af6c97a6d9beaef08d03056f665d24f06f6fcc41522fc9586dc"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/smeltery/pure_daisy.json"
+hash = "2cc2ee9313993f74729ae90d69ed7b5f58131b30f539590a48ed55affbdbb251"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/tips_for_the_stuck/diamond_replacement.json"
+hash = "c17a7ad085e79ea3543be9326cba1bd4b92320b7c4fc4850a8d8953887a1a71e"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/tips_for_the_stuck/glowstone.json"
+hash = "fb6a053417827962d1c8cad0a4cdc7a273910e027785da8fb04049be7b9ce82a"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/tips_for_the_stuck/lapis.json"
+hash = "44af2aab2aeab3b896d8fa2087886b23c700c4ac2edcb00387afb5fdff36996a"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/tips_for_the_stuck/milk.json"
+hash = "7c6fddf56c48e145810c77ea6efa4bea3dfe1c0ccd60c2768951b9c1a521df5f"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/tips_for_the_stuck/netherstar.json"
+hash = "2c116a2e739405863ddc91e93b9eda7f24bd74302bece3858fef14ea4f6a12aa"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/tips_for_the_stuck/obsidian_replacement.json"
+hash = "63b277329cb173bd5fa8a25e75aaa37d9890d1d3ed7b369e003ea911bd3663a4"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/tips_for_the_stuck/silk_touch.json"
+hash = "d2f7e41619e39628607cbb1e59b268f2b39a70a89b7a8434bd3d9f8ab82d9abd"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/tips_for_the_stuck/slimeball_replacement.json"
+hash = "0dc4ad4576a16647900297bb788264f8bf727584286deae60fa70084220d5ed3"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/tips_for_the_stuck/string.json"
+hash = "24138d37b4474d969e369752f49ffefcdcb8dcb5c7fe8b9ff11344f73f248b30"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/entries/tips_for_the_stuck/tall_mystical_flowers.json"
+hash = "1f50448cb375326c7c168630ee89365e20844812787024af1f6dcd16356d1d57"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/templates/lava_dip.json"
+hash = "187872fbd697bfbbf3ca01b9f71a3a9392dec305622470c04f71b2ab92908162"
+
+[[files]]
+file = "patchouli_books/playingwithfire/en_us/templates/mob_spawn_block.json"
+hash = "0a53e37ebd910a53a4c32c7407bd1cff00ee9ce64ada1f24875175743fdd9b8a"
+
+[[files]]
+file = "scripts/block_attributes.zs"
+hash = "e7bcd1947b7f9eece6fa5cf240e80a9a2dafa37af8a29b800e4fe6f4c1651b47"
+
+[[files]]
+file = "scripts/botania/elven_trade.zs"
+hash = "2f1778d9952e4d599d1370f61112699506a7ad40535f54c63dfc4b5be263f9ef"
+
+[[files]]
+file = "scripts/botania/mana_infusion.zs"
+hash = "f7a171b5fd1fd440c84971a19b486a8c4bfcdfde75836b31d5d1f124d0d50512"
+
+[[files]]
+file = "scripts/botania/orechid_weight.zs"
+hash = "f951b9d8ef4371f300ecbc0dbf5104c402a1b3a7e86a95907830c0bd6498ddbc"
+
+[[files]]
+file = "scripts/botania/pure_daisy.zs"
+hash = "eb6e03c8516853dab178d556b0d9f93fa9ef00b548528ff346bfdd7e3e4165bb"
+
+[[files]]
+file = "scripts/botania/runic_altar.zs"
+hash = "491b2d994faee6d29a9bd5fd3988504e12cd07a2a07647070c2f2bdd189aadf5"
+
+[[files]]
+file = "scripts/botania/terra_plate.zs"
+hash = "30ee187562df0c8ab555bcf461dbc4ee9cadf49ef830a7d1a7803498c4b0da41"
+
+[[files]]
+file = "scripts/create/compacting.zs"
+hash = "9619a63148ba66da651a95639700c4260be9d98d5dc00c1c38a5e0beef92e546"
+
+[[files]]
+file = "scripts/create/crushing_wheel.zs"
+hash = "5865e10c7400cdbc583a150d739d81b69332990da0143666d779acef503b2fe0"
+
+[[files]]
+file = "scripts/create/emptying.zs"
+hash = "03c91d187bab3848399bed7a32dd01321d2cd91d494ecf227642298b03636847"
+
+[[files]]
+file = "scripts/create/filling.zs"
+hash = "07dc67b48f372de6efeee43beb9d202f1714da12c3aaa243d73cb09956a5a366"
+
+[[files]]
+file = "scripts/create/mechanical_crafter.zs"
+hash = "deb0d8a085fc66cfa9ea8fe80b0f982fa73c3772d91da6494eff15b5d82be1fe"
+
+[[files]]
+file = "scripts/create/milling.zs"
+hash = "e70edbef2896e3a3442d89095fc2f40208b589fe5491045e9f5e78765a1cf7eb"
+
+[[files]]
+file = "scripts/create/mixing.zs"
+hash = "f364a854b2c2a16ec52a4a140b929ecf523e2b4d2652a9b4b7afd6860e9916ba"
+
+[[files]]
+file = "scripts/create/sequenced_assembler.zs"
+hash = "ac018918e86a7a3bc2e3c24d5d0554befa52e6639ea471c00a86b49b85c6e59e"
+
+[[files]]
+file = "scripts/custommachines/addremove_fluids.zs"
+hash = "2d8e31d4757738ee8ce5ce9ba8ed6c2687aa44b64c29b4758f9610b304a3f6cf"
+
+[[files]]
+file = "scripts/custommachines/flowerpot.zs"
+hash = "2590474ab5dccd61d14bc41847c128c0a5d75114619b38eca043c2b2174ccb82"
+
+[[files]]
+file = "scripts/custommachines/most_flowers.zs"
+hash = "bffb46b55b9e92e1e41568bfadb95864873562547b7338e031a88194e5bb5a9f"
+
+[[files]]
+file = "scripts/custommachines/other_recipes.zs"
+hash = "2eb0ab598bd5a16fbe5723810d549f1773f2198c920df64f153a501004e5c750"
+
+[[files]]
+file = "scripts/disable_replace_recipes.zs"
+hash = "58510991949584c1fe19774b2d8e714f62440e8b1e1456a1f3d64b4b18b10b88"
+
+[[files]]
+file = "scripts/initital_inventory/initial.zs"
+hash = "4eda2c86bdb351db008bd34e2bf13f27adf07ea537dec6b08377af6812aa870e"
+
+[[files]]
+file = "scripts/interactio/explosions.zs"
+hash = "683d8ab7fef742e72defc4b9818017e144193839402676c09bd2ff7cf8e933af"
+
+[[files]]
+file = "scripts/interactio/lava_dip.zs"
+hash = "621ccbf53dc802516a4875402d82dfbff2b747352560c7692093e7546978e47e"
+
+[[files]]
+file = "scripts/item_stack_attributes.zs"
+hash = "84bb31eb34aef028bdbb8b4f9fec3ea4e130ff1b650a465af078a4fe6837141e"
+
+[[files]]
+file = "scripts/jeitweaker/add_info.zs"
+hash = "e85136d956a9cadbfae53f06b76cab9eaf67d4014935c6850e43990584011d1d"
+
+[[files]]
+file = "scripts/jeitweaker/hide_items.zs"
+hash = "905244716617c178c9e19074f6a9e4f867cd5eb8e9f2e711abcf00834b08ece3"
+
+[[files]]
+file = "scripts/tconstruct/casting.zs"
+hash = "9b9c7d7aaaeec8c9f9df93bde884d2a49f4eb4dc387634e01c866b750b33d101"
+
+[[files]]
+file = "scripts/tconstruct/melting.zs"
+hash = "1b8d787b4337897a2297d2e841f5358d2385709f873f372adad7a41a6ce82d1b"
+
+[[files]]
+file = "scripts/vanilla/composter.zs"
+hash = "748fc4aa445254eb6f2af3ecf2c6d0fe446a06fe6f991972528a5842e5a7331c"
+
+[[files]]
+file = "scripts/vanilla/crafting_table.zs"
+hash = "320b42636eddb84b749b5f517b3227936db3ba60522e7808d5d8a0df211b60b2"
+
+[[files]]
+file = "scripts/vanilla/right_click_jukebox.zs"
+hash = "10d24d11f423afc5e9c21bb4750ca58f7926d6ee3f1aa342f1ec44951068e408"
