@@ -11,7 +11,7 @@ event.recipes.create.mixing(Fluid.of("minecraft:milk", 1000), ["minecraft:bone_b
 // event.recipes.create.mixing(Fluid.of("tconstruct:blood", 50), ["minecraft:rotten_flesh"], [], 10).heated();
 // event.recipes.create.mixing(Fluid.of("tconstruct:molten_ender", 250), ["minecraft:ender_pearl"]).heated();
 event.recipes.create.mixing(Fluid.of("funkyfluids:silly_putty", 288), ["minecraft:slime_ball", Fluid.of("funkyfluids:magnetroleum", 144), Fluid.of("create:honey", 144), Item.of("#minecraft:fishes")]).superheated().id("playingwithfire:mixing/silly_putty");
-event.recipes.create.mixing(Fluid.of("funkyfluids:magnetroleum", 288), ["minecraft:lapis_lazuli", "botania:manasteel_ingot", "create:powdered_obsidian"]).superheated().id("playingwithfire:mixing/magtroleum");
+event.recipes.create.mixing(Fluid.of("funkyfluids:magnetroleum", 288), ["minecraft:lapis_lazuli", "botania:manasteel_ingot", Fluid.of("funkyfluids:redstone_suspension", 144)]).superheated().id("playingwithfire:mixing/magtroleum");
 event.recipes.create.mixing(Fluid.of("funkyfluids:oobleck", 1000), [Item.of("minecraft:potato", 2), Fluid.of("minecraft:milk", 1000)]).heated().id("playingwithfire:mixing/oobleck");
 event.recipes.create.mixing(Fluid.of("funkyfluids:redstone_suspension", 1000), [Item.of("minecraft:redstone", 2), "botania:rune_water", Fluid.of("minecraft:milk", 1000)]).heated().id("playingwithfire:mixing/redstone_suspension");
 
