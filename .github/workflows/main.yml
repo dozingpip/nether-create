@@ -1,4 +1,5 @@
-name: Build
+name: Build Multiplatform
+run-name: "Build Multiplatform #${{ github.run_number }}"
 
 on:
   push:
@@ -11,67 +12,133 @@ on:
   workflow_dispatch:
 
 jobs:
-  get-changelog:
-    name: Get Changelog
+  modpack-info:
+    name: Modpack Info
     runs-on: ubuntu-latest
+
+    outputs:
+      projectname: ${{ steps.info.outputs.projectname }}
+      projectsuffix: ${{ steps.info.outputs.projectsuffix }}
+      tag: ${{ steps.info.outputs.tag }}
+      rel_type: ${{ steps.info.outputs.rel_type }}
+      diff: ${{ steps.info.outputs.diff }}
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
         with:
-            fetch-depth: 0
-
-      - name: Get Changelog
+          fetch-depth: 0
+  
+      - name: Get modpack info
+        id: info
         shell: bash
         run: |
-            latest_tag=$(git describe --tags --abbrev=0)
-            { grep --color=auto -Pzo "(?<=## $latest_tag)((?!\n## )[\s\S])*" ./CHANGELOG.md || true; } | sed '$ s/.$//' > ./NEW_CHANGELOG.md
+          set +e
 
-      - name: Upload Changelog
-        uses: actions/upload-artifact@v4
-        with:
-            name: changelog
-            path: ${{ github.workspace }}/NEW_CHANGELOG.md
-    
-  pakku-build:
-    name: Pakku build
+          echo "🔎 Getting modpack info..."
+
+          # -- CHECK LOCKFILE --
+
+          if [ ! -f pakku-lock.json ]; then
+            echo "::error::Could not find pakku-lock.json" && exit 1
+          else
+            echo "✔️ pakku-lock.json"
+          fi
+
+          if [ ! -f pakku.json ]; then
+            echo "::error::Could not find pakku.json" && exit 1
+          else
+            echo "✔️ pakku.json"
+          fi
+
+          config_file=`cat pakku.json`
+
+          # -- PROJECT NAME --
+
+          projectname=`echo $(jq -r '.name' <<< "$config_file")`
+          echo "projectname=$projectname" >> $GITHUB_OUTPUT
+          echo "📃 projectname=$projectname"
+
+          # -- TAGS --
+
+          latest_tag=$(git describe --tags --abbrev=0)
+          echo "tag=$latest_tag" >> $GITHUB_OUTPUT
+          echo "📃 latest_tag=$latest_tag"
+
+          # -- PROJECT SUFFIX --
+
+          if [[ ${{ startsWith(github.ref, 'refs/tags/v') }} == true ]]; then
+            echo "projectsuffix=$latest_tag" >> $GITHUB_OUTPUT
+            echo "📃 projectsuffix=$latest_tag"
+          else
+            echo "projectsuffix=build.${{ github.run_number }}" >> $GITHUB_OUTPUT
+            echo "📃 projectsuffix=build.${{ github.run_number }}"
+          fi
+
+          # -- RELEASE TYPE
+
+          rel_type="release"
+          case $latest_tag in
+            *alpha*) rel_type="alpha" ;;
+            *beta*) rel_type="beta" ;;
+            *) rel_type="release" ;;
+          esac
+
+          echo "rel_type=$rel_type" >> $GITHUB_OUTPUT
+          echo "📃 rel_type=$rel_type"
+
+          # -- DIFF --
+
+          latest_tagged_commit=$(git rev-list -n 1 --pretty=format:"%h" $latest_tag | sed -n 2p)
+
+          if [ "$latest_tag" = ${{ github.ref_name }} ]; then
+            latest_tag_prev=$(git describe --tags --abbrev=0 $(git describe --tags --abbrev=0)^)
+            latest_tagged_commit=$(git rev-list -n 1 --pretty=format:"%h" $latest_tag_prev | sed -n 2p)
+          fi
+
+          echo "📃 latest_tagged_commit=$latest_tagged_commit"
+
+          git show $latest_tagged_commit:./pakku-lock.json > ./pakku-lock-prev.json
+
+          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
+
+          java -jar ./pakku.jar diff ./pakku-lock-prev.json ./pakku-lock.json --markdown PROJECTS_DIFF.md
+
+          # -- OUTPUT DIFF --
+
+          cat PROJECTS_DIFF.md >> $GITHUB_STEP_SUMMARY
+
+          {
+            echo 'diff<<EOF'
+            cat PROJECTS_DIFF.md
+            echo EOF
+          } >> "$GITHUB_OUTPUT"
+
+  build-modpack:
+    name: Build Modpack
     runs-on: ubuntu-latest
+    needs: [modpack-info]
+
     steps:
-      - name: Setup Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: 'zulu'
-          java-version: 17
-
-      - name: Get Pakku
-        uses: amitie10g/install-package@v1
-        with:
-          brew: juraj-hrivnak/pakku/pakku
-
       - name: Checkout
         uses: actions/checkout@v4
 
-      - run: pakku fetch
-      - run: pakku export
-      - name: Upload Pakku Export
+      - name: Cache pakku
+        uses: actions/cache@v4
+        with:
+          path: build/.cache
+          key: ${{ runner.OS }}-pakku-cache-${{ hashFiles('build/.cache/') }}
+          restore-keys: |
+            ${{ runner.OS }}-pakku-cache
+
+      - name: Export modpacks
+        run: |
+          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
+          java -jar ./pakku.jar --debug export
+
+      - name: Upload build
         uses: actions/upload-artifact@v4
         with:
-            name: pakkubuild
-            path: build/
-
-  release:
-    name: Release
-    runs-on: ubuntu-latest
-    needs: [get-changelog, pakku-build]
-    permissions:
-      contents: write
-    steps:
-      - name: Download Artifact Changelog
-        uses: actions/download-artifact@v4
-        with:
-          name: changelog
-
-      - name: Download artifacts
-        uses: actions/download-artifact@v4
-        with:
-            name: pakkubuild
-            path: dist
+          name: build
+          path: |
+            build/
+            !build/.*
