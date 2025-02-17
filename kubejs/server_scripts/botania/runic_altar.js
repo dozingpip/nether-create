@@ -1,36 +1,61 @@
 ServerEvents.recipes(event => {
+    let discs = [{item:"minecraft:music_disc_pigstep"},
+    {item:"minecraft:music_disc_13"},
+    {item:"minecraft:music_disc_cat"},
+    {item:"minecraft:music_disc_blocks"},
+    {item:"minecraft:music_disc_chirp"},
+    {item:"minecraft:music_disc_far"},
+    {item:"minecraft:music_disc_mall"},
+    {item:"minecraft:music_disc_mellohi"},
+    {item:"minecraft:music_disc_stal"},
+    {item:"minecraft:music_disc_strad"},
+    {item:"minecraft:music_disc_ward"},
+    {item:"minecraft:music_disc_11"},
+    {item:"minecraft:music_disc_wait"}]
+    
     let altar = (output, mana, input) =>
     {
-        event.custom({
+        return event.custom({
             type: 'botania:runic_altar',
             ingredients: input,
             output: {item: output},
             mana: mana
         }).id("playingwithfire:runic_altar/"+(output.substring(output.lastIndexOf(":")+1)))
     }
-    event.remove({type: "botania:runic_altar", output:"botania:rune_winter"});
+    
+    let altarEnchantedBook = (enchant, level, mana, input) =>
+    {
+        return event.custom({
+            type: 'botania:runic_altar',
+            ingredients: input,
+            output:
+            {
+                item: "minecraft:enchanted_book",
+                nbt: {"StoredEnchantments": [{lvl: level, id: enchant}]}
+            },
+            mana: mana
+        }).id("playingwithfire:runic_altar/"+(enchant.substring(enchant.lastIndexOf(":")+1)))
+    }
+
+    event.remove({type: "botania:runic_altar", output:"botania:rune_winter"})
     altar("botania:rune_winter", 8000,
-        [{item:"minecraft:cake"}, {tag: "minecraft:wool"}, {item:"botania:rune_water"}, {item:"botania:rune_earth"}, {tag:"minecraft:wool"}, {tag: "minecraft:wool"}]);
+        [{item:"minecraft:cake"}, {tag: "minecraft:wool"}, {item:"botania:rune_water"}, {item:"botania:rune_earth"}, {tag:"minecraft:wool"}, {tag: "minecraft:wool"}])
+        .id("botania:runic_altar/winter");
     altar("minecraft:honeycomb", 8000, [{item:"minecraft:sugar"}, {item:"minecraft:gold_block"}, {item:"minecraft:sunflower"}, {item:"botania:rune_earth"}, {item:"minecraft:oak_sapling"}, {item:"create:sweet_roll"}]);
     altar("minecraft:turtle_egg", 8000, [{item:"minecraft:wheat_seeds"}, {item:"create:dough"}, {item:"minecraft:sunflower"}, {item:"minecraft:brown_mushroom"}]);
-    altar("minecraft:wither_skeleton_skull", 10000, [{item:"minecraft:bone_block"}, {item:"minecraft:coal_block"}, {item:"minecraft:wither_rose"}, {item:"botania:rune_wrath"}, {item:"minecraft:music_disc_pigstep"}]);
     altar("create:creative_blaze_cake", 500000,
-        [{item:"create:blaze_cake"},
-        {item:"minecraft:music_disc_pigstep"},
-        {item:"minecraft:music_disc_13"},
-        {item:"minecraft:music_disc_cat"},
-        {item:"minecraft:music_disc_blocks"},
-        {item:"minecraft:music_disc_chirp"},
-        {item:"minecraft:music_disc_far"},
-        {item:"minecraft:music_disc_mall"},
-        {item:"minecraft:music_disc_mellohi"},
-        {item:"minecraft:music_disc_stal"},
-        {item:"minecraft:music_disc_strad"},
-        {item:"minecraft:music_disc_ward"},
-        {item:"minecraft:music_disc_11"},
-        {item:"minecraft:music_disc_wait"}]);
+        [{item:"create:blaze_cake"}].concat(discs));
     altar("minecraft:spore_blossom", 5000, [{item:"minecraft:bamboo", count: 6}, {item:"botania:pink_petal"}, {item:"botania:rune_earth"}]);
     altar("minecraft:end_stone", 5000, [{item:"minecraft:ender_eye", count: 6}, {item:"botania:ender_air_bottle"}, {item:"botania:rune_air"}]);
-    // altar("lure_1", "minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: "minecraft:lure" as string}]}), 5000, "minecraft:fire_coral", "combustivefishing:combustive_cod", "minecraft:book", "botania:rune_air>);
-    // altar("luck_of_the_sea_1", "minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: "minecraft:luck_of_the_sea" as string}]}), 5000, "minecraft:ghast_tear", "combustivefishing:bone_fish", "minecraft:book", "botania:rune_water>);
+    altarEnchantedBook("minecraft:lure", 1, 5000, [{item: "minecraft:fire_coral"}, {item: "netherdepthsupgrade:searing_cod"}, {item: "minecraft:book"}, {item: "botania:rune_air"}])
+    altarEnchantedBook("minecraft:luck_of_the_sea", 1, 5000, [{item: "minecraft:ghast_tear"}, {item: "netherdepthsupgrade:bonefish"}, {item: "minecraft:book"}, {item: "botania:rune_water"}])
+    discs.forEach(disc =>
+    {
+        event.custom({
+            type: 'botania:runic_altar',
+            ingredients: [{tag:"minecraft:music_discs"}, disc],
+            output: {item: disc.item, count: 2},
+            mana: 1000
+        }).id("playingwithfire:runic_altar/copy_" + (disc.item.substring(disc.item.lastIndexOf(":")+1)))
+    })
 });

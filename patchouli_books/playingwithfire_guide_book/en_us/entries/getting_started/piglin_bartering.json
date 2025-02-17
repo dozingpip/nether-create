@@ -1,0 +1,19 @@
+{
+    "name": "Piglin Bartering",
+    "icon": "minecraft:gold_ingot",
+    "category": "patchouli:getting_started",
+    "sortnum":1,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "minecraft:gold_ingot",
+            "text": "Bartering output has been changed to include iron nuggets and some other interesting goodies :)"
+        },
+        {
+            "type": "entity",
+            "entity": "minecraft:piglin",
+            "offset": 0.1,
+            "text": "You can force a piglin to spawn by right-clicking a gold block with rotten flesh (the gold block is consumed)."
+        }
+    ]
+}

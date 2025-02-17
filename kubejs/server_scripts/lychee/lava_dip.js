@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    let lava_dip = (input, output, count) =>
+    let lava_dip = (input, output) =>
     {
         {
             event.custom({
@@ -13,25 +13,9 @@ ServerEvents.recipes(event => {
                         block: output
                     }
                 ]
-            })
+            }).id("playingwithfire:burning/" + (output.substring(output.lastIndexOf(":")+1)));
         }
     }
-    // let lava_flow = (input, output) =>
-    //     {
-    //         {
-    //             event.custom({
-    //                 type: "customfluidmixin:block_transformation",
-    //                 flowing: "#minecraft:lava",
-    //                 blocks_nearby: [
-    //                 ],
-    //                 block_to_transform: input,
-    //                 result: {
-    //                     type: "block",
-    //                     block: output
-    //                 }
-    //         })
-    //     }
-    // }
     let fluid_dip = (input, output, count, fluid) =>
     {
         {
@@ -57,7 +41,7 @@ ServerEvents.recipes(event => {
                         block: "*"
                     }
                 ]
-            })
+            }).id("playingwithfire:fluid_dip/" + (output.substring(output.lastIndexOf(":")+1)));
         }
     }
     lava_dip("weeping_vines", "netherrack")

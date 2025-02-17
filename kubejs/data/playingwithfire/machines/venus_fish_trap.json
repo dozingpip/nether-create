@@ -1,0 +1,75 @@
+{
+    "name": "Venus Fish Trap",
+    "appearance": {
+      "shape": "minecraft:grass",
+      "shape_collision": [[0.0, 0.0, 0.0, 0.1, 0.1, 0.1]],
+      "interaction_sound": "botania:pure_daisy",
+      "hardness": 0,
+      "resistance": 0,
+      "idle":{
+        "block": "playingwithfire:machine/venus_fish_trap"
+      },
+      "running": {
+        "block": "playingwithfire:machine/venus_fish_trap"
+      },
+      "errored": {
+        "block": "playingwithfire:machine/venus_fish_trap"
+      },
+      "paused": {
+        "block": "playingwithfire:machine/venus_fish_trap"
+      }
+    },
+    "components": [
+      {
+        "mode": "input",
+        "id": "input1",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "input",
+        "id": "input2",
+        "type": "custommachinery:item"
+      },
+      {
+        "mode": "output",
+        "id": "output1",
+        "type": "custommachinery:item"
+      }
+    ],
+    "jei": [
+      {
+        "texture": "playingwithfire:textures/gui/transparent_small_base_background.png",
+        "x": 0,
+        "y": 0,
+        "type": "custommachinery:texture",
+        "jei": true,
+        "width" : 100,
+        "height" : 50
+      },
+      {
+        "x": 20,
+        "y": 5,
+        "id": "input1",
+        "type": "custommachinery:slot"
+      },
+      {
+        "x": 20,
+        "y": 25,
+        "id": "input2",
+        "type": "custommachinery:slot"
+      },
+      {
+        "x": 40,
+        "y": 15,
+        "type": "custommachinery:progress",
+        "texture_empty": "playingwithfire:textures/gui/progress_right_empty.png",
+        "texture_filled": "playingwithfire:textures/gui/progress_right_full.png"
+      },
+      {
+        "x": 70,
+        "y": 15,
+        "id": "output1",
+        "type": "custommachinery:slot"
+      }
+    ]
+  }

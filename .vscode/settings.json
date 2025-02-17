@@ -12,5 +12,8 @@
             ],
             "url": "./.vscode/probe.doc-schema.json"
         }
-    ]
+    ],
+    "files.exclude": {
+        "**/*.log.gz": true
+    }
 }

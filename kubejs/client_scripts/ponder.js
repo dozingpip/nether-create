@@ -1,17 +1,6 @@
-let spawnConditions = [
-    ["piglin", "netherrack"],
-    ["enderman", "soul_sand"],
-    ["ghast", "gravel"],
-    ["zombified_piglin", "crimson_hyphae"],
-    ["blaze", "quartz_block"],
-    ["magma_cube", "magma_block"],
-    ["wither_skeleton", "nether_bricks"],
-    ["hoglin", "crimson_nylium"]
-]
 // i would do this except jsonio doesn't allow array jsons
 //var config = JsonIO.read('config/incontrol/spawn.json')
 //console.log(config)
-// for 1.18 pls use: onEvent("ponder.tag")
 Ponder.tags((event) => {
     /**
      * "kubejs:getting_started" -> the tag name
@@ -20,9 +9,6 @@ Ponder.tags((event) => {
      * "This is a description"  -> the description
      * [...items]               -> default items
      */
-
-    // event.createTag("kubejs:mob_spawns", "minecraft:egg", "Mob Spawns", "Unique mob spawning mechanics!",
-    //     spawnConditions.map(x => "minecraft:" + x[0] + "_spawn_egg"));
     event.createTag("kubejs:tea_tabling",
         "kubejs:teatable",
         "The Tea Table", "Drink tea and manifest flowers?",
@@ -37,23 +23,38 @@ Ponder.tags((event) => {
         ["minecraft:anvil", "minecraft:pointed_dripstone", "minecraft:sand", "minecraft:gravel"]);
 });
 Ponder.registry((event) => {
-    // let showSpawnCondition = (entity, block) =>
-    // {
-    //     event.create("minecraft:" + entity + "_spawn_egg").scene(entity + "_spawn", entity + " spawning", (scene, util) =>
-    //     {
-    //         scene.showStructure();
-    //         scene.world.setBlock([2, 1, 2], block, false);
-    //         const entityLink = scene.world.createEntity(entity, [2.5, 2, 2.5]);
-    //         let message = "The wild " + entity.replace("_", " ") + " only spawns on " + block.toString().replace("_", " ") + ".";
-    //         console.log(message)
-    //         scene.text(200, message, [2.0, 2.5, 2.5])
-    //     });
-    // }
-    // spawnConditions.forEach(condition =>
-    // {
-    //     showSpawnCondition(condition[0], condition[1])
-    // })
 
+    event.create("kubejs:teatable").scene("growing_endoflame", "growing an endoflame", (scene, util) =>
+    {
+        scene.showStructure();
+        scene.addKeyframe();
+        scene.world.setBlock([2, 1, 2], "custommachinery:custom_machine_block", false);
+        scene.world.modifyBlockEntityNBT([2, 1, 2], (nbt) => {
+            nbt.machineID = "playingwithfire:teatable"
+        });
+        scene.addKeyframe();
+        scene.idle(15);
+        scene.text(30, "bury the petals around the table", [2.0, 2.5, 2.5]);
+        scene.idle(15);
+        var petal1 = scene.world.setBlock([1, 1, 2], "botania:brown_mushroom", true);
+        var petal2 = scene.world.setBlock([1, 1, 3], "botania:brown_mushroom", true);
+        var petal3 = scene.world.setBlock([2, 1, 1], "botania:light_gray_mushroom", true);
+        var petal4 = scene.world.setBlock([3, 1, 2], "botania:red_mushroom", true);
+        scene.addKeyframe();
+        scene.idle(40);
+        scene.particles.item(10, "botania:brown_mushroom", [2.0, 2.5, 2.5]).area([2, 2, 3]);
+        scene.world.destroyBlock([1, 1, 2]);
+        scene.world.destroyBlock([1, 1, 3]);
+        scene.world.destroyBlock([2, 1, 1]);
+        scene.world.destroyBlock([3, 1, 2]);
+        scene.addKeyframe();
+        scene.idle(10);
+        scene.text(40, "endoflame will be planted on top of the table", [2.0, 2.5, 2.5]);
+        scene.particles.simple(20, "glow", [2.5, 2.2, 2.5]);
+        scene.idle(10);
+        scene.world.setBlock([2, 2, 2], "botania:endoflame", true);
+    })
+    
     event.create("kubejs:teatable").scene("growing_sugar_cane", "growing sugar cane", (scene, util) =>
     {
         scene.showStructure();
@@ -85,37 +86,6 @@ Ponder.registry((event) => {
         scene.text(40, "The weeping vines will get replaced by sugar cane", [2.0, 2.5, 2.5]);
         scene.idle(10);
         scene.world.setBlock([2, 2, 2], "kubejs:potted_sugar_cane", true);
-    })
-
-    event.create("kubejs:teatable").scene("growing_endoflame", "growing an endoflame", (scene, util) =>
-    {
-        scene.showStructure();
-        scene.addKeyframe();
-        scene.world.setBlock([2, 1, 2], "custommachinery:custom_machine_block", false);
-        scene.world.modifyBlockEntityNBT([2, 1, 2], (nbt) => {
-            nbt.machineID = "playingwithfire:teatable"
-        });
-        scene.addKeyframe();
-        scene.idle(15);
-        scene.text(30, "bury the petals around the table", [2.0, 2.5, 2.5]);
-        scene.idle(15);
-        var petal1 = scene.world.setBlock([1, 1, 2], "botania:brown_mushroom", true);
-        var petal2 = scene.world.setBlock([1, 1, 3], "botania:brown_mushroom", true);
-        var petal3 = scene.world.setBlock([2, 1, 1], "botania:light_gray_mushroom", true);
-        var petal4 = scene.world.setBlock([3, 1, 2], "botania:red_mushroom", true);
-        scene.addKeyframe();
-        scene.idle(40);
-        scene.particles.item(10, "botania:brown_mushroom", [2.0, 2.5, 2.5]).area([2, 2, 3]);
-        scene.world.destroyBlock([1, 1, 2]);
-        scene.world.destroyBlock([1, 1, 3]);
-        scene.world.destroyBlock([2, 1, 1]);
-        scene.world.destroyBlock([3, 1, 2]);
-        scene.addKeyframe();
-        scene.idle(10);
-        scene.text(40, "endoflame will be planted on top of the table", [2.0, 2.5, 2.5]);
-        scene.particles.simple(20, "glow", [2.5, 2.2, 2.5]);
-        scene.idle(10);
-        scene.world.setBlock([2, 2, 2], "botania:endoflame", true);
     })
 
     event.create("kubejs:teatable").scene("music_disc_pigstep", "making music (pigstep)", (scene, util) =>

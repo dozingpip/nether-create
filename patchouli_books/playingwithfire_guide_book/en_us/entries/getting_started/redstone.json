@@ -1,0 +1,14 @@
+{
+    "name": "Where do I get redstone?",
+    "icon": "minecraft:redstone",
+    "category": "patchouli:getting_started",
+    "sortnum": 30,
+    "pages": [
+        {
+            "type": "entity",
+            "entity": "minecraft:witch",
+            "offset": 0.3,
+            "text": "You can craft witch eggs in a Create mixer, and witches drop redstone at an increased rate!"
+        }
+    ]
+}

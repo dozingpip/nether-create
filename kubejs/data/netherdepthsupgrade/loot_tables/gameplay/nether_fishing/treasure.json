@@ -89,6 +89,11 @@
           "type": "minecraft:item",
           "weight": 3,
           "name": "netherdepthsupgrade:eyeball"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "botania:blacker_lotus"
         }
       ]
     }

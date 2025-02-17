@@ -6,8 +6,8 @@ const Level = Java.loadClass('net.minecraft.world.level.Level');
 const Entity = Java.loadClass('net.minecraft.world.entity.Entity');
 const AllGuiTextures = Java.loadClass('snownee.lychee.client.gui.AllGuiTextures');
 const GuiGameElement = Java.loadClass('snownee.lychee.client.gui.GuiGameElement');
-const Blocks = Java.loadClass('net.minecraft.world.level.block.Blocks');
-const ItemAndBlockBaseCategory = Java.loadClass('snownee.lychee.compat.jei.category.ItemAndBlockBaseCategory');
+// const Blocks = Java.loadClass('net.minecraft.world.level.block.Blocks');
+// const ItemAndBlockBaseCategory = Java.loadClass('snownee.lychee.compat.jei.category.ItemAndBlockBaseCategory');
 const JEIREI = Java.loadClass('snownee.lychee.compat.JEIREI');
 const setLevelMethod = Entity.__javaObject__.getDeclaredMethod('m_284535_', Level);
 setLevelMethod.setAccessible(true);
@@ -154,8 +154,4 @@ JEIAddedEvents.registerRecipes(event => {
     registerRecipe('minecraft:wither_skeleton', "minecraft:nether_bricks", ["minecraft:coal", "minecraft:bone", "minecraft:wither_skeleton_skull"], 30, {x:1.2, y:1}, 'minecraft:fire')
     registerRecipe2('minecraft:magma_cube', "minecraft:magma_block", ["minecraft:magma_cream"], 30, {x:1.7, y:1})
     registerRecipe2('minecraft:zombified_piglin', "minecraft:stripped_warped_stem", ["minecraft:rotten_flesh", "minecraft:gold_nugget", "minecraft:gold_ingot"], 30, {x:1.3, y:1})
-})
-
-JEIAddedEvents.registerRecipeCatalysts(event => {
-    event.data.addRecipeCatalyst('minecraft:flint_and_steel', global.fireEntityRecipeType)
 })

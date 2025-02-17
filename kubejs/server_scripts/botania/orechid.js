@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
             weight: weight
         }).id("playingwithfire:orechid/"+(ore.substring(ore.lastIndexOf(":")+1)))
     }
-    orechid("minecraft:clay", 12000);
+    orechid("minecraft:iron_ore", 7654);
     orechid("minecraft:redstone_ore", 7654);
     orechid("minecraft:emerald_ore", 1239);
     orechid("minecraft:lapis_ore", 1079);
@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
             input: { type:"block", block: "minecraft:netherrack" },
             output: { type:"block", block: ore },
             weight: weight
-        }).id("playingwithfire:orechidignem/"+(ore.substring(ore.lastIndexOf(":")+1)))
+        }).id("playingwithfire:orechid_ignem/"+(ore.substring(ore.lastIndexOf(":")+1)))
     }
 
     ignem("minecraft:nether_quartz_ore", 3000);

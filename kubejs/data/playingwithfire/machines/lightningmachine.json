@@ -21,37 +21,37 @@
       "mode": "input",
       "id": "input1",
       "type": "custommachinery:item"
-    },
-    {
-      "mode": "output",
-      "id": "output1",
-      "type": "custommachinery:item"
     }
   ],
   "jei": [
     {
-      "texture": "playingwithfire:textures/gui/small_base_background.png",
-      "x": 20,
+      "texture": "playingwithfire:textures/gui/transparent_small_base_background.png",
+      "x": 0,
       "y": 0,
       "type": "custommachinery:texture",
-      "width" : 180
+      "jei": true,
+      "width" : 100,
+      "height" : 50
     },
     {
-      "x": 101,
-      "y": 59,
+      "x": 20,
+      "y": 15,
       "id": "input1",
       "type": "custommachinery:slot"
     },
     {
-      "x": 101,
-      "y": 59,
-      "id": "output1",
-      "type": "custommachinery:slot"
+      "x": 40,
+      "y": 15,
+      "type": "custommachinery:progress",
+      "texture_empty": "playingwithfire:textures/gui/progress_right_empty.png",
+      "texture_filled": "playingwithfire:textures/gui/progress_right_full.png"
     },
     {
-      "x": 101,
-      "y": 59,
-      "type": "custommachinery:progress"
+      "x": 70,
+      "y": 15,
+      "jei": true,
+      "type": "custommachinery:texture",
+      "texture": "playingwithfire:textures/gui/lightning_bolt.png"
     }
   ]
 }

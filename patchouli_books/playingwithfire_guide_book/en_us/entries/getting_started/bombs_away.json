@@ -1,0 +1,13 @@
+{
+    "name": "Bombs Away!",
+    "icon": "kubejs:bomb",
+    "category": "patchouli:getting_started",
+    "sortnum": 4,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item" : "kubejs:bomb",
+            "text": "I dare you to use a bomb, it's fun, I promise! :)"
+        }
+    ]
+}

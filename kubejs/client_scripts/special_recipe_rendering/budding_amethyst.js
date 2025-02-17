@@ -44,5 +44,5 @@ JEIAddedEvents.registerRecipes(event => {
             output: drops
         });
     }
-    registerRecipe("minecraft:budding_amethyst", "minecraft:amethyst_cluster", "minecraft:amethyst_shard")
+    registerRecipe(Item.of("minecraft:budding_amethyst"), "minecraft:amethyst_cluster", "minecraft:amethyst_shard")
 })

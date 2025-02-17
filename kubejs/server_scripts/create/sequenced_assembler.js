@@ -9,6 +9,7 @@ ServerEvents.recipes(e => {
         // the transitional item set by `transitionalItem('create:incomplete_large_cogwheel')` is the item used during the intermediate stages of the assembly
         e.recipes.createDeploying(inter, [inter, 'minecraft:wet_sponge']),
         e.recipes.createDeploying(inter, [inter, 'botania:ice_pendant']),
+        e.recipes.createDeploying(inter, [inter, 'botania:laputa_shard']),
         e.recipes.createPressing(inter, inter),
     ]).transitionalItem(inter).loops(1) // set the transitional item and the number of loops
     .id("playingwithfire:sequenced_assembly/ice");

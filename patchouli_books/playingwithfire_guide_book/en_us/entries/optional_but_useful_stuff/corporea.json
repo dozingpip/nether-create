@@ -1,0 +1,12 @@
+{
+    "name": "Corporea",
+    "icon": "botania:corporea_index",
+    "category": "patchouli:optional_but_useful_stuff",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "botania:corporea_index",
+            "text": "$(c:/open-patchouli-book @s botania:lexicon botania:ender/corporea 1)$(t:Go to corporea in Botania Lexicon)Corporea$(/t)$(/c) - a Botanical solution to storage"
+        }
+    ]
+}

@@ -181,8 +181,17 @@
         "type": "custommachinery:text",
         "jei": true,
         "width":70,
-        "height":6,
-        "text":{"text": "drop within 1 block", "color": "white"}
+        "height":5,
+        "text":{"text": "place/drop within 1 block", "color": "white"}
+      },
+      {
+        "x": 10,
+        "y": 110,
+        "type": "custommachinery:text",
+        "jei": true,
+        "width": 100,
+        "height":4,
+        "text":{"text": "If the item is placeable, place it. If not, drop it.", "color": "white"}
       },
       {
         "x": 53,
@@ -283,10 +292,13 @@
         "texture":"playingwithfire:textures/gui/additional_slot.png"
       },
       {
+        "texture": "playingwithfire:textures/gui/teatable_icon.png",
         "x": 53,
         "y": 59,
-        "type": "custommachinery:slot",
-        "id": "table_slot_input"
+        "type": "custommachinery:texture",
+        "width": 18,
+        "height": 18,
+        "jei": true
       },
       {
         "id": "flower_pot_slot2",
@@ -302,15 +314,20 @@
         "type": "custommachinery:slot"
       },
       {
-        "id": "table_slot_output",
+        "texture": "playingwithfire:textures/gui/teatable_icon.png",
         "x": 129,
         "y": 69,
-        "type": "custommachinery:slot"
+        "type": "custommachinery:texture",
+        "width": 18,
+        "height": 18,
+        "jei": true
       },
       {
         "x": 101,
         "y": 59,
-        "type": "custommachinery:progress"
+        "type": "custommachinery:progress",
+        "texture_empty": "playingwithfire:textures/gui/progress_right_empty.png",
+        "texture_filled": "playingwithfire:textures/gui/progress_right_full.png"
       }
 ]
 }

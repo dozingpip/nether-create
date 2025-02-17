@@ -10,7 +10,8 @@ ServerEvents.recipes(event => {
         }).id("playingwithfire:elven_trade/"+(output.substring(output.lastIndexOf(":")+1)))
     }
     trade("minecraft:cobblestone", "minecraft:netherrack");
-    trade("minecraft:dirt", "minecraft:warped_nylium");
+    trade("minecraft:grass_block", "minecraft:warped_nylium");
+    trade("minecraft:mycelium", "minecraft:crimson_nylium");
     trade("minecraft:kelp", "minecraft:dried_kelp");
     trade("minecraft:brick", "minecraft:nether_brick");
     trade("minecraft:slime_ball", "minecraft:magma_cream");

@@ -21,6 +21,12 @@ ServerEvents.recipes(event => {
         {item:"minecraft:wither_skeleton_skull"}, {tag:"minecraft:music_discs"}]);
     plate("botania:life_essence", 30000, [{item:"minecraft:fire_coral_block"},
         {item:"minecraft:beacon"}, {item:"botania:gaia_pylon"}, {tag:"minecraft:music_discs"}]);
-    plate("minecraft:deepslate_diamond_ore", 2000, [{item:"create:powdered_obsidian"},
+    plate("minecraft:deepslate_diamond_ore", 10000, [{item:"create:powdered_obsidian"},
         {item:"minecraft:lapis_lazuli"}, {item:"botania:manasteel_nugget"}]);
+    plate("minecraft:sniffer_egg", 5000, [{item:"minecraft:turtle_egg"},
+        {item:"minecraft:warped_nylium"}, {item:"botania:cosmetic_groucho_glasses"}, {item:"minecraft:purpur_block"}]);
+    plate("minecraft:wither_skeleton_skull", 22500, [
+        {item:"minecraft:bone_block"}, {item:"minecraft:coal_block"},
+        {item:"minecraft:wither_rose"}, {item:"botania:rune_fire"}, // maybe should be rune of wrath?
+        {item:"minecraft:music_disc_pigstep"}]);
 });

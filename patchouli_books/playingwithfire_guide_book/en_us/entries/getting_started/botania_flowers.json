@@ -1,0 +1,13 @@
+{
+    "name": "Mystical Flowers",
+    "icon": "botania:red_mystical_flower",
+    "category": "patchouli:getting_started",
+    "sortnum":20,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "botania:fertilizer",
+            "text": "Use $(c:/open-patchouli-book @s botania:lexicon botania:basics/flowers 6)$(t:Go to floral fertilizer in Lexica Botania)floral fertilizer$(/t)$(/c) on nylium"
+        }
+    ]
+}

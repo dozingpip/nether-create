@@ -1,0 +1,12 @@
+{
+    "type": "flowing_block",
+    "flowing": "#minecraft:lava",
+    "blocks_nearby": [
+        "minecraft:soul_soil",
+        "minecraft:sea_lantern"
+    ],
+    "result": {
+        "type": "blocks",
+        "blocks": "minecraft:basalt"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "Schematicannon",
+    "icon": "create:schematicannon",
+    "category": "patchouli:optional_but_useful_stuff",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "create:schematicannon",
+            "text": "Build or plan something out in creative, save it as a schematic, and have the schematicannon automatically build it for you in survival! (given the materials and some gunpowder)"
+        }
+    ]
+}

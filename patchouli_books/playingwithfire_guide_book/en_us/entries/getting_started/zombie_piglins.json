@@ -1,0 +1,19 @@
+{
+    "name": "Zombified Piglins",
+    "icon": "minecraft:rotten_flesh",
+    "category": "patchouli:getting_started",
+    "sortnum":0,
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "minecraft:stripped_warped_stem",
+            "text": "There are specialized conditions for spawning mobs here, Zombified Piglins will spawn on stripped warped stems. When one spawns it will unstrip the stem it spawned on."
+        },
+        {
+            "type": "entity",
+            "entity": "minecraft:zombified_piglin",
+            "offset": 0.1,
+            "text": "The drop rates for golden nuggets has been increased."
+        }
+    ]
+}

@@ -5,7 +5,7 @@
     ],
     "block_to_transform": "minecraft:soul_sand",
     "result": {
-        "type": "block",
-        "block": "minecraft:quartz_block"
+        "type": "blocks",
+        "blocks": "minecraft:quartz_block"
     }
 }

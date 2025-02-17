@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cross",
+    "textures": {
+      "cross": "playingwithfire:block/venus_fish_trap"
+    }
+  }

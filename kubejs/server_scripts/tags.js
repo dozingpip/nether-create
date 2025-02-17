@@ -3,7 +3,7 @@ ServerEvents.tags('item', event => {
     event.add('minecraft:saplings', ['minecraft:crimson_fungus', 'minecraft:warped_fungus'])
     event.add('forge:gems/diamond', ['create:refined_radiance'])
     event.add('forge:stone', 'minecraft:blackstone')
-    event.add('forge:obsidian', ['minecraft:wither_skeleton_skull', 'create:shadow_steel'])
+    event.add('forge:obsidian', ['minecraft:wither_skeleton_skull', 'create:shadow_steel', "minecraft:crying_obsidian"])
     event.add('forge:dirt', ['minecraft:crimson_nylium', 'minecraft:warped_nylium', 'custommachinery:custom_machine_item', 'create:zinc_block'])
   })
 

@@ -1,0 +1,12 @@
+{
+    "name": "Silly Putty",
+    "icon": "funkyfluids:silly_putty_bucket",
+    "category": "patchouli:pointers",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item" : "funkyfluids:silly_putty_bucket",
+            "text": "If this fluid flows onto a strippable log, it will strip automatically. (including warped stems, $(o)wink wink$())"
+        }
+    ]
+}

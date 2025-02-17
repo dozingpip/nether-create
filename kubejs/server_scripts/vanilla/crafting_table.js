@@ -20,6 +20,9 @@ ServerEvents.recipes(event => {
     event.shapeless('minecraft:fire_coral_block', [
         '4x minecraft:fire_coral'
     ]).id("playingwithfire:fire_coral_to_block")
+    event.shapeless('minecraft:fire_coral', [
+        '2x minecraft:fire_coral_fan'
+    ]).id("playingwithfire:fire_coral_from_fan")
     event.shapeless('minecraft:fire_coral_block', [
         'minecraft:dead_fire_coral_block',
         'minecraft:wet_sponge'
@@ -27,18 +30,27 @@ ServerEvents.recipes(event => {
     event.shapeless('4x minecraft:fire_coral', [
         'minecraft:fire_coral_block'
     ]).id("playingwithfire:fire_coral_from_block")
+    event.shapeless('2x minecraft:fire_coral_fan', [
+        'minecraft:fire_coral'
+    ]).id("playingwithfire:fire_coral_fan")
     event.shapeless('minecraft:string', [
         '9x minecraft:warped_roots'
     ]).id("playingwithfire:roots_to_string")
     event.shapeless('minecraft:warped_fungus', [
         '4x minecraft:warped_roots'
     ]).id("playingwithfire:roots_to_fungus")
+    event.shapeless('minecraft:crimson_fungus', [
+        '4x minecraft:crimson_roots'
+    ]).id("playingwithfire:crimson_roots_to_fungus")
     event.shapeless('minecraft:dried_kelp', [
         '2x netherdepthsupgrade:warped_kelp'
     ]).id("playingwithfire:warped_to_dried_kelp")
     event.shapeless('minecraft:warped_fungus', [
         '2x netherdepthsupgrade:warped_seagrass'
     ]).id("playingwithfire:warped_to_fungus")
+    event.shapeless('4x minecraft:quartz', [
+        'minecraft:quartz_block'
+    ]).id("playingwithfire:quartz_block_to_quartz")
     event.shaped('minecraft:hopper', [
         'G G',
         'GCG',
@@ -74,4 +86,25 @@ ServerEvents.recipes(event => {
             C: 'create:copper_sheet'
         }
     ).id("playingwithfire:lightning_machine")
+    event.shaped('minecraft:saddle',
+        [
+            ' L ',
+            'L L',
+            '   '
+        ],
+        {
+            L: 'minecraft:leather'
+        }
+    ).id("playingwithfire:saddle")
+    event.shaped('botania:turntable',
+        [
+            'LLL',
+            'LDL',
+            'LLL'
+        ],
+        {
+            L: '#botania:livingwood_logs',
+            D: 'minecraft:dispenser'
+        }
+    ).id("playingwithfire:spreader_turntable")
 })

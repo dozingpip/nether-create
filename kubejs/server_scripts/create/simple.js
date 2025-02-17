@@ -13,8 +13,8 @@ ServerEvents.recipes(event => {
         Fluid.of('funkyfluids:oobleck', 1000)
     ]).id("playingwithfire:filling/ender_air");
     event.recipes.create.filling(Item.of('minecraft:cherry_sapling', 1), [
-        'minecraft:red_mushroom',
-        Fluid.of('funkyfluids:melonade', 250)
+        'minecraft:spore_blossom',
+        Fluid.of('funkyfluids:melonade', 1000)
     ]).id("playingwithfire:filling/cherry_sapling");
     event.recipes.create.filling(Item.of('minecraft:ancient_debris', 1), [
         'minecraft:ochre_froglight',
@@ -31,19 +31,24 @@ ServerEvents.recipes(event => {
     ], 'minecraft:magma_cream').id("playingwithfire:emptying/lava")
 
     //crushing
+    event.recipes.create.crushing(Item.of("minecraft:bone_meal", 3), "minecraft:shroomlight")
+    event.recipes.create.crushing(['minecraft:gold_ingot', Item.of('minecraft:gold_ingot', 1).withChance(0.25)], 'minecraft:golden_sword').id("playingwithfire:crushing/golden_sword")
     event.recipes.create.crushing('minecraft:red_mushroom', 'minecraft:crimson_fungus').id("playingwithfire:crushing/red_mushroom")
     event.recipes.create.crushing('minecraft:brown_mushroom', 'minecraft:warped_fungus').id("playingwithfire:crushing/brown_mushroom")
-    event.recipes.create.crushing('minecraft:warped_fungus', 'minecraft:warped_wart_block').id("playingwithfire:crushing/warped_fungus")
+    event.recipes.create.crushing(Item.of('minecraft:warped_fungus').withChance(0.25), 'minecraft:warped_wart_block').id("playingwithfire:crushing/warped_fungus")
     event.recipes.create.crushing('create:powdered_obsidian', '#forge:obsidian').id("playingwithfire:crushing/powdered_obsidian")
-    event.recipes.create.crushing(['minecraft:crimson_fungus', Item.of('minecraft:nether_wart', 1).withChance(0.25)], 'minecraft:nether_wart_block').id("playingwithfire:crushing/wart_block_crush")
+    event.remove({id: 'create:crushing/nether_wart_block'})
+    event.recipes.create.crushing([Item.of('minecraft:crimson_fungus').withChance(0.5), Item.of('minecraft:nether_wart', 1).withChance(0.25)], 'minecraft:nether_wart_block').id("playingwithfire:crushing/wart_block_crush")
     event.recipes.create.compacting("minecraft:red_sand", [Item.of("create:cinder_flour",  4), Fluid.of("minecraft:lava", 1000)]).id("playingwithfire:compacting/red_sand");
-    event.recipes.create.compacting("minecraft:lapis_block", ["minecraft:blue_glazed_terracotta", Fluid.of("create:honey", 250)]).heated().id("playingwithfire:compacting/lapis");
+    event.recipes.create.compacting(Item.of("minecraft:lapis_lazuli", 18), ["minecraft:blue_glazed_terracotta", Fluid.of("create:honey", 500)]).heated().id("playingwithfire:compacting/lapis");
     event.recipes.create.compacting("minecraft:sculk_catalyst", ["minecraft:sculk", "minecraft:end_stone"]).heated().id("playingwithfire:compacting/sculk_catalyst");
     event.recipes.create.compacting("minecraft:nether_quartz_ore", "create:rose_quartz").heated().id("playingwithfire:compacting/nether_quartz_ore");
-    event.recipes.create.milling(["minecraft:cherry_sapling", '#minecraft:leaves'], "minecraft:spore_blossom").id("playingwithfire:milling/spore_blossom");
+    event.recipes.create.compacting("minecraft:moss_block", ["botania:vine_ball", "minecraft:grass_block"]).id("playingwithfire:compacting/moss_block");
+    event.recipes.create.compacting("minecraft:music_disc_13", ["create:turntable", "minecraft:black_carpet", Item.of("minecraft:gold_ingot", 13)]).heated().id("playingwithfire:compacting/disc_13");
     event.recipes.create.milling(["minecraft:quartz"], "minecraft:quartz_block").id("playingwithfire:milling/quartz");
+    event.remove({id: 'create:milling/wheat'})
+    event.recipes.create.milling([Item.of("minecraft:wheat_seeds").withChance(0.4), "create:wheat_flour", Item.of("create:wheat_flour").withChance("0.5")], "minecraft:wheat").id("playingwithfire:milling/wheat");
+    event.recipes.create.milling(["minecraft:andesite"], "minecraft:polished_andesite").id("playingwithfire:milling/unpolish_andesite");
     event.recipes.create.milling(["create:cinder_flour"], "minecraft:netherrack").id("playingwithfire:milling/cinder_flour");
     event.recipes.create.milling([Item.of("minecraft:dead_bush").withChance(0.25), Item.of('minecraft:gold_nugget', 3)], "minecraft:red_sand").id("playingwithfire:milling/dead_bush");
-    // event.recipes.create.compacting("tconstruct:blood_slime_ball", [], [Fluid.of("tconstruct:blood", 250)], 1000).heated();
-    // event.recipes.create.compacting("tconstruct:blood_slime", [], [Fluid.of("tconstruct:blood", 1250)], 1000).heated();
 })

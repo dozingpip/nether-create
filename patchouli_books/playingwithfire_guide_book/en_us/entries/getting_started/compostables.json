@@ -2,7 +2,7 @@
     "name": "Compostables",
     "icon": "minecraft:bone_meal",
     "category": "patchouli:getting_started",
-    "sortnum":6,
+    "sortnum":10,
     "pages": [
         {
             "type": "text",

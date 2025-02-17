@@ -95,6 +95,6 @@ JEIAddedEvents.registerRecipes((event) => {
     });
 });
 
-JEIAddedEvents.registerRecipeCatalysts(event => {
-    event.data.addRecipeCatalyst('minecraft:gold_ingot', global.barteringRecipeType)
-})
+// JEIAddedEvents.registerRecipeCatalysts(event => {
+//     event.data.addRecipeCatalyst('minecraft:gold_ingot', global.barteringRecipeType)
+// })

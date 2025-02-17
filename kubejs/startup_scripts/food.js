@@ -4,4 +4,9 @@ ItemEvents.modification(event => {
           food.alwaysEdible(true)
       }
     })
+    event.modify('netherdepthsupgrade:fortress_grouper_nether_plate', item => {
+      item.foodProperties = food => {
+          food.alwaysEdible(true)
+      }
+    })
 })

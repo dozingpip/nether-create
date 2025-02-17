@@ -81,9 +81,9 @@ JEIAddedEvents.registerRecipes(event => {
     registerRecipe("minecraft:wither_skeleton", "minecraft:milk", 1, {x:-1, y:0}, 20)
     registerRecipe("minecraft:skeleton", "minecraft:milk", 1, {x:-1, y:0}, 20)
     registerRecipe("minecraft:magma_cube", "minecraft:lava", 1, {x:-1, y:0}, 20)
-    registerRecipe("minecraft:witch", "funkyfluids:redstone_suspension", 1, {x:-1, y:0}, 20)
+    // registerRecipe("minecraft:witch", "funkyfluids:redstone_suspension", 1, {x:-1, y:0}, 20)
 })
 
-JEIAddedEvents.registerRecipeCatalysts(event => {
-    event.data.addRecipeCatalyst('create:fluid_tank', global.fluidEntityRecipeType)
-})
+// JEIAddedEvents.registerRecipeCatalysts(event => {
+//     event.data.addRecipeCatalyst('create:fluid_tank', global.fluidEntityRecipeType)
+// })

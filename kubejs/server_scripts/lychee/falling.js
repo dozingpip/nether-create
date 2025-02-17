@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
             "comment": "make sure your " + below + " is underneath"
         }
     }
-    let falling = (output, landing) =>
+    let falling = (output, landing, extra_out) =>
     {
         return {
             "type": "lychee:block_crushing",
@@ -36,6 +36,11 @@ ServerEvents.recipes(event => {
                 {
                     "type": "place",
                     "block": "*"
+                },
+                {
+                    "type": "drop_item",
+                    "item": "minecraft:brick",
+                    "count": 3
                 },
                 {
                     "type": "place",
@@ -50,8 +55,8 @@ ServerEvents.recipes(event => {
     // event.custom(falling("botania:pure_daisy", "turtle_egg", "moss_block"))
     // event.custom(falling("botania:pure_daisy", "cake", "moss_block"))
     // event.custom(fallingOn(falling("botania:pure_daisy", "flower_pot", "moss_block"), "pointed_dripstone"))
-    event.custom(fallingWithBelow("create:zinc_block", "kubejs:potted_twisting_vines", "minecraft:magma_block"))
-    event.custom(fallingWithBelow("minecraft:copper_block", "minecraft:potted_crimson_fungus", "minecraft:magma_block"))
+    event.custom(falling("create:zinc_block", "kubejs:potted_twisting_vines"))
+    event.custom(falling("minecraft:copper_block", "minecraft:potted_crimson_fungus"))
     event.custom(
     {
         "type": "lychee:block_crushing",
@@ -69,6 +74,38 @@ ServerEvents.recipes(event => {
         ]
     })
     event.custom(
+        {
+            "type": "lychee:block_crushing",
+            "item_in": [
+            {
+                "item": "gold_block"
+            },
+            ],
+            "landing_block": "blackstone",
+            "post": [
+                {
+                    "type": "place",
+                    "block": "gilded_blackstone"
+                }
+            ]
+        })
+        event.custom(
+            {
+                "type": "lychee:block_crushing",
+                "item_in": [
+                {
+                    "item": "chorus_fruit"
+                },
+                ],
+                "landing_block": "black_glazed_terracotta",
+                "post": [
+                    {
+                        "type": "place",
+                        "block": "crying_obsidian"
+                    }
+                ]
+            })
+    event.custom(
     {
         "type": "lychee:block_crushing",
         "falling_block": "gravel",
@@ -80,6 +117,43 @@ ServerEvents.recipes(event => {
             }
         ]
     })
+    event.custom(
+    {
+        "type": "lychee:block_crushing",
+        "falling_block": "gravel",
+        "landing_block": "minecraft:clay",
+        "item_in": [
+        {
+            "item": "minecraft:big_dripleaf"
+        }
+        ],
+        "post": [
+            {
+                "type": "place",
+                "block": "minecraft:pointed_dripstone"
+            }
+        ]
+    })
+    event.custom(
+        {
+            "type": "lychee:block_crushing",
+            "falling_block": "gravel",
+            "item_in": [
+            {
+                "item": "kubejs:bomb",
+            }
+            ],
+            "post": [
+                {
+                    "type": "drop_item",
+                    "item": "potion",
+                    "nbt": {
+                        "Potion": "minecraft:awkward"
+                    },
+                    "count":2
+                }
+            ]
+        })
     event.custom(
     {
         "type": "lychee:block_crushing",

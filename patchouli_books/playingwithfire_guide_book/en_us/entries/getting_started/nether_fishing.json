@@ -1,0 +1,16 @@
+{
+    "name": "Nether Fishing",
+    "icon": "netherdepthsupgrade:lava_fishing_rod",
+    "category": "patchouli:getting_started",
+    "sortnum":41,
+    "pages": [
+        {
+            "type": "crafting",
+            "recipe": "playingwithfire:lava_fishing_rod"
+        },
+        {
+            "type": "text",
+            "text": "Try some fishing when you have downtime, there are some good rewards!"
+        }
+    ]
+}

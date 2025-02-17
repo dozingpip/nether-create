@@ -16,4 +16,6 @@ ServerEvents.recipes(event => {
     daisy('minecraft:nether_wart_block', 'minecraft:warped_wart_block')
     daisy('minecraft:crimson_fungus', 'minecraft:warped_fungus')
     daisy('minecraft:crimson_nylium', 'minecraft:warped_nylium')
+    daisy('minecraft:big_dripleaf', 'minecraft:vine')
+    daisy('minecraft:melon', 'minecraft:pumpkin')
 })

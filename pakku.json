@@ -3,9 +3,9 @@
     "version": "1.0.0",
     "overrides": [
         "config/defaultworldtype/",
-        "config/doomangelring.json",
-        "config/globalgamerules-common.toml",
         "config/kiwi-client.yaml",
+        "config/roughlyenoughitems/",
+        "config/skyblockbuilder/",
         "kubejs/assets/",
         "kubejs/data/",
         "kubejs/client_scripts/",

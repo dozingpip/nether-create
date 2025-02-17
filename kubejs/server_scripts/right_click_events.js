@@ -25,16 +25,47 @@ let addRemoveFluid = (player, item, fluidName, machine, full_item, empty_item, a
         default:
             break;
     }
+    console.log(result)
+    return result;
+}
+let addRemovePotionFluid = (player, item, machine, amount) =>
+{
+    let fluid = machine.getFluidStored("fluid")
+    let result = false;
+    if (item.id == "minecraft:potion")
+    {
+        let potionName = item.nbt.Potion
+        let potionMatch = fluid.id == "create:potion" && fluid.nbt.Potion == potionName
+        if ((potionMatch || fluid.id == 'minecraft:empty') && fluid.amount + amount <= machine.getFluidCapacity("fluid"))
+        {
+            machine.addFluidToTank("fluid", Fluid.of("create:potion", amount).withNBT({Potion: potionName}), false)
+            item.count--
+            player.giveInHand("minecraft:glass_bottle")
+            result = true;
+        }
+    }
+    else if(item.id == "minecraft:glass_bottle")
+    {
+        if (fluid.id == "create:potion" && fluid.amount >= amount)
+        {
+            let potionName = fluid.nbt.Potion
+            item.count--
+            machine.removeFluidFromTank("fluid", amount, false)
+            player.giveInHand(Item.of("minecraft:potion").withNBT({Potion: potionName}))
+            result = true;
+        }
+    }
     return result;
 }
 BlockEvents.rightClicked(event => {
-    const { block, item, player, level, server, target } = event
-    if (block.id == 'custommachinery:custom_machine_block')
+    const { block, item, player, level, direction, server, target } = event
+    if (block.id == 'kubejs:teatable')
     {
         let machine = CustomMachine.of(block)
-        let success = addRemoveFluid(player, item, "create:tea", machine, "create:builders_tea", "minecraft:glass_bottle", 500)
+        let successTea = addRemoveFluid(player, item, "create:tea", machine, "create:builders_tea", "minecraft:glass_bottle", 250)
+        let successPotion = addRemovePotionFluid(player, item, machine, 250)
         // success = success || addRemoveFluid(player, item, "create:honey", machine, "minecraft:honey_bottle", "minecraft:glass_bottle", 500)
-        if(success)
+        if(successTea || successPotion)
             event.cancel();
     }
     else if (block.id == 'minecraft:jukebox')
@@ -74,5 +105,49 @@ BlockEvents.rightClicked(event => {
     {
         player.giveInHand('minecraft:twisting_vines')
         level.setBlock(block.pos, Block.getBlock('minecraft:flower_pot').withPropertiesOf(block.blockState), 3)
+    }
+    else if(block.id == 'create:blaze_burner' && event.hand == 'main_hand' && item.empty)
+    {
+        let cost = 20
+        let limit = 0
+        let min = 0
+        let state = block.getProperties().blaze
+        let burnTimeRemaining = block.getEntityData().get("burnTimeRemaining")
+        if(state == "smouldering" || state == "none")
+            limit = 0
+        else if(state == "kindled")
+        {
+            min = 1
+            limit = 3
+        }
+        else if(state == "seething")
+        {
+            limit = 4
+            min = 4
+        }
+        if(burnTimeRemaining - (cost*range) <= 0)
+            limit = Math.floor(burnTimeRemaining / cost)
+        let range = Math.floor(Math.random()*limit) + min
+        let burned = 0
+        for (let i = 1; i < range; i++)
+        {
+            let b = block.offset(event.getFacing().opposite, i)
+            let down = b.getDown()
+            if (b.id == "minecraft:air" && down.id != "minecraft:air")
+            {
+                if(down.id == "minecraft:soul_sand" || down.id == "minecraft:soul_soil")
+                    b.set('minecraft:soul_fire')
+                else
+                    b.set('minecraft:fire')
+                burned += 1
+            }
+        }
+        if(burned > 0)
+        {
+            level.runCommandSilent(`playsound minecraft:entity.blaze.shoot neutral @p`)
+            block.setEntityData({"burnTimeRemaining": burnTimeRemaining - (cost * burned)})
+            // let burnTimeRemainingAfter = block.getEntityData().get("burnTimeRemaining")
+            // Utils.server.tell("remaining: " + burnTimeRemaining + ", after: " + burnTimeRemainingAfter)
+        }
     }
 })

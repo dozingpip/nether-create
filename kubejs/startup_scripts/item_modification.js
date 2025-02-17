@@ -12,19 +12,7 @@ ItemEvents.modification(event => {
     event.modify('minecraft:pumpkin_seeds', item => {
       item.fireResistant = true
     })
-    event.modify('minecraft:ender_pearl', item => {
-      item.maxStackSize = 64
-    })
-    event.modify('minecraft:bucket', item => {
-      item.maxStackSize = 64
-    })
-    event.modify('minecraft:lava_bucket', item => {
-      item.maxStackSize = 64
-    })
-    event.modify('minecraft:potion', item => {
-      item.maxStackSize = 64
-    })
-    var stack64 = ['minecraft:potion', 'minecraft:splash_potion', 'minecraft:lingering_potion', 'minecraft:music_disc_13',
+    var stack64 = ['minecraft:bucket', 'minecraft:ender_pearl', 'minecraft:lava_bucket', 'minecraft:potion', 'minecraft:splash_potion', 'minecraft:lingering_potion', 'minecraft:music_disc_13',
       "minecraft:music_disc_pigstep"
     ];
     stack64.forEach(thing => {

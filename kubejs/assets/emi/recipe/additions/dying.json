@@ -1,0 +1,6 @@
+{
+    "type": "emi:world_interaction",
+    "left": "item:minecraft:white_wool",
+    "right": "item:minecraft:yellow_dye",
+    "output": "item:minecraft:yellow_wool"
+}

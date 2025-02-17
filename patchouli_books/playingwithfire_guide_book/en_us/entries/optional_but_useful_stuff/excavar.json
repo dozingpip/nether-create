@@ -1,0 +1,11 @@
+{
+    "name": "Excavar Multimine",
+    "icon": "minecraft:wooden_axe",
+    "category": "patchouli:optional_but_useful_stuff",
+    "pages": [
+        {
+            "type": "text",
+            "text": "You can break multiple blocks at once by holding $(6)$(k:excavar.key.excavar)$()."
+        }
+    ]
+}

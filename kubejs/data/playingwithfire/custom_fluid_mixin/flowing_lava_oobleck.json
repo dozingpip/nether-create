@@ -1,0 +1,9 @@
+{
+    "type": "flowing_block",
+    "flowing": "#minecraft:lava",
+    "blocks_nearby": ["funkyfluids:oobleck_block"],
+    "result": {
+        "type": "blocks",
+        "blocks": "minecraft:netherrack"
+    }
+}

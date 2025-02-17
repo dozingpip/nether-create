@@ -1,0 +1,12 @@
+{
+    "type": "patchouli:shapeless_book_recipe",
+    "ingredients": [
+      {
+        "item": "minecraft:twisting_vines"
+      },
+      {
+        "item": "minecraft:netherrack"
+      }
+    ],
+    "book": "patchouli:playingwithfire_guide_book"
+  }

@@ -1,0 +1,12 @@
+{
+    "name": "Wireless Redstone :O",
+    "icon": "create:redstone_link",
+    "category": "patchouli:optional_but_useful_stuff",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "create:redstone_link",
+            "text": "$(c:/create ponder create:redstone_link)$(t:ponder the redstone link!)Redstone link$(/t)$(/c) - wireless redstone :o"
+        }
+    ]
+}

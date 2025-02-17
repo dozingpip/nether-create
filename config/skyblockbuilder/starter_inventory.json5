@@ -1,0 +1,14 @@
+// See here for more information:
+// https://wiki.chaotictrials.de/skyblock-builder/1.20.x/config/inventory/#starting-inventory
+// If this page isn't available, go to the project page (where you downloaded the file), and click on the wiki
+{
+  "items": [
+    {"item":"patchouli:guide_book",
+      "nbt": "{'patchouli:book':'patchouli:playingwithfire_guide_book'}"},
+    {"item": "minecraft:bucket"},
+    {"item":"minecraft:golden_boots", "Slot": "feet"},
+    {"item":"botania:lexicon"},
+    {"item":"angelblockrenewed:angel_block"},
+    {"item":"minecraft:piglin_spawn_egg"}
+    ]
+}
